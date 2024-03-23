@@ -10,9 +10,9 @@ PDK:		sky130A
 cace_format:	4.0
 
 authorship {
-	designer:	Stephen W. Wu
+	designer:	Stephen Wu
 	company:	N/A
-	creation_date:	March 7, 2024
+	creation_date:	March 22, 2024
 	license:	Apache 2.0
 }
 
@@ -40,52 +40,66 @@ dependencies {
 # Pin names and descriptions
 
 pins {
-	name:		ena
-	description:	Enable input (active low)
-	type:		digital
+	name:		vbg
+	description:	input bandgap voltage reference
+	type:		analog
 	direction:	input
-	Vmin:		vss - 0.3
-	Vmax:		vdd + 0.3
-	note:		May be 1.8V or 3.3V signal
+	Vtyp:		1.2
 
  	+
-	name:		inm
-	description:	amplifier voltage negative input
+	name:		por
+	description:	reset signal in dvdd domain
 	type:		signal
 	direction:	output
-	Vmin:		vss - 0.3
-	Vmax:		vdd + 0.3
+	Vmin:		dvss
+	Vmax:		dvdd
 
  	+
-	name:		inp
-	description:	amplifier voltage positive input
+	name:		porb
+	description:	reset bar signal in dvdd domain
 	type:		signal
 	direction:	output
-	Vmin:		vss - 0.3
-	Vmax:		vdd + 0.3
+	Vmin:		dvss
+	Vmax:		dvdd
 
  	+
-	name:		out
-	description:	amplifier voltage output
+	name:		porb_h
+	description:	reset bar signal in avdd domain
 	type:		signal
 	direction:	output
-	Vmin:		vss
-	Vmax:		vdd
+	Vmin:		avss
+	Vmax:		avdd
 
  	+
-	name:		vdd
+	name:		dvdd
+	description:	Digital power supply
+	type:		power
+	direction:	inout
+	Vmin:		1.64
+	Vmax:		1.96
+
+ 	+
+	name:		dvss
+	description:	Digital ground
+	type:		ground
+	direction:	inout
+	Vmin:		0
+	Vmax:		0.3
+	
+	+
+	name:		avdd
 	description:	Analog power supply
 	type:		power
 	direction:	inout
-	Vmin:		3.0
-	Vmax:		3.6
+	Vmin:		2.7
+	Vmax:		5.5
 
  	+
-	name:		vss
+	name:		avss
 	description:	Analog ground
 	type:		ground
 	direction:	inout
-	Vmin:		-0.3
+	Vmin:		0
 	Vmax:		0.3
 }
 
@@ -93,16 +107,16 @@ pins {
 # if not otherwise specified
 
 default_conditions {
-	name:		Vvdd
+	name:		Vavdd
 	description:	Analog power supply voltage
-	display:	vdd
+	display:	avdd
 	unit:		V
 	typical:	3.3
 
 	+
-	name:		Vvss
+	name:		Vavss
 	description:	Analog ground
-	display:	vss
+	display:	avss
 	unit:		V
 	typical:	0
 
@@ -113,38 +127,41 @@ default_conditions {
 	unit:		V
 	typical:	1.8
 	note:		Reference voltage for the enable input
-
+	
 	+
-	name:		Rout
-	description:	Output load resistance
-	display:	RLoad
-	unit:		M{ohms}
-	typical:	100
-
-	+
-	name:		Cout
-	description:	Output load capacitance
-	display:	CLoad
-	unit:		fF
-	maximum:	100
-
-	+
-	name:		ena
-	description:	Amplifier enable
-	display:	ena
-	typical:	1
-
-	+
-	name:		Vcm
-	description:	Common-mode input voltage
-	display:	Vcm
-	typical:	1.65
-
-	+
-	name:		Vdiff
-	description:	Differential input voltage
-	display:	Vdiff
+	name:		Vdvss
+	description:	Digital ground
+	display:	dvss
+	unit:		V
 	typical:	0
+
+	+
+	name:		Vvbg
+	description:	bandgap reference voltage
+	display:	vbg
+	unit:		V
+	typical:	1.2
+
+	+
+	name:		Vpor
+	description:	reset voltage signal(dvdd domain)
+	display:	por
+	unit:		V
+	maximum:	1.8
+	
+	+
+	name:		Vporb
+	description:	reset bar voltage signal(dvdd domain)
+	display:	porb
+	unit:		V
+	maximum:	1.8
+
+	+
+	name:		Vporb_h
+	description:	reset bar voltage signal(avdd domain)
+	display:	por
+	unit:		V
+	maximum:	3.3
 
 	+
 	name:		temperature
@@ -152,8 +169,8 @@ default_conditions {
 	display:	Temp
 	unit:		{degrees}C
 	minimum:	-40
-	typical:	27
-	maximum:	130
+	typical:	25
+	maximum:	85
 
 	+
 	name:		corner
