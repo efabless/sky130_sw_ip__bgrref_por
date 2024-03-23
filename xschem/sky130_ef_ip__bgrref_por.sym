@@ -1,0 +1,51 @@
+v {xschem version=3.4.5 file_version=1.2
+* Copyright 2021 Stefan Frederik Schippers
+* 
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*     https://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+
+}
+G {}
+K {type=subcircuit
+format="@name @pinlist @VCCBPIN @VSSBPIN @symname W_N=@W_N L_N=@L_N W_P=@W_P L_P=@L_P m=@m"
+template="name=x1 W_N=1 L_N=0.2 W_P=1 L_P=0.2 VCCBPIN=VCC VSSBPIN=VSS m=1"
+extra="VCCBPIN VSSBPIN"
+
+}
+V {}
+S {}
+E {}
+L 4 -40 -50 80 -50 {}
+L 4 -40 40 80 40 {}
+L 4 -40 -50 -40 40 {}
+L 4 -60 20 -40 20 {}
+L 4 80 -20 100 -20 {}
+L 4 -60 0 -40 0 {}
+L 4 -60 -40 -40 -40 {}
+L 4 -60 -20 -40 -20 {}
+L 4 80 -50 80 40 {}
+L 4 80 0 100 0 {}
+B 5 -62.5 17.5 -57.5 22.5 {name=Vbg dir=in}
+B 5 97.5 -22.5 102.5 -17.5 {name=por dir=out }
+B 5 -62.5 -2.5 -57.5 2.5 {name=VSS dir=in }
+B 5 -62.5 -42.5 -57.5 -37.5 {name=AVDD dir=in }
+B 5 -62.5 -22.5 -57.5 -17.5 {name=DVDD dir=in }
+B 5 97.5 -2.5 102.5 2.5 {name=porb dir=out }
+T {@symname} -26.5 -66 0 0 0.3 0.3 {}
+T {@name} -5 18 0 0 0.2 0.2 {}
+T {por} 75 -24 0 1 0.2 0.2 {}
+T {AVDD
+} -35 -44 0 0 0.2 0.2 {}
+T {VSS} -35 -4 0 0 0.2 0.2 {}
+T {Vbg} -35 24 2 1 0.2 0.2 {}
+T {DVDD} -35 -24 0 0 0.2 0.2 {}
+T {porb} 75 -4 0 1 0.2 0.2 {}
