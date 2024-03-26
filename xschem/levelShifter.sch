@@ -5,8 +5,6 @@ K {}
 V {}
 S {}
 E {}
-N 290 -310 290 -270 {
-lab=#net1}
 N 690 -310 720 -310 {lab=VSS}
 N 690 -280 690 -220 {
 lab=VSS}
@@ -97,8 +95,6 @@ N 690 -390 710 -390 {
 lab=#net2}
 N 860 -380 940 -380 {
 lab=#net3}
-N 220 -260 250 -260 {
-lab=VSS}
 N 300 -460 300 -410 {
 lab=VSS}
 N 270 -410 300 -410 {
@@ -135,9 +131,6 @@ N 860 -220 1050 -220 {
 lab=VSS}
 N 1050 -280 1050 -220 {
 lab=VSS}
-C {devices/vcvs.sym} 290 -240 0 0 {name=E1 value='3.3/1.8'}
-C {devices/gnd.sym} 290 -210 0 0 {name=l11 lab=GND}
-C {devices/gnd.sym} 250 -220 0 0 {name=l13 lab=GND}
 C {devices/title.sym} 160 -30 0 0 {name=l2 author="Stephen Wu"}
 C {devices/ipin.sym} 90 -240 0 0 {name=p6 lab=VCCL}
 C {devices/ipin.sym} 90 -210 0 0 {name=p12 lab=VSS}
@@ -272,7 +265,6 @@ C {devices/lab_wire.sym} 450 -530 0 0 {name=p8 lab=S1B}
 C {devices/lab_wire.sym} 610 -310 0 0 {name=p9 lab=S1}
 C {devices/lab_wire.sym} 940 -310 0 1 {name=p11 lab=S1B}
 C {devices/lab_pin.sym} 770 -570 3 1 {name=p15 sig_type=std_logic lab=VCCH}
-C {devices/lab_pin.sym} 220 -260 0 0 {name=p10 sig_type=std_logic lab=VSS}
 C {devices/ipin.sym} 90 -270 0 0 {name=p13 lab=VCCH}
 C {sky130_fd_pr/nfet_g5v0d10v5.sym} 1030 -330 0 0 {name=M7
 W=0.9

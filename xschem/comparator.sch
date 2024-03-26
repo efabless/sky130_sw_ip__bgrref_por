@@ -10,8 +10,6 @@ N 780 -810 810 -810 {lab=AVDD}
 N 670 -390 700 -390 {lab=VSS}
 N 560 -940 560 -900 { lab=AVDD}
 N 780 -940 780 -900 { lab=AVDD}
-N 950 -500 1010 -500 {
-lab=vo1}
 N 560 -780 560 -760 {
 lab=#net1}
 N 1100 -430 1130 -430 {lab=VSS}
@@ -154,15 +152,15 @@ N 1200 -430 1230 -430 {lab=VSS}
 N 1200 -400 1200 -340 {
 lab=VSS}
 N 1200 -480 1200 -460 {
-lab=Vout}
+lab=RST}
 N 1200 -610 1230 -610 {lab=DVDD}
 N 1200 -670 1200 -640 {lab=DVDD}
 N 1200 -520 1200 -480 {
-lab=Vout}
+lab=RST}
 N 1160 -610 1160 -430 {
 lab=#net2}
 N 1200 -500 1260 -500 {
-lab=Vout}
+lab=RST}
 N 1230 -650 1230 -610 {
 lab=DVDD}
 N 1200 -650 1230 -650 {
@@ -181,13 +179,40 @@ N 1100 -940 1200 -940 {
 lab=DVDD}
 N 960 -300 1200 -300 {
 lab=VSS}
-N 1010 -500 1060 -500 {
-lab=vo1}
 N 1260 -500 1320 -500 {
-lab=Vout}
+lab=RST}
 N 660 -840 660 -810 { lab=#net1}
 N 660 -940 660 -900 {
 lab=AVDD}
+N 1040 -500 1060 -500 {
+lab=vo1}
+N 950 -500 960 -500 {
+lab=vo1}
+N 960 -500 1040 -500 {
+lab=vo1}
+N 140 -710 170 -710 {lab=VSS}
+N 140 -760 140 -740 {
+lab=Sel}
+N 140 -890 170 -890 {lab=AVDD}
+N 140 -950 140 -920 {lab=AVDD}
+N 140 -800 140 -760 {
+lab=Sel}
+N 100 -890 100 -710 {
+lab=vo1}
+N 170 -930 170 -890 {
+lab=AVDD}
+N 140 -930 170 -930 {
+lab=AVDD}
+N 170 -710 170 -660 {
+lab=VSS}
+N 140 -660 170 -660 {
+lab=VSS}
+N 80 -780 100 -780 {
+lab=vo1}
+N 140 -780 160 -780 {
+lab=Sel}
+N 140 -680 140 -660 {
+lab=VSS}
 C {devices/lab_pin.sym} 490 -530 0 0 {name=l11 lab=Vinn}
 C {devices/lab_pin.sym} 850 -530 0 1 {name=l12 lab=Vinp
 }
@@ -235,12 +260,10 @@ sa=0 sb=0 sd=0
 model=pfet_g5v0d10v5
 spiceprefix=X
 }
-C {devices/lab_pin.sym} 1030 -500 3 1 {name=l3 lab=vo1
-}
 C {devices/ngspice_probe.sym} 560 -600 0 0 {name=r4}
-C {devices/ngspice_probe.sym} 970 -500 0 0 {name=r6}
+C {devices/ngspice_probe.sym} 930 -670 0 0 {name=r6}
 C {devices/ipin.sym} 80 -300 0 0 {name=p2 lab=AVDD}
-C {devices/opin.sym} 130 -230 0 0 {name=p3 lab=Vout}
+C {devices/opin.sym} 130 -230 0 0 {name=p3 lab=RST}
 C {devices/ipin.sym} 80 -270 0 0 {name=p4 lab=VSS}
 C {devices/iopin.sym} 130 -280 0 0 {name=p5 lab=Iref}
 C {devices/lab_pin.sym} 690 -940 1 0 {name=l6 lab=AVDD
@@ -343,14 +366,13 @@ C {devices/title.sym} 160 -30 0 0 {name=l1 author="Stephen Wu"}
 C {mux2to1.sym} 140 -540 0 0 {name=x1}
 C {devices/lab_pin.sym} 180 -540 0 1 {name=l18 lab=VY
 }
-C {devices/lab_pin.sym} 80 -510 2 1 {name=l19 lab=VD
+C {devices/lab_pin.sym} 80 -570 2 1 {name=l19 lab=VD
 }
-C {devices/lab_pin.sym} 80 -570 2 1 {name=l20 lab=VS
+C {devices/lab_pin.sym} 80 -510 2 1 {name=l20 lab=VS
 }
 C {devices/lab_wire.sym} 80 -470 0 0 {name=p8 lab=AVDD}
 C {devices/lab_wire.sym} 80 -450 0 0 {name=p9 lab=VSS}
 C {devices/lab_wire.sym} 80 -430 0 0 {name=p10 lab=Sel}
-C {devices/ipin.sym} 80 -370 0 0 {name=p12 lab=Sel}
 C {sky130_fd_pr/nfet_g5v0d10v5.sym} 910 -390 0 0 {name=M6
 W=1
 L=0.5
@@ -451,11 +473,43 @@ sa=0 sb=0 sd=0
 model=pfet_g5v0d10v5
 spiceprefix=X
 }
-C {devices/lab_pin.sym} 1320 -500 0 1 {name=l8 lab=Vout
+C {devices/lab_pin.sym} 1320 -500 0 1 {name=l8 lab=RST
 }
 C {devices/lab_pin.sym} 850 -300 3 0 {name=l2 lab=VSS}
-C {devices/capa.sym} 660 -870 0 0 {name=C1
-m=50
-value=100f
-footprint=1206
-device="ceramic capacitor"}
+C {sky130_fd_pr/cap_mim_m3_2.sym} 660 -870 0 0 {name=C3 model=cap_mim_m3_2 W=22 L=22 MF=1 spiceprefix=X}
+C {devices/lab_wire.sym} 1000 -500 0 0 {name=p13 lab=vo1
+}
+C {devices/ammeter.sym} 140 -830 0 0 {name=v5}
+C {sky130_fd_pr/nfet_g5v0d10v5.sym} 120 -710 0 0 {name=M16
+W=0.5
+L=0.5
+nf=1
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=nfet_g5v0d10v5
+spiceprefix=X
+}
+C {sky130_fd_pr/pfet_g5v0d10v5.sym} 120 -890 0 0 {name=M17
+W=1
+L=0.5
+nf=1
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=pfet_g5v0d10v5
+spiceprefix=X
+}
+C {devices/lab_wire.sym} 80 -780 0 0 {name=p11 lab=vo1
+}
+C {devices/lab_wire.sym} 160 -780 0 1 {name=p12 lab=Sel}
+C {devices/lab_wire.sym} 150 -660 0 0 {name=p14 lab=VSS}
+C {devices/lab_wire.sym} 140 -950 0 0 {name=p15 lab=AVDD}

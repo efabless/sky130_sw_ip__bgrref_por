@@ -40,17 +40,7 @@ N 280 -530 460 -530 {
 lab=Vinn}
 N 510 -810 510 -770 {
 lab=vindiff}
-N 620 -240 620 -230 {
-lab=AVSS}
 N 670 -560 790 -560 {
-lab=RST}
-N 510 -410 510 -290 {
-lab=Sel}
-N 510 -290 560 -290 {
-lab=Sel}
-N 680 -290 720 -290 {
-lab=RST}
-N 720 -560 720 -290 {
 lab=RST}
 N 930 -480 930 -460 {
 lab=Iref}
@@ -104,8 +94,6 @@ L=120
 model=res_xhigh_po_0p35
 spiceprefix=X
  mult=1}
-C {levelShifter.sym} 620 -290 0 1 {name=x3}
-C {devices/lab_wire.sym} 560 -290 0 0 {name=p22 lab=Sel}
 C {delayPulse.sym} 850 -530 0 0 {name=x2}
 C {devices/lab_wire.sym} 790 -480 0 0 {name=p15 lab=DVDD}
 C {devices/lab_wire.sym} 790 -460 0 0 {name=p16 lab=DVSS}
@@ -120,15 +108,12 @@ C {devices/iopin.sym} 110 -220 0 0 {name=p26 lab=AVSS}
 C {devices/iopin.sym} 110 -280 0 0 {name=p30 lab=DVDD}
 C {devices/lab_wire.sym} 510 -470 0 0 {name=p5 lab=DVDD}
 C {devices/opin.sym} 260 -170 0 0 {name=p31 lab=porb}
-C {devices/lab_wire.sym} 640 -340 0 1 {name=p23 lab=DVDD}
-C {devices/lab_wire.sym} 600 -340 0 0 {name=p34 lab=AVDD}
 C {devices/ipin.sym} 130 -160 0 0 {name=p21 lab=Vbg}
 C {devices/lab_wire.sym} 990 -570 0 1 {name=p14 lab=por}
 C {devices/lab_wire.sym} 990 -550 0 1 {name=p35 lab=porb}
 C {devices/lab_wire.sym} 990 -530 0 1 {name=p36 lab=porb_h}
 C {devices/opin.sym} 260 -140 0 0 {name=p27 lab=porb_h}
 C {devices/iopin.sym} 110 -190 0 0 {name=p28 lab=DVSS}
-C {devices/lab_wire.sym} 620 -230 0 0 {name=p29 lab=AVSS}
 C {devices/lab_wire.sym} 260 -430 0 0 {name=p32 lab=AVSS}
 C {devices/lab_wire.sym} 310 -780 0 1 {name=p18 lab=AVSS}
 C {devices/lab_wire.sym} 930 -470 0 0 {name=p33 lab=Iref}
