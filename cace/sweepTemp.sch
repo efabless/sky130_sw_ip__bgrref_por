@@ -37,7 +37,7 @@ C {devices/lab_wire.sym} 390 -260 0 0 {name=p6 lab=DVDD}
 C {devices/lab_wire.sym} 200 -530 0 0 {name=p8 lab=AVDD}
 C {devices/lab_wire.sym} 50 -360 0 0 {name=p9 lab=DVDD}
 C {devices/lab_wire.sym} 50 -210 0 0 {name=p10 lab=Vbg}
-C {devices/vsource.sym} 200 -470 0 0 {name=V2 value="PULSE 0 3.3 10n 1m 1m 100m 200m"}
+C {devices/vsource.sym} 200 -470 0 0 {name=Vavdd value="PULSE 0 3.3 10n 1m 1m 100m 200m"}
 C {devices/lab_wire.sym} 390 -240 0 0 {name=p4 lab=AVSS}
 C {devices/lab_wire.sym} 390 -220 0 0 {name=p15 lab=DVSS}
 C {devices/vsource.sym} 120 -470 0 1 {name=V5 value="0"}
@@ -56,6 +56,7 @@ value="
 .include \{PDK_ROOT\}/\{PDK\}/libs.tech/combined/sky130.lib.spice \{corner\}
 .include \{PDK_ROOT\}/\{PDK\}/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
 
+.option TEMP=\{temperature\}
 "
 spice_ignore=false}
 C {devices/code.sym} 820 -430 0 0 {name=ngspice1 only_toplevel=false value="
