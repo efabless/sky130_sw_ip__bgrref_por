@@ -41,14 +41,25 @@ C {devices/lab_wire.sym} 50 -530 0 0 {name=p7 lab=DVSS}
 C {devices/gnd.sym} 200 -420 0 0 {name=l6 lab=GND}
 C {devices/code.sym} 830 -250 0 0 {name=ngspice only_toplevel=false 
 value="
-*.option method=gear
+.option method=gear
 .options savecurrents
 .control
-set temp=-40
 save all
+set temp=-40
 tran .1u 2m
 plot AVDD por porb+6.8 porb_h+3.4
-write sky130_ef_ip__bgrref_por_tb.raw
+write sky130_ef_ip__bgrref_por_tb1.raw
+
+set appendwrite
+set temp=27
+tran .1u 2m 
+write sky130_ef_ip__bgrref_por_tb1.raw
+
+set appendwrite
+set temp=85
+tran .1u 2m
+write sky130_ef_ip__bgrref_por_tb1.raw
+
 *quit 0
 .endc
 "}
