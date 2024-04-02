@@ -1,4 +1,4 @@
-v {xschem version=3.4.5 file_version=1.2
+v {xschem version=3.4.4 file_version=1.2
 }
 G {}
 K {}
@@ -48,9 +48,9 @@ lab=VSS}
 N 830 -260 860 -260 {
 lab=VSS}
 N 690 -420 690 -340 {
-lab=#net2}
+lab=#net1}
 N 860 -420 860 -340 {
-lab=#net3}
+lab=#net2}
 N 690 -220 860 -220 {
 lab=VSS}
 N 610 -310 650 -310 {
@@ -82,19 +82,19 @@ lab=S1B}
 N 690 -570 860 -570 {
 lab=VCCH}
 N 730 -510 760 -510 {
-lab=#net3}
+lab=#net2}
 N 760 -510 830 -390 {
-lab=#net3}
+lab=#net2}
 N 830 -390 860 -390 {
-lab=#net3}
+lab=#net2}
 N 790 -510 820 -510 {
-lab=#net2}
+lab=#net1}
 N 710 -390 790 -510 {
-lab=#net2}
+lab=#net1}
 N 690 -390 710 -390 {
-lab=#net2}
+lab=#net1}
 N 860 -380 940 -380 {
-lab=#net3}
+lab=#net2}
 N 300 -460 300 -410 {
 lab=VSS}
 N 270 -410 300 -410 {
@@ -106,7 +106,7 @@ lab=VSS}
 N 1050 -390 1050 -360 {
 lab=aout}
 N 1010 -420 1010 -330 {
-lab=#net3}
+lab=#net2}
 N 1050 -380 1070 -380 {
 lab=aout}
 N 1050 -330 1050 -300 {
@@ -118,9 +118,9 @@ lab=VCCH}
 N 1050 -470 1050 -450 {
 lab=VCCH}
 N 1000 -380 1010 -380 {
-lab=#net3}
+lab=#net2}
 N 940 -380 1000 -380 {
-lab=#net3}
+lab=#net2}
 N 1050 -560 1050 -470 {
 lab=VCCH}
 N 860 -570 1050 -570 {
@@ -168,7 +168,7 @@ spiceprefix=X
 C {devices/ammeter.sym} 270 -580 0 0 {name=v5}
 C {sky130_fd_pr/nfet_01v8.sym} 250 -460 0 0 {name=M6
 L=0.15
-W=0.4
+W=0.5
 nf=1 
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -228,7 +228,7 @@ spiceprefix=X
 C {devices/ammeter.sym} 410 -580 0 0 {name=v2}
 C {sky130_fd_pr/nfet_01v8.sym} 390 -460 0 0 {name=M4
 L=0.15
-W=0.4
+W=0.5
 nf=1 
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 

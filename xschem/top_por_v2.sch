@@ -1,4 +1,4 @@
-v {xschem version=3.4.5 file_version=1.2
+v {xschem version=3.4.4 file_version=1.2
 }
 G {}
 K {}
@@ -245,7 +245,7 @@ value="
 .options savecurrents
 *.dc v3 0 3.3 0.01
 .control 
-  set temp=85
+  set temp=27
   save all
   save @m.xm1.msky130_fd_pr__nfet_05v0_nvt[gm]
   save @m.xm1.msky130_fd_pr__nfet_05v0_nvt[id]
@@ -295,10 +295,10 @@ C {devices/lab_wire.sym} 1790 -500 0 0 {name=p16 lab=VSS}
 C {devices/lab_wire.sym} 1790 -480 0 0 {name=p17 lab=Vbg}
 C {devices/vdd.sym} 1720 -420 0 0 {name=l16 lab=VDD}
 C {devices/lab_wire.sym} 480 -600 0 0 {name=p18 lab=Vbg}
-C {devices/vsource.sym} 350 -540 0 0 {name=V1 value="PULSE 0 1.8 10n 1.1m 1m 200mm 400m"}
+C {devices/vsource.sym} 350 -540 0 0 {name=V1 value="PULSE 0 1.8 10n 1.1m 1m 200m 400m"}
 C {devices/gnd.sym} 350 -480 0 0 {name=l11 lab=GND}
 C {devices/gnd.sym} 480 -480 0 0 {name=l18 lab=GND}
-C {devices/vsource.sym} 480 -540 0 0 {name=V2 value="PULSE 0 1.2 10n 0.5m 1m 200mm 400m"}
+C {devices/vsource.sym} 480 -540 0 0 {name=V2 value="PULSE 0 1.2 10n 0.5m 1m 200m 400m"}
 C {devices/lab_wire.sym} 1790 -600 0 0 {name=p13 lab=Vout}
 C {devices/vsource.sym} 380 -360 0 0 {name=V4 value=0}
 C {devices/gnd.sym} 380 -300 0 0 {name=l19 lab=GND}
@@ -312,7 +312,7 @@ format="tcleval( @value )"
 value=".lib $::SKYWATER_MODELS/sky130.lib.spice tt
 
 .include $::SKYWATER_STDCELLS/sky130_fd_sc_hd.spice
-.include /foss/pdks/sky130A/libs.ref/sky130_fd_sc_hvl/spice/sky130_fd_sc_hvl.spice
+.include $::SKYWATER_STDCELLS/../../sky130_fd_sc_hvl/spice/sky130_fd_sc_hvl.spice
 
 "
 spice_ignore=false}

@@ -15,7 +15,7 @@ v {xschem version=3.4.4 file_version=1.2
 
 }
 G {}
-K {type=subcircuit
+K {type=primitive
 format="@name @pinlist @VCCBPIN @VSSBPIN @symname W_N=@W_N L_N=@L_N W_P=@W_P L_P=@L_P m=@m"
 template="name=x1 W_N=1 L_N=0.2 W_P=1 L_P=0.2 VCCBPIN=VCC VSSBPIN=VSS m=1"
 extra="VCCBPIN VSSBPIN"

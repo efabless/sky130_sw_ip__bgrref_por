@@ -1,4 +1,4 @@
-v {xschem version=3.4.5 file_version=1.2
+v {xschem version=3.4.4 file_version=1.2
 }
 G {}
 K {}
@@ -149,14 +149,11 @@ N 330 -830 390 -830 { lab=vbn1}
 N 230 -890 300 -890 { lab=vbn1}
 N 300 -890 300 -830 { lab=vbn1}
 N 170 -770 290 -770 { lab=VSS}
-N 40 -770 170 -770 { lab=VSS}
 N 230 -1190 230 -1150 { lab=#net6}
 N 230 -1280 230 -1250 { lab=VCCH}
 N 230 -1020 230 -980 { lab=vbn1}
 N 270 -830 330 -830 { lab=vbn1}
 N 230 -1090 230 -1020 { lab=vbn1}
-N 30 -800 30 -770 { lab=VSS}
-N 30 -770 40 -770 { lab=VSS}
 N 30 -1280 30 -1250 { lab=VCCH}
 N 30 -1190 30 -1150 { lab=#net7}
 N 190 -830 190 -770 { lab=VSS}
@@ -551,6 +548,12 @@ N 1740 -960 1740 -840 {
 lab=Td_L}
 N 1650 -910 1740 -910 {
 lab=Td_L}
+N 10 -800 10 -740 {
+lab=VSS}
+N 60 -770 170 -770 {
+lab=VSS}
+N 30 -850 30 -830 {
+lab=#net9}
 C {devices/ammeter.sym} 660 -960 0 0 {name=v9}
 C {devices/ammeter.sym} 620 -310 0 0 {name=v1}
 C {devices/lab_pin.sym} 620 -430 0 0 {name=p4 sig_type=std_logic lab=VCCL}
@@ -807,11 +810,6 @@ sa=0 sb=0 sd=0
 model=nfet_g5v0d10v5
 spiceprefix=X
 }
-C {devices/res.sym} 30 -820 0 1 {name=R1
-value=1400e3
-footprint=1206
-device=resistor
-m=1}
 C {devices/ngspice_probe.sym} 30 -870 0 0 {name=r2}
 C {devices/lab_pin.sym} -40 -910 2 1 {name=p28 sig_type=std_logic lab=Vbg}
 C {sky130_fd_pr/pfet_g5v0d10v5.sym} -130 -1220 0 1 {name=M28
@@ -941,21 +939,6 @@ spiceprefix=X
 }
 C {devices/lab_pin.sym} 1030 -700 0 0 {name=p36 sig_type=std_logic lab=VSS}
 C {devices/lab_pin.sym} 980 -760 0 0 {name=p54 sig_type=std_logic lab=vbn1}
-C {devices/capa.sym} 330 -800 0 0 {name=C3
-m=2
-value=1p
-footprint=1206
-device="ceramic capacitor"}
-C {devices/capa.sym} 140 -1250 0 0 {name=C5
-m=2
-value=1p
-footprint=1206
-device="ceramic capacitor"}
-C {devices/capa.sym} 530 -1250 0 0 {name=C6
-m=2
-value=1p
-footprint=1206
-device="ceramic capacitor"}
 C {devices/lab_pin.sym} 1470 -470 2 1 {name=p41 sig_type=std_logic lab=Td_S}
 C {devices/lab_wire.sym} 1430 -430 0 1 {name=p39 lab=rstn}
 C {sky130_fd_pr/pfet_01v8.sym} 1300 -1230 0 0 {name=M22
@@ -990,7 +973,7 @@ C {devices/lab_pin.sym} 1280 -1230 0 0 {name=p46 sig_type=std_logic lab=vbp1}
 C {devices/lab_pin.sym} 1280 -1150 0 0 {name=p49 sig_type=std_logic lab=vbp2}
 C {sky130_fd_pr/nfet_01v8.sym} 1460 -840 0 0 {name=M27
 L=0.15
-W=0.4
+W=0.5
 nf=1 
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -1020,7 +1003,7 @@ C {devices/lab_pin.sym} 1500 -790 2 0 {name=p55 sig_type=std_logic lab=VSS}
 C {devices/lab_pin.sym} 1480 -1000 3 1 {name=p56 sig_type=std_logic lab=VCCL}
 C {sky130_fd_pr/nfet_01v8.sym} 1590 -840 0 0 {name=M30
 L=0.15
-W=0.4
+W=0.5
 nf=1 
 mult=2
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -1050,7 +1033,7 @@ C {devices/lab_pin.sym} 1630 -790 2 0 {name=p57 sig_type=std_logic lab=VSS}
 C {devices/lab_pin.sym} 1610 -1000 3 1 {name=p58 sig_type=std_logic lab=VCCL}
 C {sky130_fd_pr/nfet_01v8.sym} 870 -190 0 0 {name=M32
 L=0.15
-W=0.4
+W=0.5
 nf=1 
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -1079,7 +1062,7 @@ spiceprefix=X
 C {devices/lab_pin.sym} 910 -140 2 0 {name=p60 sig_type=std_logic lab=VSS}
 C {sky130_fd_pr/nfet_01v8.sym} 1000 -190 0 0 {name=M34
 L=0.15
-W=0.4
+W=0.5
 nf=1 
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -1109,7 +1092,7 @@ C {devices/lab_pin.sym} 1040 -140 2 0 {name=p63 sig_type=std_logic lab=VSS}
 C {devices/lab_pin.sym} 1020 -350 3 1 {name=p64 sig_type=std_logic lab=VCCL}
 C {sky130_fd_pr/nfet_01v8.sym} 1270 -190 0 0 {name=M36
 L=0.15
-W=0.4
+W=0.5
 nf=1 
 mult=2
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -1126,7 +1109,7 @@ C {devices/lab_pin.sym} 1290 -350 3 1 {name=p66 sig_type=std_logic lab=VCCL}
 C {devices/lab_pin.sym} 1330 -260 0 1 {name=p67 sig_type=std_logic lab=Td_Sd}
 C {sky130_fd_pr/nfet_01v8.sym} 1150 -190 0 0 {name=M38
 L=0.15
-W=0.4
+W=0.5
 nf=1 
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -1193,17 +1176,12 @@ model=pfet_g5v0d10v5
 spiceprefix=X
 }
 C {devices/ammeter.sym} 30 -1000 0 1 {name=v4}
-C {devices/capa.sym} -280 -1190 0 0 {name=C10
-m=2
-value=0.2p
-footprint=1206
-device="ceramic capacitor"}
 C {sky130_stdcells/dfrtn_1.sym} 1560 -490 0 0 {name=x5 VGND=VSS VNB=VSS VPB=VCCL VPWR=VCCL prefix=sky130_fd_sc_hd__ }
 C {devices/lab_pin.sym} 1480 -620 2 1 {name=p34 sig_type=std_logic lab=Td_S}
 C {sky130_stdcells/dfrtp_1.sym} 1570 -600 0 0 {name=x2 VGND=VSS VNB=VSS VPB=VCCL VPWR=VCCL prefix=sky130_fd_sc_hd__ }
 C {sky130_fd_pr/nfet_01v8.sym} 1760 -840 0 0 {name=M4
 L=0.15
-W=0.4
+W=0.5
 nf=1 
 mult=2
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -1233,3 +1211,21 @@ C {devices/lab_pin.sym} 1800 -790 2 0 {name=p35 sig_type=std_logic lab=VSS}
 C {devices/lab_pin.sym} 1780 -1000 3 1 {name=p70 sig_type=std_logic lab=VCCL}
 C {devices/lab_pin.sym} 1820 -910 2 0 {name=p73 sig_type=std_logic lab=Td_Lb}
 C {devices/lab_pin.sym} 1480 -580 0 0 {name=p74 sig_type=std_logic lab=Td_Lb}
+C {sky130_fd_pr/cap_mim_m3_2.sym} 320 -800 0 0 {name=C1 model=cap_mim_m3_2 W=16 L=16 MF=2 spiceprefix=X }
+C {sky130_fd_pr/cap_mim_m3_2.sym} 140 -1250 0 0 {name=C5 model=cap_mim_m3_2 W=16 L=16 MF=2 spiceprefix=X }
+C {sky130_fd_pr/cap_mim_m3_2.sym} 530 -1250 0 0 {name=C6 model=cap_mim_m3_2 W=16 L=16 MF=2 spiceprefix=X }
+C {sky130_fd_pr/cap_mim_m3_2.sym} -280 -1190 0 0 {name=C3 model=cap_mim_m3_2 W=8 L=8 MF=2 spiceprefix=X }
+C {sky130_fd_pr/res_xhigh_po.sym} 30 -800 0 0 {name=R9
+W=1
+L=350
+model=res_xhigh_po
+spiceprefix=X
+ mult=1}
+C {sky130_fd_pr/res_xhigh_po.sym} 30 -740 0 0 {name=R6
+W=1
+L=350
+model=res_xhigh_po
+spiceprefix=X
+ mult=1}
+C {devices/lab_pin.sym} 30 -710 0 0 {name=p75 sig_type=std_logic lab=VSS}
+C {devices/lab_pin.sym} 10 -770 0 0 {name=p76 sig_type=std_logic lab=VSS}

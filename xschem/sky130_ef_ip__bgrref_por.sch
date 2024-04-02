@@ -1,4 +1,4 @@
-v {xschem version=3.4.5 file_version=1.2
+v {xschem version=3.4.4 file_version=1.2
 }
 G {}
 K {}
@@ -7,19 +7,19 @@ S {}
 E {}
 T {VA-VB=62.8mV} 80 -580 0 0 0.4 0.4 {}
 N 280 -870 280 -810 {
-lab=AVDD}
+lab=avdd}
 N 280 -780 310 -780 {
-lab=AVSS}
+lab=avss}
 N 240 -830 280 -830 {
-lab=AVDD}
+lab=avdd}
 N 240 -830 240 -780 {
-lab=AVDD}
+lab=avdd}
 N 260 -480 260 -430 {
-lab=AVSS}
+lab=avss}
 N 260 -430 280 -430 {
-lab=AVSS}
+lab=avss}
 N 280 -450 280 -430 {
-lab=AVSS}
+lab=avss}
 N 280 -690 280 -670 {
 lab=#net1}
 N 280 -610 280 -590 {
@@ -27,9 +27,9 @@ lab=Vinp}
 N 280 -530 280 -510 {
 lab=Vinn}
 N 260 -560 260 -480 {
-lab=AVSS}
+lab=avss}
 N 260 -640 260 -560 {
-lab=AVSS}
+lab=avss}
 N 530 -530 580 -530 {
 lab=Vinn}
 N 510 -810 510 -770 {
@@ -97,26 +97,26 @@ model=res_xhigh_po_0p35
 spiceprefix=X
  mult=1}
 C {delayPulse.sym} 850 -530 0 0 {name=x2}
-C {devices/lab_wire.sym} 790 -480 0 0 {name=p15 lab=DVDD}
-C {devices/lab_wire.sym} 790 -460 0 0 {name=p16 lab=DVSS}
-C {devices/lab_wire.sym} 790 -440 0 0 {name=p17 lab=Vbg}
-C {devices/lab_wire.sym} 580 -450 0 0 {name=p10 lab=AVSS}
-C {devices/lab_wire.sym} 580 -490 0 0 {name=p13 lab=AVDD}
-C {devices/lab_wire.sym} 280 -870 0 0 {name=p9 lab=AVDD}
-C {devices/lab_wire.sym} 790 -420 0 0 {name=p20 lab=AVDD}
-C {devices/iopin.sym} 110 -250 0 0 {name=p24 lab=AVDD}
+C {devices/lab_wire.sym} 790 -440 0 0 {name=p17 lab=vbg}
+C {devices/lab_wire.sym} 580 -450 0 0 {name=p10 lab=avss}
+C {devices/lab_wire.sym} 580 -490 0 0 {name=p13 lab=avdd}
+C {devices/lab_wire.sym} 280 -870 0 0 {name=p9 lab=avdd}
+C {devices/lab_wire.sym} 790 -420 0 0 {name=p20 lab=avdd}
+C {devices/iopin.sym} 110 -250 0 0 {name=p24 lab=avdd}
 C {devices/opin.sym} 260 -200 0 0 {name=p25 lab=por}
-C {devices/iopin.sym} 110 -220 0 0 {name=p26 lab=AVSS}
-C {devices/iopin.sym} 110 -280 0 0 {name=p30 lab=DVDD}
-C {devices/lab_wire.sym} 580 -470 0 0 {name=p5 lab=DVDD}
+C {devices/iopin.sym} 110 -220 0 0 {name=p26 lab=avss}
+C {devices/iopin.sym} 110 -280 0 0 {name=p30 lab=dvdd}
+C {devices/lab_wire.sym} 580 -470 0 0 {name=p5 lab=dvdd}
 C {devices/opin.sym} 260 -170 0 0 {name=p31 lab=porb}
-C {devices/ipin.sym} 130 -160 0 0 {name=p21 lab=Vbg}
+C {devices/ipin.sym} 130 -160 0 0 {name=p21 lab=vbg}
 C {devices/lab_wire.sym} 990 -570 0 1 {name=p14 lab=por}
 C {devices/lab_wire.sym} 990 -550 0 1 {name=p35 lab=porb}
 C {devices/lab_wire.sym} 990 -530 0 1 {name=p36 lab=porb_h}
 C {devices/opin.sym} 260 -140 0 0 {name=p27 lab=porb_h}
-C {devices/iopin.sym} 110 -190 0 0 {name=p28 lab=DVSS}
-C {devices/lab_wire.sym} 260 -430 0 0 {name=p32 lab=AVSS}
-C {devices/lab_wire.sym} 310 -780 0 1 {name=p18 lab=AVSS}
+C {devices/iopin.sym} 110 -190 0 0 {name=p28 lab=dvss}
+C {devices/lab_wire.sym} 260 -430 0 0 {name=p32 lab=avss}
+C {devices/lab_wire.sym} 310 -780 0 1 {name=p18 lab=avss}
 C {devices/lab_wire.sym} 930 -400 0 0 {name=p33 lab=Iref}
 C {devices/ammeter.sym} 930 -430 0 0 {name=Vr2}
+C {devices/lab_wire.sym} 790 -480 0 0 {name=p11 lab=dvdd}
+C {devices/lab_wire.sym} 790 -460 0 0 {name=p12 lab=dvss}

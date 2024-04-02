@@ -1,4 +1,4 @@
-v {xschem version=3.4.5 file_version=1.2
+v {xschem version=3.4.4 file_version=1.2
 }
 G {}
 K {}
@@ -244,6 +244,10 @@ N 560 -710 610 -710 {
 lab=vt}
 N 720 -710 780 -710 {
 lab=vbp}
+N 420 -430 420 -410 {
+lab=VSS}
+N 420 -430 470 -430 {
+lab=VSS}
 C {devices/lab_pin.sym} 320 -540 0 0 {name=l11 lab=Vinn}
 C {devices/ammeter.sym} 780 -870 0 0 {name=v1}
 C {devices/ammeter.sym} 560 -870 0 0 {name=v2}
@@ -519,11 +523,6 @@ spiceprefix=X
 C {devices/lab_pin.sym} 1430 -500 0 1 {name=l3 lab=RST
 }
 C {sky130_fd_pr/cap_mim_m3_2.sym} 510 -350 0 0 {name=C1 model=cap_mim_m3_2 W=11 L=11 MF=1 spiceprefix=X}
-C {devices/res.sym} 420 -390 3 0 {name=R7
-value=10k
-footprint=1206
-device=resistor
-m=1}
 C {devices/lab_wire.sym} 580 -390 0 0 {name=p12 lab=vbn
 }
 C {devices/lab_wire.sym} 700 -810 0 0 {name=p14 lab=vbp
@@ -562,3 +561,10 @@ spiceprefix=X
 }
 C {devices/lab_pin.sym} 810 -670 3 0 {name=l12 lab=VSS}
 C {devices/lab_pin.sym} 530 -670 3 0 {name=l24 lab=VSS}
+C {sky130_fd_pr/res_xhigh_po.sym} 420 -390 1 0 {name=R9
+W=1
+L=300
+model=res_xhigh_po
+spiceprefix=X
+ mult=1}
+C {devices/lab_pin.sym} 470 -430 2 0 {name=l4 lab=VSS}
