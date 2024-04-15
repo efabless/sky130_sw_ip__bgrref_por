@@ -100,28 +100,16 @@ C {devices/code_shown.sym} 830 -610 0 0 {name=SETUP only_toplevel=false value="
 "}
 C {devices/code_shown.sym} 830 -280 0 0 {name=CONTROL only_toplevel=false value="
 .control
+.options savecurrents
 save all
-set savecurrents
-tran 1u 2m
-meas tran yAvdd FIND v(avdd) WHEN v(por)=0.9 RISE=1
-*plot AVDD por porb+6.8 porb_h+3.4
-wrdata \{simpath\}/\{filename\}_\{N\}.data yAvdd
+
+tran 1u \{Tsim\}
+*meas tran yAvdd FIND v(avdd) WHEN v(por)=0.9 RISE=1
+  meas tran Ivdd AVG i(Vavdd) from=0 to=55m
+  let Iavg=abs(Ivdd)
+wrdata \{simpath\}/\{filename\}_\{N\}.data Iavg
 
 quit
 .endc
 "}
 C {sky130_ef_ip__bgrref_por.sym} 470 -240 0 0 {name=XDUT}
-C {devices/capa.sym} 720 -140 0 0 {name=C1
-m=1
-value=20p
-footprint=1206
-device="ceramic capacitor"}
-C {devices/lab_wire.sym} 720 -170 0 1 {name=p12 lab=por}
-C {devices/capa.sym} 620 -140 0 0 {name=C2
-m=1
-value=20p
-footprint=1206
-device="ceramic capacitor"}
-C {devices/lab_wire.sym} 620 -170 0 1 {name=p19 lab=porb}
-C {devices/gnd.sym} 620 -110 0 0 {name=l4 lab=GND}
-C {devices/gnd.sym} 720 -110 0 0 {name=l7 lab=GND}

@@ -1,4 +1,4 @@
-v {xschem version=3.4.4 file_version=1.2
+v {xschem version=3.4.5 file_version=1.2
 }
 G {}
 K {}
@@ -138,10 +138,10 @@ C {devices/ipin.sym} 90 -170 0 0 {name=p14 lab=ain}
 C {devices/opin.sym} 150 -200 0 0 {name=p16 lab=aout}
 C {devices/ammeter.sym} 860 -450 0 0 {name=v6}
 C {sky130_fd_pr/nfet_g5v0d10v5.sym} 670 -310 0 0 {name=M12
-W=0.9
+W=3.6
 L=0.5
 nf=1
-mult=4
+mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 
@@ -152,10 +152,10 @@ model=nfet_g5v0d10v5
 spiceprefix=X
 }
 C {sky130_fd_pr/pfet_g5v0d10v5.sym} 840 -510 0 0 {name=M13
-W=2.9
+W=5.8
 L=0.5
 nf=2
-mult=2
+mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 
@@ -198,10 +198,10 @@ C {devices/lab_pin.sym} 270 -410 2 0 {name=p36 sig_type=std_logic lab=VSS}
 C {devices/lab_pin.sym} 270 -680 3 1 {name=p37 sig_type=std_logic lab=VCCL}
 C {devices/ammeter.sym} 690 -450 0 1 {name=v1}
 C {sky130_fd_pr/pfet_g5v0d10v5.sym} 710 -510 0 1 {name=M2
-W=2.9
+W=5.8
 L=0.5
 nf=2
-mult=2
+mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 
@@ -212,10 +212,10 @@ model=pfet_g5v0d10v5
 spiceprefix=X
 }
 C {sky130_fd_pr/nfet_g5v0d10v5.sym} 880 -310 0 1 {name=M3
-W=0.9
+W=3.6
 L=0.5
 nf=1
-mult=4
+mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 
@@ -267,10 +267,10 @@ C {devices/lab_wire.sym} 940 -310 0 1 {name=p11 lab=S1B}
 C {devices/lab_pin.sym} 770 -570 3 1 {name=p15 sig_type=std_logic lab=VCCH}
 C {devices/ipin.sym} 90 -270 0 0 {name=p13 lab=VCCH}
 C {sky130_fd_pr/nfet_g5v0d10v5.sym} 1030 -330 0 0 {name=M7
-W=0.9
+W=1.8
 L=0.5
 nf=1
-mult=2
+mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 
@@ -281,10 +281,10 @@ model=nfet_g5v0d10v5
 spiceprefix=X
 }
 C {sky130_fd_pr/pfet_g5v0d10v5.sym} 1030 -420 0 0 {name=M8
-W=2.9
+W=5.8
 L=0.5
 nf=2
-mult=2
+mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 

@@ -1,13 +1,13 @@
-** sch_path: /headless/Documents/sky130_ef_ip__bgrref_por/xschem/startup_sim.sch
-**.subckt startup_sim por porb porb_h
+** sch_path: /headless/Documents/sky130_ef_ip__bgrref_por/xschem/rising_sim.sch
+**.subckt rising_sim por porb porb_h
 *.opin por
 *.opin porb
 *.opin porb_h
 Vdvss dvss GND DC {Vdvss}
-Vavdd avdd GND PULSE 0 {Vavdd} 10e-9 1e-3 1e-3 100e-3 200e-3
+Vavdd avdd GND PULSE 0 {Vavdd} 10e-9 {travdd} 1e-3 100e-3 200e-3
 Vavss avss GND DC {Vavss}
-Vdvdd dvdd GND PULSE 0 {Vdvdd} 10e-9 1.1e-3 1e-3 200e-3 400e-3
-Vvbg vbg GND PULSE 0 {Vvbg} 10e-9 0.5e-3 1e-3 200e-3 400e-3
+Vdvdd dvdd GND PULSE 0 {Vdvdd} 10e-9 {trdvdd} 1e-3 200e-3 400e-3
+Vvbg vbg GND PULSE 0 {Vvbg} 10e-9 {trvbg} 1e-3 200e-3 400e-3
 XDUT vbg por avss avdd dvdd porb dvss porb_h sky130_ef_ip__bgrref_por
 C1 por GND 20p m=1
 C2 porb GND 20p m=1
@@ -33,9 +33,10 @@ C2 porb GND 20p m=1
 
 
 .control
+.options savecurrents
 save all
-set savecurrents
-tran 1u 2m
+
+tran 1u {Tsim}
 meas tran yAvdd FIND v(avdd) WHEN v(por)=0.9 RISE=1
 *plot AVDD por porb+6.8 porb_h+3.4
 wrdata {simpath}/{filename}_{N}.data yAvdd

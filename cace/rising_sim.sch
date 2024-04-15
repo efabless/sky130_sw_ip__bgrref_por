@@ -37,15 +37,15 @@ C {devices/lab_wire.sym} 200 -530 0 0 {name=p8 lab=avdd}
 C {devices/lab_wire.sym} 50 -360 0 0 {name=p9 lab=dvdd
 }
 C {devices/lab_wire.sym} 50 -210 0 0 {name=p10 lab=vbg}
-C {devices/vsource.sym} 200 -470 0 0 {name=Vavdd value="PULSE 0 \{Vavdd\} 10e-9 1e-3 1e-3 100e-3 200e-3"}
+C {devices/vsource.sym} 200 -470 0 0 {name=Vavdd value="PULSE 0 \{Vavdd\} 10e-9 \{travdd\} 1e-3 100e-3 200e-3"}
 C {devices/lab_wire.sym} 390 -240 0 0 {name=p4 lab=avss}
 C {devices/lab_wire.sym} 390 -220 0 0 {name=p15 lab=dvss}
 C {devices/vsource.sym} 120 -470 0 1 {name=Vavss value="DC \{Vavss\}"}
 C {devices/gnd.sym} 120 -420 0 0 {name=l3 lab=GND}
 C {devices/lab_wire.sym} 120 -530 0 0 {name=p17 lab=avss}
 C {devices/opin.sym} 580 -220 0 0 {name=p11 lab=porb_h}
-C {devices/vsource.sym} 50 -300 0 0 {name=Vdvdd value="PULSE 0 \{Vdvdd\} 10e-9 1.1e-3 1e-3 200e-3 400e-3"}
-C {devices/vsource.sym} 50 -150 0 0 {name=Vvbg value="PULSE 0 \{Vvbg\} 10e-9 0.5e-3 1e-3 200e-3 400e-3"}
+C {devices/vsource.sym} 50 -300 0 0 {name=Vdvdd value="PULSE 0 \{Vdvdd\} 10e-9 \{trdvdd\} 1e-3 200e-3 400e-3"}
+C {devices/vsource.sym} 50 -150 0 0 {name=Vvbg value="PULSE 0 \{Vvbg\} 10e-9 \{trvbg\} 1e-3 200e-3 400e-3"}
 C {devices/code.sym} 460 -560 0 0 {name=TT_MODELS
 only_toplevel=true
 format="tcleval( @value )"
@@ -100,9 +100,10 @@ C {devices/code_shown.sym} 830 -610 0 0 {name=SETUP only_toplevel=false value="
 "}
 C {devices/code_shown.sym} 830 -280 0 0 {name=CONTROL only_toplevel=false value="
 .control
+.options savecurrents
 save all
-set savecurrents
-tran 1u 2m
+
+tran 1u \{Tsim\}
 meas tran yAvdd FIND v(avdd) WHEN v(por)=0.9 RISE=1
 *plot AVDD por porb+6.8 porb_h+3.4
 wrdata \{simpath\}/\{filename\}_\{N\}.data yAvdd

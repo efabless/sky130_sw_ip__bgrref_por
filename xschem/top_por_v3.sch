@@ -94,7 +94,7 @@ xlabmag=1.0
 ylabmag=1.0
 node="por
 porb
-
+porb_h
 "
 color="10 6 7"
 dataset=-1
@@ -134,7 +134,7 @@ lab=GND}
 N 460 -420 460 -390 {
 lab=VDD}
 N 280 -340 280 -310 {
-lab=Iref}
+lab=#net1}
 N 710 -890 710 -830 {
 lab=VDD}
 N 710 -800 740 -800 {
@@ -150,7 +150,7 @@ lab=GND}
 N 710 -470 710 -450 {
 lab=GND}
 N 710 -710 710 -690 {
-lab=#net1}
+lab=#net2}
 N 710 -630 710 -610 {
 lab=Vinp1}
 N 710 -550 710 -530 {
@@ -190,12 +190,11 @@ lab=GND}
 N 380 -420 380 -390 {
 lab=VSS}
 N 1930 -520 1930 -500 {
-lab=#net2}
+lab=#net3}
 N 1060 -890 1060 -850 {
 lab=Vinn}
 N 1170 -890 1170 -850 {
 lab=Vinp}
-C {devices/lab_wire.sym} 940 -450 0 0 {name=p1 lab=Iref}
 C {devices/lab_wire.sym} 940 -550 0 0 {name=p2 lab=Vinn1}
 C {devices/lab_wire.sym} 940 -610 0 0 {name=p3 lab=Vinp1}
 C {devices/vsource.sym} 460 -360 0 0 {name=V3 value="PULSE 0 3.3 10n 1m 1m 100m 200m"}
@@ -236,15 +235,15 @@ value="
   save @m.xm1.msky130_fd_pr__nfet_05v0_nvt[gm]
   save @m.xm1.msky130_fd_pr__nfet_05v0_nvt[id]
   op
-  write top_por_v2.raw
+  write top_por_v3.raw
   set appendwrite
   *dc v3 0 3.3 0.01
-  tran .5u 2m
+  tran 1u 2m
   *tran 1u 55m
   meas tran Ivdd AVG i(V3)
   meas tran yAvdd FIND v(vdd) WHEN v(por)=0.9 RISE=1
   meas tran porPulse TRIG v(por) VAL=0.9 RISE=1 TARG v(por) VAL=0.9 FALL=1
-  write top_por_v2.raw
+  write top_por_v3.raw
   *quit 0
 
 .endc
@@ -252,7 +251,7 @@ value="
 C {devices/vdd.sym} 870 -650 0 0 {name=l8 lab=VDD}
 C {devices/launcher.sym} 1250 -750 0 0 {name=h5
 descr="load waves" 
-tclcommand="xschem raw_read $netlist_dir/top_por_v2.raw tran"
+tclcommand="xschem raw_read $netlist_dir/top_por_v3.raw tran"
 }
 C {devices/gnd.sym} 870 -430 0 0 {name=l4 lab=GND}
 C {devices/lab_wire.sym} 1100 -580 0 1 {name=p4 lab=Vout}
@@ -261,19 +260,19 @@ C {devices/lab_wire.sym} 870 -840 0 0 {name=p6 lab=Vinp}
 C {devices/lab_wire.sym} 870 -800 0 0 {name=p7 lab=Vinn}
 C {devices/gnd.sym} 910 -790 0 0 {name=l9 lab=GND}
 C {devices/lab_wire.sym} 910 -890 0 1 {name=p8 lab=vindiff}
-C {comparator.sym} 1000 -580 0 0 {name=x1}
+C {comparator_v3.sym} 1000 -580 0 0 {name=x1}
 C {sky130_fd_pr/res_xhigh_po_0p35.sym} 710 -500 0 0 {name=R1
 L=250
 model=res_xhigh_po_0p35
 spiceprefix=X
  mult=1}
 C {sky130_fd_pr/res_xhigh_po_0p35.sym} 710 -580 0 0 {name=R10
-L=13
+L=9
 model=res_xhigh_po_0p35
 spiceprefix=X
  mult=1}
 C {sky130_fd_pr/res_xhigh_po_0p35.sym} 710 -660 0 0 {name=R12
-L=145
+L=150
 model=res_xhigh_po_0p35
 spiceprefix=X
  mult=1}
@@ -299,7 +298,7 @@ C {devices/lab_wire.sym} 1990 -610 0 1 {name=p21 lab=por}
 C {devices/code.sym} 40 -450 0 0 {name=TT_MODELS1
 only_toplevel=true
 format="tcleval( @value )"
-value=".lib $::SKYWATER_MODELS/sky130.lib.spice tt
+value=".lib $::SKYWATER_MODELS/sky130.lib.spice ss
 
 .include $::SKYWATER_STDCELLS/sky130_fd_sc_hd.spice
 .include $::SKYWATER_STDCELLS/../../sky130_fd_sc_hvl/spice/sky130_fd_sc_hvl.spice
@@ -317,7 +316,6 @@ C {devices/gnd.sym} 1020 -800 0 0 {name=l14 lab=GND}
 C {devices/gnd.sym} 1130 -800 0 0 {name=l15 lab=GND}
 C {devices/lab_wire.sym} 1170 -890 0 0 {name=p23 lab=Vinp}
 C {devices/lab_wire.sym} 1060 -890 0 0 {name=p25 lab=Vinn}
-C {devices/ammeter.sym} 1930 -470 0 0 {name=Vr2}
 C {sky130_fd_pr/nfet_05v0_nvt.sym} 690 -800 0 0 {name=M2
 L=0.9
 W=1
@@ -332,4 +330,3 @@ sa=0 sb=0 sd=0
 model=nfet_05v0_nvt
 spiceprefix=X
 }
-C {devices/lab_wire.sym} 280 -310 0 0 {name=p26 lab=Iref}

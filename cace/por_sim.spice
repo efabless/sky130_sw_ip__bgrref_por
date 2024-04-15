@@ -1,5 +1,5 @@
-** sch_path: /headless/Documents/sky130_ef_ip__bgrref_por/xschem/startup_sim.sch
-**.subckt startup_sim por porb porb_h
+** sch_path: /headless/Documents/sky130_ef_ip__bgrref_por/xschem/por_sim.sch
+**.subckt por_sim por porb porb_h
 *.opin por
 *.opin porb
 *.opin porb_h
@@ -33,12 +33,15 @@ C2 porb GND 20p m=1
 
 
 .control
+.options savecurrents
 save all
-set savecurrents
-tran 1u 2m
+
+tran 1u {Tsim}
 meas tran yAvdd FIND v(avdd) WHEN v(por)=0.9 RISE=1
-*plot AVDD por porb+6.8 porb_h+3.4
-wrdata {simpath}/{filename}_{N}.data yAvdd
+  meas tran Ivdd AVG i(Vavdd)
+  *meas tran yAvdd FIND v(avdd) WHEN v(por)=0.9 RISE=1
+  meas tran porPulse TRIG v(por) VAL=0.9 RISE=1 TARG v(por) VAL=0.9 FALL=1
+wrdata {simpath}/{filename}_{N}.data porPulse
 
 quit
 .endc

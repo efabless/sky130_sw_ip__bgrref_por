@@ -185,14 +185,159 @@ default_conditions {
 # List of electrical parameters to be measured and their specified limits
 
 electrical_parameters {
-	name:		startup
+	name:		Iavdd
 	description:	Powerup transient simulation, no load
-	display:	POR (dynamic)
-	unit: 		ms
+	display:	Iavg_avdd
+	unit: 		uA
 	spec {
-		minimum:	30	fail
-		typical:	50
-		maximum:	100	fail
+		minimum:	0	fail
+		typical:	3
+		maximum:	5	fail
+	}
+	simulate {
+		tool:		ngspice
+		template:	Iavdd_sim.spice
+		format:		ascii .data null result
+	}
+	conditions {
+		name: Vavdd
+		typical: 3.3
+
+		+
+		name: Vavss
+		typical: 0
+
+		+
+		name: Vdvdd
+		typical: 1.8
+		
+		+
+		name: Vdvss
+		typical: 0
+
+		+
+		name: Vvbg
+		typical: 1.2
+
+		+
+		name: temperature
+		typical: 27
+
+		+
+		name: corner
+		typical: tt
+		
+		+
+		name: Tsim
+		display: Tsim
+		typical: 55m
+	}
+	
+	+
+	name:		Ileakage
+	description:	Powerup transient simulation, no load
+	display:	Ileakage
+	unit: 		nA
+	spec {
+		minimum:	0	fail
+		typical:	1
+		maximum:	10	fail
+	}
+	simulate {
+		tool:		ngspice
+		template:	leakage_sim.spice
+		format:		ascii .data null result
+	}
+	conditions {
+		name: Vavdd
+		typical: 3.3
+
+		+
+		name: Vavss
+		typical: 0
+
+		+
+		name: Vdvdd
+		typical: 1.8
+		
+		+
+		name: Vdvss
+		typical: 0
+
+		+
+		name: Vvbg
+		typical: 1.2
+
+		+
+		name: temperature
+		typical: 27
+
+		+
+		name: corner
+		typical: tt
+		
+		+
+		name: Tsim
+		display: Tsim
+		typical: 55m
+	}
+	
+	+
+	name:		Vreset1
+	description:	Powerup Sim with Temperature variations
+	display:	Vreset_T 
+	unit: 		V
+	spec {
+		minimum:	2.4	fail
+		typical:	2.7
+		maximum:	3.0	fail
+	}
+	simulate {
+		tool:		ngspice
+		template:	startup_sim.spice
+		format:		ascii .data null result
+	}
+	conditions {
+		name: Vavdd
+		typical: 3.3
+
+		+
+		name: Vavss
+		typical: 0
+
+		+
+		name: Vdvdd
+		typical: 1.8
+		
+		+
+		name: Vdvss
+		typical: 0
+
+		+
+		name: Vvbg
+		typical: 1.2
+
+		+
+		name: temperature
+		maximum: 85
+		typical: 27
+		minimum: -40
+
+		+
+		name: corner
+		typical: tt
+
+	}
+	
+	+
+	name:		Vreset2
+	description:	Powerup Sim with Process Corners and normal Temperature
+	display:	Vreset_P1 
+	unit: 		V
+	spec {
+		minimum:	2.4	fail
+		typical:	2.7
+		maximum:	3.0	fail
 	}
 	simulate {
 		tool:		ngspice
@@ -225,7 +370,263 @@ electrical_parameters {
 
 		+
 		name: corner
+		minimum: ss
 		typical: tt
+		maximum: ff
+
+	}
+	
+	+
+	name:		Vreset3
+	description:	Powerup Sim with Process Corners and Cold Temperature
+	display:	Vreset_P2 
+	unit: 		V
+	spec {
+		minimum:	2.4	fail
+		typical:	2.7
+		maximum:	3.0	fail
+	}
+	simulate {
+		tool:		ngspice
+		template:	startup_sim.spice
+		format:		ascii .data null result
+	}
+	conditions {
+		name: Vavdd
+		typical: 3.3
+
+		+
+		name: Vavss
+		typical: 0
+
+		+
+		name: Vdvdd
+		typical: 1.8
+		
+		+
+		name: Vdvss
+		typical: 0
+
+		+
+		name: Vvbg
+		typical: 1.2
+
+		+
+		name: temperature
+		typical: -40
+
+		+
+		name: corner
+		minimum: ss
+		typical: tt
+		maximum: ff
+
+	}
+	
+	+
+	name:		Vreset4
+	description:	Powerup Sim with Process Corners and Hot Temperature
+	display:	Vreset_P3 
+	unit: 		V
+	spec {
+		minimum:	2.4	fail
+		typical:	2.7
+		maximum:	3.0	fail
+	}
+	simulate {
+		tool:		ngspice
+		template:	startup_sim.spice
+		format:		ascii .data null result
+	}
+	conditions {
+		name: Vavdd
+		typical: 3.3
+
+		+
+		name: Vavss
+		typical: 0
+
+		+
+		name: Vdvdd
+		typical: 1.8
+		
+		+
+		name: Vdvss
+		typical: 0
+
+		+
+		name: Vvbg
+		typical: 1.2
+
+		+
+		name: temperature
+		typical: 85
+
+		+
+		name: corner
+		minimum: ss
+		typical: tt
+		maximum: ff
+
+	}
+	
+	+
+	name:		Vreset5
+	description:	Powerup Sim with different Avdd rising time
+	display:	Vreset_Trise 
+	unit: 		V
+	spec {
+		minimum:	2.4	fail
+		typical:	2.7
+		maximum:	3.0	fail
+	}
+	simulate {
+		tool:		ngspice
+		template:	rising_sim.spice
+		format:		ascii .data null result
+	}
+	conditions {
+		name: Vavdd
+		typical: 3.3
+
+		+
+		name: Vavss
+		typical: 0
+
+		+
+		name: Vdvdd
+		typical: 1.8
+		
+		+
+		name: Vdvss
+		typical: 0
+
+		+
+		name: Vvbg
+		typical: 1.2
+
+		+
+		name: temperature
+		typical: 27
+
+		+
+		name: corner
+		typical: tt
+		
+		+
+		name: travdd
+		typical: 1m
+		
+		+
+		name: trdvdd
+		typical: 1.1m
+		
+		+
+		name: trvbg
+		typical: 0.5m
+		
+		+
+		name: Tsim
+		display: Tsim
+		typical: 2m
+
+	}
+	
+	+
+	name:		Hysteresis
+	description:	Powerup Sim
+	display:	Vhyst
+	unit: 		V
+	spec {
+		minimum:	0.1	fail
+		typical:	0.2
+		maximum:	0.3	fail
+	}
+	simulate {
+		tool:		ngspice
+		template:	por_hys.spice
+		format:		ascii .data null result
+	}
+	conditions {
+		name: Vavdd
+		typical: 3.3
+
+		+
+		name: Vavss
+		typical: 0
+
+		+
+		name: Vdvdd
+		typical: 1.8
+		
+		+
+		name: Vdvss
+		typical: 0
+
+		+
+		name: Vvbg
+		typical: 1.2
+
+		+
+		name: temperature
+		typical: 27
+
+		+
+		name: corner
+		typical: tt
+
+
+	}
+	
+	+
+	name:		POR
+	description:	Powerup transient simulation, no load
+	display:	POR_pulse
+	unit: 		ms
+	spec {
+		minimum:	30	fail
+		typical:	50
+		maximum:	100	fail
+	}
+	simulate {
+		tool:		ngspice
+		template:	por_sim.spice
+		format:		ascii .data null result
+	}
+	conditions {
+		name: Vavdd
+		typical: 3.3
+
+		+
+		name: Vavss
+		typical: 0
+
+		+
+		name: Vdvdd
+		typical: 1.8
+		
+		+
+		name: Vdvss
+		typical: 0
+
+		+
+		name: Vvbg
+		typical: 1.2
+
+		+
+		name: temperature
+		typical: 27
+
+		+
+		name: corner
+		minimum: ss
+		typical: tt
+		maximum: ff
+		
+		+
+		name: Tsim
+		display: Tsim
+		typical: 55m
 	}
 
 
