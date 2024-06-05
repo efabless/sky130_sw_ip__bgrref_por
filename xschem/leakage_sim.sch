@@ -67,17 +67,17 @@ save all
 set temp=27
 tran .1u 2m
 plot AVDD por porb+6.8 porb_h+3.4
-write sky130_ef_ip__bgrref_por_tb1.raw
+write sky130_sw_ip__bgrref_por_tb1.raw
 
 set appendwrite
 set temp=27
 tran .1u 2m 
-write sky130_ef_ip__bgrref_por_tb1.raw
+write sky130_sw_ip__bgrref_por_tb1.raw
 
 set appendwrite
 set temp=85
 tran .1u 2m
-write sky130_ef_ip__bgrref_por_tb1.raw
+write sky130_sw_ip__bgrref_por_tb1.raw
 
 *quit 0
 .endc
@@ -112,7 +112,7 @@ wrdata \{simpath\}/\{filename\}_\{N\}.data Iavg
 quit
 .endc
 "}
-C {sky130_ef_ip__bgrref_por.sym} 470 -240 0 0 {name=XDUT}
+C {sky130_sw_ip__bgrref_por.sym} 470 -240 0 0 {name=XDUT}
 C {devices/capa.sym} 720 -130 0 0 {name=C1
 m=1
 value=20p

@@ -1,9 +1,9 @@
-** sch_path: /headless/Documents/sky130_ef_ip__bgrref_por/xschem/por_hys.sch
+** sch_path: /headless/Documents/sky130_sw_ip__bgrref_por/xschem/por_hys.sch
 **.subckt por_hys por porb porb_h
 *.opin por
 *.opin porb
 *.opin porb_h
-XDUT vbg por avss avdd dvdd porb dvss porb_h sky130_ef_ip__bgrref_por
+XDUT vbg por avss avdd dvdd porb dvss porb_h sky130_sw_ip__bgrref_por
 V9 dvss GND 0
 V1 avdd GND PULSE 0 3.3 10n 1m 1m 1m 4m
 V11 avss GND 0
@@ -50,10 +50,10 @@ quit
 **** end user architecture code
 **.ends
 
-* expanding   symbol:  sky130_ef_ip__bgrref_por.sym # of pins=8
-** sym_path: /headless/Documents/sky130_ef_ip__bgrref_por/xschem/sky130_ef_ip__bgrref_por.sym
-** sch_path: /headless/Documents/sky130_ef_ip__bgrref_por/xschem/sky130_ef_ip__bgrref_por.sch
-.subckt sky130_ef_ip__bgrref_por vbg por avss avdd dvdd porb dvss porb_h
+* expanding   symbol:  sky130_sw_ip__bgrref_por.sym # of pins=8
+** sym_path: /headless/Documents/sky130_sw_ip__bgrref_por/xschem/sky130_sw_ip__bgrref_por.sym
+** sch_path: /headless/Documents/sky130_sw_ip__bgrref_por/xschem/sky130_sw_ip__bgrref_por.sch
+.subckt sky130_sw_ip__bgrref_por vbg por avss avdd dvdd porb dvss porb_h
 *.iopin avdd
 *.opin por
 *.iopin avss
@@ -76,8 +76,8 @@ XM2 avdd avdd net2 avss sky130_fd_pr__nfet_05v0_nvt L=0.9 W=1 nf=1 ad='int((nf+1
 
 
 * expanding   symbol:  comparator_final.sym # of pins=6
-** sym_path: /headless/Documents/sky130_ef_ip__bgrref_por/xschem/comparator_final.sym
-** sch_path: /headless/Documents/sky130_ef_ip__bgrref_por/xschem/comparator_final.sch
+** sym_path: /headless/Documents/sky130_sw_ip__bgrref_por/xschem/comparator_final.sym
+** sch_path: /headless/Documents/sky130_sw_ip__bgrref_por/xschem/comparator_final.sch
 .subckt comparator_final Vinn Vinp RST VSS AVDD DVDD
 *.ipin AVDD
 *.opin RST
@@ -156,8 +156,8 @@ XC2 AVDD net7 sky130_fd_pr__cap_mim_m3_2 W=16 L=16 MF=3 m=3
 
 
 * expanding   symbol:  delayPulse_final.sym # of pins=8
-** sym_path: /headless/Documents/sky130_ef_ip__bgrref_por/xschem/delayPulse_final.sym
-** sch_path: /headless/Documents/sky130_ef_ip__bgrref_por/xschem/delayPulse_final.sch
+** sym_path: /headless/Documents/sky130_sw_ip__bgrref_por/xschem/delayPulse_final.sym
+** sch_path: /headless/Documents/sky130_sw_ip__bgrref_por/xschem/delayPulse_final.sch
 .subckt delayPulse_final din por VCCL VSS Vbg VCCH porb porb_h
 *.ipin VCCL
 *.ipin VSS
@@ -276,8 +276,8 @@ XR6 VSS net23 VSS sky130_fd_pr__res_xhigh_po W=1 L=350 mult=1 m=1
 
 
 * expanding   symbol:  mux2to1.sym # of pins=6
-** sym_path: /headless/Documents/sky130_ef_ip__bgrref_por/xschem/mux2to1.sym
-** sch_path: /headless/Documents/sky130_ef_ip__bgrref_por/xschem/mux2to1.sch
+** sym_path: /headless/Documents/sky130_sw_ip__bgrref_por/xschem/mux2to1.sym
+** sch_path: /headless/Documents/sky130_sw_ip__bgrref_por/xschem/mux2to1.sch
 .subckt mux2to1 A1 A0 Z VCC VSS S
 *.ipin VCC
 *.ipin VSS
@@ -303,8 +303,8 @@ XM2 Z S A1 VSS sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=1 nf=1 ad='int((nf+1)/2) * W
 
 
 * expanding   symbol:  levelShifter.sym # of pins=5
-** sym_path: /headless/Documents/sky130_ef_ip__bgrref_por/xschem/levelShifter.sym
-** sch_path: /headless/Documents/sky130_ef_ip__bgrref_por/xschem/levelShifter.sch
+** sym_path: /headless/Documents/sky130_sw_ip__bgrref_por/xschem/levelShifter.sym
+** sch_path: /headless/Documents/sky130_sw_ip__bgrref_por/xschem/levelShifter.sch
 .subckt levelShifter ain aout VCCL VSS VCCH
 *.ipin VCCL
 *.ipin VSS
@@ -343,8 +343,8 @@ XM8 aout net2 VCCH VCCH sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=5.8 nf=2 ad='int((n
 
 
 * expanding   symbol:  TieH_1p8.sym # of pins=3
-** sym_path: /headless/Documents/sky130_ef_ip__bgrref_por/xschem/TieH_1p8.sym
-** sch_path: /headless/Documents/sky130_ef_ip__bgrref_por/xschem/TieH_1p8.sch
+** sym_path: /headless/Documents/sky130_sw_ip__bgrref_por/xschem/TieH_1p8.sym
+** sch_path: /headless/Documents/sky130_sw_ip__bgrref_por/xschem/TieH_1p8.sch
 .subckt TieH_1p8 TieH VSS VCC
 *.ipin VCC
 *.ipin VSS

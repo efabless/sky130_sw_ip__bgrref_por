@@ -2,7 +2,7 @@
 # CACE circuit characterization file
 #--------------------------------------------------------------
 
-name:		sky130_ef_ip__bgrref_por
+name:		sky130_sw_ip__bgrref_por
 description:	Bandgap-referenced Power-on-Reset
 commit:		N/A
 PDK:		sky130A

@@ -21,7 +21,7 @@ N 120 -440 120 -420 { lab=GND}
 N 120 -530 120 -500 { lab=AVSS}
 N 550 -220 580 -220 {
 lab=porb_h}
-C {sky130_ef_ip__bgrref_por.sym} 450 -240 0 0 {name=x1 W_N=1 L_N=0.2 W_P=1 L_P=0.2 VCCBPIN=VCC VSSBPIN=VSS m=1}
+C {sky130_sw_ip__bgrref_por.sym} 450 -240 0 0 {name=x1 W_N=1 L_N=0.2 W_P=1 L_P=0.2 VCCBPIN=VCC VSSBPIN=VSS m=1}
 C {devices/title.sym} 160 -30 0 0 {name=l2 author="Stephen Wu"}
 C {devices/gnd.sym} 50 -250 0 0 {name=l22 lab=GND}
 C {devices/gnd.sym} 50 -100 0 0 {name=l1 lab=GND}

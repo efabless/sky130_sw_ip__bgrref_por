@@ -50,7 +50,7 @@ tran 1u 2m
 plot AVDD por porb+6.8 porb_h+3.4
 meas tran Ivdd AVG i(Vavdd)
 meas tran porPulse TRIG v(por) VAL=0.9 RISE=1 TARG v(por) VAL=0.9 FALL=1
-write sky130_ef_ip__bgrref_por_tb.raw
+write sky130_sw_ip__bgrref_por_tb.raw
 *quit 0
 .endc
 "}
@@ -67,7 +67,7 @@ C {devices/lab_wire.sym} 120 -530 0 0 {name=p17 lab=avss}
 C {devices/opin.sym} 580 -220 0 0 {name=p11 lab=porb_h}
 C {devices/vsource.sym} 50 -300 0 0 {name=Vdvdd value="PULSE 0 1.8 10n 1.1m 1m 100m 400m"}
 C {devices/vsource.sym} 50 -150 0 0 {name=Vvbg value="PULSE 0 1.2 10n 0.55m 0.5m 200m 400m"}
-C {sky130_ef_ip__bgrref_por.sym} 470 -240 0 0 {name=XDUT}
+C {sky130_sw_ip__bgrref_por.sym} 470 -240 0 0 {name=XDUT}
 C {devices/lab_wire.sym} 390 -200 0 0 {name=p3 lab=vbg}
 C {devices/lab_wire.sym} 390 -280 0 0 {name=p5 lab=avdd}
 C {devices/lab_wire.sym} 390 -260 0 0 {name=p6 lab=dvdd}
@@ -86,14 +86,14 @@ value="
   set temp=-40
   save all
   op
-  write sky130_ef_ip__bgrref_por_tb.raw
+  write sky130_sw_ip__bgrref_por_tb.raw
   set appendwrite
   tran 1u 2m
   *tran 1u 100m
   meas tran Ivdd AVG i(Vavdd)
   meas tran yAvdd FIND v(avdd) WHEN v(por)=0.9 RISE=1
   meas tran porPulse TRIG v(por) VAL=0.9 RISE=1 TARG v(por) VAL=0.9 FALL=1
-  write sky130_ef_ip__bgrref_por_tb.raw
+  write sky130_sw_ip__bgrref_por_tb.raw
   *quit 0
 
 .endc

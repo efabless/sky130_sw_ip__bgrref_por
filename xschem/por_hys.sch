@@ -30,7 +30,7 @@ C {devices/lab_wire.sym} 490 -300 0 0 {name=p19 lab=dvdd}
 C {devices/lab_wire.sym} 490 -280 0 0 {name=p23 lab=avss}
 C {devices/lab_wire.sym} 490 -260 0 0 {name=p24 lab=dvss}
 C {devices/opin.sym} 680 -260 0 0 {name=p26 lab=porb_h}
-C {sky130_ef_ip__bgrref_por.sym} 570 -280 0 0 {name=XDUT}
+C {sky130_sw_ip__bgrref_por.sym} 570 -280 0 0 {name=XDUT}
 C {devices/code_shown.sym} 940 -330 0 0 {name=CONTROL1 only_toplevel=false value="
 .control
 .options savecurrents

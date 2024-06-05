@@ -1,0 +1,102 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1717527227
+<< locali >>
+rect 348 263 1047 294
+rect 348 208 418 263
+rect 808 208 1047 263
+rect 348 172 1047 208
+rect 346 -766 1048 -751
+rect 346 -821 390 -766
+rect 780 -821 1048 -766
+rect 346 -837 1048 -821
+<< viali >>
+rect 418 208 808 263
+rect 390 -821 780 -766
+<< metal1 >>
+rect 848 294 1048 295
+rect 348 263 1048 294
+rect 348 208 418 263
+rect 808 208 1048 263
+rect 348 172 1048 208
+rect 405 93 690 123
+rect 848 95 1048 172
+rect 405 -116 435 93
+rect 405 -146 690 -116
+rect 405 -269 435 -146
+rect 405 -325 489 -269
+rect 405 -435 435 -325
+rect 405 -465 603 -435
+rect 405 -682 435 -465
+rect 405 -712 605 -682
+rect 850 -751 1050 -634
+rect 346 -766 1050 -751
+rect 346 -821 390 -766
+rect 780 -821 1050 -766
+rect 346 -834 1050 -821
+rect 346 -837 1048 -834
+<< via1 >>
+rect 418 208 808 263
+rect 390 -821 780 -766
+<< metal2 >>
+rect 346 263 1048 296
+rect 346 208 418 263
+rect 808 208 1048 263
+rect 346 99 1048 208
+rect 391 -94 530 99
+rect 688 95 1048 99
+rect 688 94 1004 95
+rect 456 -646 527 -234
+rect 573 -262 644 56
+rect 688 -95 827 94
+rect 849 -262 1049 -184
+rect 573 -333 1049 -262
+rect 849 -384 1049 -333
+rect 580 -684 739 -499
+rect 850 -684 1050 -634
+rect 346 -766 1050 -684
+rect 346 -821 390 -766
+rect 780 -821 1050 -766
+rect 346 -834 1050 -821
+rect 346 -837 1048 -834
+use por_via_2cut  por_via_2cut_0
+timestamp 1717527227
+transform 0 1 8512 -1 0 16140
+box 16088 -7932 16222 -7868
+use por_via_2cut  por_via_2cut_1
+timestamp 1717527227
+transform 0 1 8515 -1 0 15581
+box 16088 -7932 16222 -7868
+use por_via_2cut  por_via_2cut_2
+timestamp 1717527227
+transform 0 1 8391 -1 0 15849
+box 16088 -7932 16222 -7868
+use por_via_2cut  por_via_2cut_3
+timestamp 1717527227
+transform 0 1 8393 -1 0 16140
+box 16088 -7932 16222 -7868
+use por_via_2cut  por_via_2cut_4
+timestamp 1717527227
+transform 0 1 8621 -1 0 16140
+box 16088 -7932 16222 -7868
+use por_via_2cut  por_via_2cut_5
+timestamp 1717527227
+transform 0 1 8393 -1 0 15580
+box 16088 -7932 16222 -7868
+use sky130_fd_pr__nfet_01v8_L9ESAD  XM4 paramcells
+timestamp 1717527227
+transform 1 0 563 0 1 -572
+box -211 -260 211 260
+use sky130_fd_pr__pfet_01v8_XJT6XQ  XM5 paramcells
+timestamp 1717527227
+transform 1 0 611 0 1 -13
+box -263 -269 263 269
+<< labels >>
+flabel metal2 849 -384 1049 -184 0 FreeSans 256 0 0 0 TieH
+port 0 nsew
+flabel metal2 850 -834 1050 -634 0 FreeSans 256 0 0 0 VSS
+port 1 nsew
+flabel metal2 848 95 1048 295 0 FreeSans 256 0 0 0 VCC
+port 2 nsew
+<< end >>
