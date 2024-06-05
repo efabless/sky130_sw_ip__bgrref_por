@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1717527227
+timestamp 1717613630
 << locali >>
 rect 26884 -291054 28528 -291024
 rect 26884 -291092 27004 -291054
@@ -88,106 +88,106 @@ rect 27646 -292464 28556 -292186
 rect 27646 -292468 28550 -292464
 rect 26880 -292878 28562 -292616
 use por_via_2cut  por_via_2cut_0
-timestamp 1717527227
+timestamp 1717613630
 transform 0 1 34868 -1 0 -276416
 box 16088 -7932 16222 -7868
 use por_via_2cut  por_via_2cut_1
-timestamp 1717527227
+timestamp 1717613630
 transform 0 1 36220 -1 0 -276339
 box 16088 -7932 16222 -7868
 use por_via_2cut  por_via_2cut_2
-timestamp 1717527227
+timestamp 1717613630
 transform 0 1 35903 -1 0 -276340
 box 16088 -7932 16222 -7868
 use por_via_2cut  por_via_2cut_3
-timestamp 1717527227
+timestamp 1717613630
 transform 0 1 35585 -1 0 -276340
 box 16088 -7932 16222 -7868
 use por_via_2cut  por_via_2cut_4
-timestamp 1717527227
+timestamp 1717613630
 transform 0 1 35318 -1 0 -276340
 box 16088 -7932 16222 -7868
 use por_via_2cut  por_via_2cut_5
-timestamp 1717527227
+timestamp 1717613630
 transform 0 1 34996 -1 0 -276341
 box 16088 -7932 16222 -7868
 use por_via_2cut  por_via_2cut_6
-timestamp 1717527227
+timestamp 1717613630
 transform 0 1 35162 -1 0 -276410
 box 16088 -7932 16222 -7868
 use por_via_2cut  por_via_2cut_7
-timestamp 1717527227
+timestamp 1717613630
 transform 0 1 35742 -1 0 -276410
 box 16088 -7932 16222 -7868
 use por_via_2cut  por_via_2cut_8
-timestamp 1717527227
+timestamp 1717613630
 transform 0 1 36062 -1 0 -276408
 box 16088 -7932 16222 -7868
 use por_via_2cut  por_via_2cut_9
-timestamp 1717527227
+timestamp 1717613630
 transform 0 1 36356 -1 0 -276422
 box 16088 -7932 16222 -7868
 use por_via_4cut  por_via_4cut_0
-timestamp 1717527227
+timestamp 1717613630
 transform 0 1 35160 -1 0 -275602
 box 15948 -7932 16222 -7868
 use por_via_4cut  por_via_4cut_1
-timestamp 1717527227
+timestamp 1717613630
 transform -1 0 43288 0 -1 -299966
 box 15948 -7932 16222 -7868
 use por_via_4cut  por_via_4cut_5
-timestamp 1717527227
+timestamp 1717613630
 transform 0 1 34866 -1 0 -275292
 box 15948 -7932 16222 -7868
 use por_via_4cut  por_via_4cut_6
-timestamp 1717527227
+timestamp 1717613630
 transform 0 1 35902 -1 0 -275362
 box 15948 -7932 16222 -7868
 use por_via_4cut  por_via_4cut_7
-timestamp 1717527227
+timestamp 1717613630
 transform 0 1 35580 -1 0 -275360
 box 15948 -7932 16222 -7868
 use por_via_4cut  por_via_4cut_8
-timestamp 1717527227
+timestamp 1717613630
 transform 0 1 35316 -1 0 -275360
 box 15948 -7932 16222 -7868
 use por_via_4cut  por_via_4cut_9
-timestamp 1717527227
+timestamp 1717613630
 transform 0 1 35000 -1 0 -275362
 box 15948 -7932 16222 -7868
 use por_via_4cut  por_via_4cut_10
-timestamp 1717527227
+timestamp 1717613630
 transform -1 0 43652 0 -1 -299954
 box 15948 -7932 16222 -7868
 use por_via_4cut  por_via_4cut_14
-timestamp 1717527227
+timestamp 1717613630
 transform 0 1 36058 -1 0 -275600
 box 15948 -7932 16222 -7868
 use por_via_4cut  por_via_4cut_15
-timestamp 1717527227
+timestamp 1717613630
 transform 0 1 35750 -1 0 -275604
 box 15948 -7932 16222 -7868
 use por_via_4cut  por_via_4cut_16
-timestamp 1717527227
+timestamp 1717613630
 transform 0 1 36224 -1 0 -275360
 box 15948 -7932 16222 -7868
 use por_via_4cut  por_via_4cut_17
-timestamp 1717527227
+timestamp 1717613630
 transform 0 1 36350 -1 0 -275290
 box 15948 -7932 16222 -7868
-use sky130_fd_pr__nfet_g5v0d10v5_X6E435  sky130_fd_pr__nfet_g5v0d10v5_X6E435_0
+use sky130_fd_pr__nfet_g5v0d10v5_X6E435  sky130_fd_pr__nfet_g5v0d10v5_X6E435_0 paramcells
 timestamp 1717527227
 transform 1 0 27249 0 1 -292532
 box -367 -358 367 358
-use sky130_fd_pr__nfet_g5v0d10v5_Z6E439  sky130_fd_pr__nfet_g5v0d10v5_Z6E439_0
+use sky130_fd_pr__nfet_g5v0d10v5_Z6E439  sky130_fd_pr__nfet_g5v0d10v5_Z6E439_0 paramcells
 timestamp 1717527227
 transform 1 0 28001 0 1 -292532
 box -515 -358 515 358
-use sky130_fd_pr__pfet_g5v0d10v5_CAF9E7  sky130_fd_pr__pfet_g5v0d10v5_CAF9E7_0
+use sky130_fd_pr__pfet_g5v0d10v5_CAF9E7  sky130_fd_pr__pfet_g5v0d10v5_CAF9E7_0 paramcells
 timestamp 1717527227
 transform 1 0 27261 0 1 -291567
 box -387 -547 387 547
-use sky130_fd_pr__pfet_g5v0d10v5_CAPB68  sky130_fd_pr__pfet_g5v0d10v5_CAPB68_0
+use sky130_fd_pr__pfet_g5v0d10v5_CAPB68  sky130_fd_pr__pfet_g5v0d10v5_CAPB68_0 paramcells
 timestamp 1717527227
 transform 1 0 28003 0 1 -291567
 box -545 -547 545 547

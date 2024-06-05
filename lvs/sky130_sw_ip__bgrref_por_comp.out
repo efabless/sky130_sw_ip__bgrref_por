@@ -358,7 +358,7 @@ Circuit 1: sky130_fd_pr__nfet_05v0_nvt              |Circuit 2: sky130_fd_pr__nf
 Cell pin lists are equivalent.
 Device classes sky130_fd_pr__nfet_05v0_nvt and sky130_fd_pr__nfet_05v0_nvt are equivalent.
 Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_UNEQ2N in circuit comparator_final (0)(2 instances)
-Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_VHBZVD in circuit comparator_final (0)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_VHBZVD in circuit comparator_final (0)(5 instances)
 Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_KLNSY6 in circuit comparator_final (0)(2 instances)
 Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_MJGQJ3 in circuit comparator_final (0)(4 instances)
 Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_YYAQG7 in circuit comparator_final (0)(1 instance)
@@ -369,22 +369,20 @@ Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_FGK6VM in circuit comp
 Flattening unmatched subcell sky130_fd_pr__res_xhigh_po_0p35_FVGVKR in circuit comparator_final (0)(1 instance)
 Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_KL3SY6 in circuit comparator_final (0)(3 instances)
 Flattening unmatched subcell sky130_fd_pr__nfet_01v8_QGMAL3 in circuit comparator_final (0)(1 instance)
-Flattening unmatched subcell sky130_fd_pr__cap_mim_m3_2_RQPX7Z in circuit comparator_final (0)(3 instances)
 Flattening unmatched subcell sky130_fd_pr__nfet_01v8_B8TQK3 in circuit comparator_final (0)(4 instances)
 
-Class comparator_final (0):  Merged 13 parallel devices.
+Class comparator_final (0):  Merged 11 parallel devices.
 Class comparator_final (0):  Merged 3 series devices.
 Subcircuit summary:
 Circuit 1: comparator_final                         |Circuit 2: comparator_final                         
 ----------------------------------------------------|----------------------------------------------------
 sky130_fd_pr__nfet_g5v0d10v5 (13->10)               |sky130_fd_pr__nfet_g5v0d10v5 (13->10)               
-sky130_fd_pr__pfet_g5v0d10v5 (11->9)                |sky130_fd_pr__pfet_g5v0d10v5 (9)                    
+sky130_fd_pr__pfet_g5v0d10v5 (14->12)               |sky130_fd_pr__pfet_g5v0d10v5 (12)                   
 mux2to1 (1)                                         |mux2to1 (1)                                         
 sky130_fd_pr__nfet_01v8 (10->4)                     |sky130_fd_pr__nfet_01v8 (10->4)                     
 sky130_fd_pr__res_xhigh_po_0p35 (4->1)              |sky130_fd_pr__res_xhigh_po_0p35 (1)                 
-sky130_fd_pr__cap_mim_m3_2 (3->1)                   |sky130_fd_pr__cap_mim_m3_2 (3->1)                   
-Number of devices: 26                               |Number of devices: 26                               
-Number of nets: 20                                  |Number of nets: 20                                  
+Number of devices: 28                               |Number of devices: 28                               
+Number of nets: 22                                  |Number of nets: 22                                  
 ---------------------------------------------------------------------------------------------------------
 Netlists match uniquely.
 

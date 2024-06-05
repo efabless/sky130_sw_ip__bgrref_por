@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1717527227
+timestamp 1717613630
 << locali >>
 rect 348 263 1047 294
 rect 348 208 418 263
@@ -61,27 +61,27 @@ rect 780 -821 1050 -766
 rect 346 -834 1050 -821
 rect 346 -837 1048 -834
 use por_via_2cut  por_via_2cut_0
-timestamp 1717527227
+timestamp 1717613630
 transform 0 1 8512 -1 0 16140
 box 16088 -7932 16222 -7868
 use por_via_2cut  por_via_2cut_1
-timestamp 1717527227
+timestamp 1717613630
 transform 0 1 8515 -1 0 15581
 box 16088 -7932 16222 -7868
 use por_via_2cut  por_via_2cut_2
-timestamp 1717527227
+timestamp 1717613630
 transform 0 1 8391 -1 0 15849
 box 16088 -7932 16222 -7868
 use por_via_2cut  por_via_2cut_3
-timestamp 1717527227
+timestamp 1717613630
 transform 0 1 8393 -1 0 16140
 box 16088 -7932 16222 -7868
 use por_via_2cut  por_via_2cut_4
-timestamp 1717527227
+timestamp 1717613630
 transform 0 1 8621 -1 0 16140
 box 16088 -7932 16222 -7868
 use por_via_2cut  por_via_2cut_5
-timestamp 1717527227
+timestamp 1717613630
 transform 0 1 8393 -1 0 15580
 box 16088 -7932 16222 -7868
 use sky130_fd_pr__nfet_01v8_L9ESAD  XM4 paramcells

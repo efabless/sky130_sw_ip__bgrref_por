@@ -9,9 +9,9 @@ Call to undefined subcircuit sky130_fd_pr__nfet_01v8
 Creating placeholder cell definition.
 Call to undefined subcircuit sky130_fd_pr__res_xhigh_po_0p35
 Creating placeholder cell definition.
-Call to undefined subcircuit sky130_fd_pr__cap_mim_m3_2
-Creating placeholder cell definition.
 Call to undefined subcircuit sky130_fd_pr__pfet_01v8
+Creating placeholder cell definition.
+Call to undefined subcircuit sky130_fd_pr__cap_mim_m3_2
 Creating placeholder cell definition.
 Call to undefined subcircuit sky130_fd_pr__pfet_01v8_hvt
 Creating placeholder cell definition.
@@ -51,13 +51,13 @@ Call to undefined subcircuit sky130_fd_pr__pfet_g5v0d10v5
 Creating placeholder cell definition.
 Call to undefined subcircuit mux2to1
 Creating placeholder cell definition.
-Call to undefined subcircuit sky130_fd_pr__cap_mim_m3_2
-Creating placeholder cell definition.
 Call to undefined subcircuit levelShifter
 Creating placeholder cell definition.
 Call to undefined subcircuit sky130_fd_pr__pfet_01v8
 Creating placeholder cell definition.
 Call to undefined subcircuit TieH_1p8
+Creating placeholder cell definition.
+Call to undefined subcircuit sky130_fd_pr__cap_mim_m3_2
 Creating placeholder cell definition.
 Call to undefined subcircuit sky130_fd_pr__cap_mim_m3_1
 Creating placeholder cell definition.
@@ -495,46 +495,42 @@ Circuit sky130_fd_pr__nfet_05v0_nvt contains no devices.
 Contents of circuit 1:  Circuit: 'comparator_final'
 Circuit comparator_final contains 42 device instances.
   Class: sky130_fd_pr__nfet_01v8 instances:  10
-  Class: sky130_fd_pr__cap_mim_m3_2 instances:   3
   Class: sky130_fd_pr__res_xhigh_po_0p35 instances:   4
   Class: mux2to1               instances:   1
   Class: sky130_fd_pr__nfet_g5v0d10v5 instances:  13
-  Class: sky130_fd_pr__pfet_g5v0d10v5 instances:  11
-Circuit contains 23 nets.
+  Class: sky130_fd_pr__pfet_g5v0d10v5 instances:  14
+Circuit contains 25 nets.
 Contents of circuit 2:  Circuit: 'comparator_final'
-Circuit comparator_final contains 26 device instances.
+Circuit comparator_final contains 28 device instances.
   Class: sky130_fd_pr__nfet_01v8 instances:   4
-  Class: sky130_fd_pr__cap_mim_m3_2 instances:   1
   Class: sky130_fd_pr__res_xhigh_po_0p35 instances:   1
   Class: mux2to1               instances:   1
   Class: sky130_fd_pr__nfet_g5v0d10v5 instances:  10
-  Class: sky130_fd_pr__pfet_g5v0d10v5 instances:   9
-Circuit contains 20 nets.
+  Class: sky130_fd_pr__pfet_g5v0d10v5 instances:  12
+Circuit contains 22 nets.
 
 Circuit was modified by parallel/series device merging.
 New circuit summary:
 
 Contents of circuit 1:  Circuit: 'comparator_final'
-Circuit comparator_final contains 26 device instances.
+Circuit comparator_final contains 28 device instances.
   Class: sky130_fd_pr__nfet_01v8 instances:   4
-  Class: sky130_fd_pr__cap_mim_m3_2 instances:   1
   Class: sky130_fd_pr__res_xhigh_po_0p35 instances:   1
   Class: mux2to1               instances:   1
   Class: sky130_fd_pr__nfet_g5v0d10v5 instances:  10
-  Class: sky130_fd_pr__pfet_g5v0d10v5 instances:   9
-Circuit contains 20 nets.
+  Class: sky130_fd_pr__pfet_g5v0d10v5 instances:  12
+Circuit contains 22 nets.
 Contents of circuit 2:  Circuit: 'comparator_final'
-Circuit comparator_final contains 26 device instances.
+Circuit comparator_final contains 28 device instances.
   Class: sky130_fd_pr__nfet_01v8 instances:   4
-  Class: sky130_fd_pr__cap_mim_m3_2 instances:   1
   Class: sky130_fd_pr__res_xhigh_po_0p35 instances:   1
   Class: mux2to1               instances:   1
   Class: sky130_fd_pr__nfet_g5v0d10v5 instances:  10
-  Class: sky130_fd_pr__pfet_g5v0d10v5 instances:   9
-Circuit contains 20 nets.
+  Class: sky130_fd_pr__pfet_g5v0d10v5 instances:  12
+Circuit contains 22 nets.
 
-Circuit 1 contains 26 devices, Circuit 2 contains 26 devices.
-Circuit 1 contains 20 nets,    Circuit 2 contains 20 nets.
+Circuit 1 contains 28 devices, Circuit 2 contains 28 devices.
+Circuit 1 contains 22 nets,    Circuit 2 contains 22 nets.
 
 
 Contents of circuit 1:  Circuit: 'delayPulse_final'
