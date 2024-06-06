@@ -2388,7 +2388,7 @@ use por_via_4cut  por_via_4cut_22
 timestamp 1717613630
 transform -1 0 45357 0 -1 -295496
 box 15948 -7932 16222 -7868
-use sky130_fd_pr__cap_mim_m3_1_EEU5EF  sky130_fd_pr__cap_mim_m3_1_EEU5EF_0
+use sky130_fd_pr__cap_mim_m3_1_EEU5EF  sky130_fd_pr__cap_mim_m3_1_EEU5EF_0 paramcells
 timestamp 1717613630
 transform 0 -1 20303 -1 0 -279723
 box -4192 -17600 3692 18302
