@@ -1,4 +1,4 @@
-# Tcl script to run LVS on the ICRG ultra-low-power comparator
+# Tcl script to run LVS on the project
 
 set project sky130_sw_ip__bgrref_por
 
@@ -16,7 +16,6 @@ set hdlib ${reflibs}/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
 set circuit1 [readnet spice ../netlist/layout/${project}.spice]
 # set circuit2 [readnet spice $hvlib]
 set circuit2 [readnet spice $hdlib]
-readnet spice ../netlist/schematic/${project}.spice $circuit2
-
-lvs "$circuit1 $project" "$circuit2 $project" \
-	$setupfile ${project}_comp.out
+readnet spice ../netlist/schematic/${project}_lvs.spice $circuit2
+lvs "$circuit1 $project" "$circuit2 ${project}_lvs" \
+	$setupfile ${project}_lvs_comp.out
