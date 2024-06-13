@@ -247,29 +247,6 @@ VSS                                                 |VSS
 ---------------------------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes levelShifter and levelShifter are equivalent.
-Flattening unmatched subcell sky130_fd_pr__nfet_01v8_L9ESAD in circuit TieH_1p8 (0)(1 instance)
-Flattening unmatched subcell sky130_fd_pr__pfet_01v8_XJT6XQ in circuit TieH_1p8 (0)(1 instance)
-
-Class TieH_1p8 (0):  Merged 1 parallel devices.
-Subcircuit summary:
-Circuit 1: TieH_1p8                                 |Circuit 2: TieH_1p8                                 
-----------------------------------------------------|----------------------------------------------------
-sky130_fd_pr__nfet_01v8 (1)                         |sky130_fd_pr__nfet_01v8 (1)                         
-sky130_fd_pr__pfet_01v8 (2->1)                      |sky130_fd_pr__pfet_01v8 (1)                         
-Number of devices: 2                                |Number of devices: 2                                
-Number of nets: 4                                   |Number of nets: 4                                   
----------------------------------------------------------------------------------------------------------
-Netlists match uniquely.
-
-Subcircuit pins:
-Circuit 1: TieH_1p8                                 |Circuit 2: TieH_1p8                                 
-----------------------------------------------------|----------------------------------------------------
-TieH                                                |TieH                                                
-VSS                                                 |VSS                                                 
-VCC                                                 |VCC                                                 
----------------------------------------------------------------------------------------------------------
-Cell pin lists are equivalent.
-Device classes TieH_1p8 and TieH_1p8 are equivalent.
 
 Class sky130_fd_sc_hd__buf_8 (0):  Merged 18 parallel devices.
 Class sky130_fd_sc_hd__buf_8 (1):  Merged 18 parallel devices.
@@ -295,6 +272,29 @@ A                                                   |A
 ---------------------------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes sky130_fd_sc_hd__buf_8 and sky130_fd_sc_hd__buf_8 are equivalent.
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_L9ESAD in circuit TieH_1p8 (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_XJT6XQ in circuit TieH_1p8 (0)(1 instance)
+
+Class TieH_1p8 (0):  Merged 1 parallel devices.
+Subcircuit summary:
+Circuit 1: TieH_1p8                                 |Circuit 2: TieH_1p8                                 
+----------------------------------------------------|----------------------------------------------------
+sky130_fd_pr__nfet_01v8 (1)                         |sky130_fd_pr__nfet_01v8 (1)                         
+sky130_fd_pr__pfet_01v8 (2->1)                      |sky130_fd_pr__pfet_01v8 (1)                         
+Number of devices: 2                                |Number of devices: 2                                
+Number of nets: 4                                   |Number of nets: 4                                   
+---------------------------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: TieH_1p8                                 |Circuit 2: TieH_1p8                                 
+----------------------------------------------------|----------------------------------------------------
+TieH                                                |TieH                                                
+VSS                                                 |VSS                                                 
+VCC                                                 |VCC                                                 
+---------------------------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes TieH_1p8 and TieH_1p8 are equivalent.
 
 Subcircuit summary:
 Circuit 1: sky130_fd_sc_hd__dfrtn_1                 |Circuit 2: sky130_fd_sc_hd__dfrtn_1                 
@@ -399,18 +399,18 @@ VSS                                                 |VSS
 Cell pin lists are equivalent.
 Device classes comparator_final and comparator_final are equivalent.
 Flattening unmatched subcell sky130_fd_pr__nfet_01v8_L9ESAD in circuit delayPulse_final (0)(4 instances)
-Flattening unmatched subcell sky130_fd_pr__pfet_01v8_GHZ9W9 in circuit delayPulse_final (0)(1 instance)
 Flattening unmatched subcell sky130_fd_pr__pfet_01v8_XPC8Y6 in circuit delayPulse_final (0)(15 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_GHZ9W9 in circuit delayPulse_final (0)(1 instance)
 Flattening unmatched subcell sky130_fd_pr__cap_mim_m3_2_2V27AY in circuit delayPulse_final (0)(2 instances)
 Flattening unmatched subcell por_output_buffer in circuit delayPulse_final (0)(2 instances)
 Flattening unmatched subcell sky130_fd_pr__nfet_01v8_PR763Z in circuit delayPulse_final (0)(2 instances)
 Flattening unmatched subcell sky130_fd_pr__pfet_01v8_DD63S8 in circuit delayPulse_final (0)(2 instances)
-Flattening unmatched subcell sky130_fd_pr__nfet_01v8_G7LLWL in circuit delayPulse_final (0)(5 instances)
-Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_PQJ659 in circuit delayPulse_final (0)(3 instances)
 Flattening unmatched subcell sky130_fd_pr__pfet_01v8_U6B66J in circuit delayPulse_final (0)(4 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_PQJ659 in circuit delayPulse_final (0)(3 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_G7LLWL in circuit delayPulse_final (0)(5 instances)
 Flattening unmatched subcell sky130_fd_pr__nfet_01v8_5QNSAB in circuit delayPulse_final (0)(3 instances)
-Flattening unmatched subcell sky130_fd_pr__pfet_01v8_SKYQWJ in circuit delayPulse_final (0)(3 instances)
 Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_KLZS5A in circuit delayPulse_final (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_SKYQWJ in circuit delayPulse_final (0)(3 instances)
 Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_69TNYL in circuit delayPulse_final (0)(1 instance)
 Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_ESEQJ8 in circuit delayPulse_final (0)(1 instance)
 Flattening unmatched subcell sky130_fd_pr__cap_mim_m3_1_TBT74C in circuit delayPulse_final (0)(3 instances)
@@ -428,8 +428,8 @@ Flattening unmatched subcell sky130_fd_pr__cap_mim_m3_2_4PHTN9 in circuit delayP
 Flattening unmatched subcell sky130_fd_pr__cap_mim_m3_1_EEU5EF in circuit delayPulse_final (0)(2 instances)
 Flattening unmatched subcell sky130_fd_pr__cap_mim_m3_1_RRZ644 in circuit delayPulse_final (0)(1 instance)
 Flattening unmatched subcell sky130_fd_pr__res_xhigh_po_0p69_KA8C77 in circuit delayPulse_final (0)(2 instances)
-Flattening unmatched subcell sky130_fd_pr__pfet_01v8_6QC8WZ in circuit delayPulse_final (0)(1 instance)
 Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_XSEQJ6 in circuit delayPulse_final (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_6QC8WZ in circuit delayPulse_final (0)(1 instance)
 
 Class delayPulse_final (0):  Merged 296 parallel devices.
 Class delayPulse_final (0):  Merged 47 series devices.
@@ -443,10 +443,10 @@ sky130_fd_pr__cap_mim_m3_2 (47->9)                  |sky130_fd_pr__cap_mim_m3_2 
 sky130_fd_sc_hd__xor2_1 (1)                         |sky130_fd_sc_hd__xor2_1 (1)                         
 sky130_fd_pr__pfet_g5v0d10v5 (17->6)                |sky130_fd_pr__pfet_g5v0d10v5 (6)                    
 sky130_fd_sc_hd__dfrtp_1 (1)                        |sky130_fd_sc_hd__dfrtp_1 (1)                        
-levelShifter (1)                                    |levelShifter (1)                                    
 sky130_fd_pr__nfet_g5v0d10v5 (19->6)                |sky130_fd_pr__nfet_g5v0d10v5 (15->6)                
-TieH_1p8 (1)                                        |TieH_1p8 (1)                                        
+levelShifter (1)                                    |levelShifter (1)                                    
 sky130_fd_sc_hd__buf_8 (1)                          |sky130_fd_sc_hd__buf_8 (1)                          
+TieH_1p8 (1)                                        |TieH_1p8 (1)                                        
 sky130_fd_sc_hd__dfrtn_1 (1)                        |sky130_fd_sc_hd__dfrtn_1 (1)                        
 sky130_fd_pr__cap_mim_m3_1 (47->9)                  |sky130_fd_pr__cap_mim_m3_1 (47->9)                  
 sky130_fd_sc_hd__decap_4 (1)                        |sky130_fd_sc_hd__decap_4 (1)                        
@@ -461,11 +461,11 @@ Circuit 1: delayPulse_final                         |Circuit 2: delayPulse_final
 ----------------------------------------------------|----------------------------------------------------
 Vbg                                                 |Vbg                                                 
 VCCH                                                |VCCH                                                
+VCCL                                                |VCCL                                                
 din                                                 |din                                                 
 porb                                                |porb                                                
 por                                                 |por                                                 
 porb_h                                              |porb_h                                              
-VCCL                                                |VCCL                                                
 VSS                                                 |VSS                                                 
 ---------------------------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
@@ -478,7 +478,7 @@ Flattening unmatched subcell sky130_fd_pr__nfet_05v0_nvt_CZFQWY in circuit sky13
 Class sky130_sw_ip__bgrref_por (0):  Merged 1 parallel devices.
 Class sky130_sw_ip__bgrref_por (0):  Merged 38 series devices.
 Subcircuit summary:
-Circuit 1: sky130_sw_ip__bgrref_por                 |Circuit 2: sky130_sw_ip__bgrref_por                 
+Circuit 1: sky130_sw_ip__bgrref_por                 |Circuit 2: sky130_sw_ip__bgrref_por_lvs             
 ----------------------------------------------------|----------------------------------------------------
 comparator_final (1)                                |comparator_final (1)                                
 delayPulse_final (1)                                |delayPulse_final (1)                                
@@ -490,7 +490,7 @@ Number of nets: 12                                  |Number of nets: 12
 Netlists match uniquely.
 
 Subcircuit pins:
-Circuit 1: sky130_sw_ip__bgrref_por                 |Circuit 2: sky130_sw_ip__bgrref_por                 
+Circuit 1: sky130_sw_ip__bgrref_por                 |Circuit 2: sky130_sw_ip__bgrref_por_lvs             
 ----------------------------------------------------|----------------------------------------------------
 por                                                 |por                                                 
 dvss                                                |dvss                                                
@@ -502,7 +502,7 @@ avdd                                                |avdd
 dvdd                                                |dvdd                                                
 ---------------------------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
-Device classes sky130_sw_ip__bgrref_por and sky130_sw_ip__bgrref_por are equivalent.
+Device classes sky130_sw_ip__bgrref_por and sky130_sw_ip__bgrref_por_lvs are equivalent.
 
 Final result: Circuits match uniquely.
 .

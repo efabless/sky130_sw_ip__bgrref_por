@@ -304,8 +304,8 @@ No property value found for device sky130_fd_pr__cap_mim_m3_2
 No property mult found for device sky130_fd_pr__cap_mim_m3_2
 No property perim found for device sky130_fd_pr__cap_mim_m3_2
 No property mf found for device sky130_fd_pr__cap_mim_m3_2
-Comparison output logged to file sky130_sw_ip__bgrref_por_comp.out
-Logging to file "sky130_sw_ip__bgrref_por_comp.out" enabled
+Comparison output logged to file sky130_sw_ip__bgrref_por_lvs_comp.out
+Logging to file "sky130_sw_ip__bgrref_por_lvs_comp.out" enabled
 Circuit sky130_fd_pr__nfet_g5v0d10v5 contains no devices.
 Circuit sky130_fd_pr__pfet_g5v0d10v5 contains no devices.
 Circuit sky130_fd_pr__nfet_01v8 contains no devices.
@@ -401,35 +401,6 @@ Circuit 1 contains 10 devices, Circuit 2 contains 10 devices.
 Circuit 1 contains 9 nets,    Circuit 2 contains 9 nets.
 
 
-Contents of circuit 1:  Circuit: 'TieH_1p8'
-Circuit TieH_1p8 contains 3 device instances.
-  Class: sky130_fd_pr__nfet_01v8 instances:   1
-  Class: sky130_fd_pr__pfet_01v8 instances:   2
-Circuit contains 4 nets.
-Contents of circuit 2:  Circuit: 'TieH_1p8'
-Circuit TieH_1p8 contains 2 device instances.
-  Class: sky130_fd_pr__nfet_01v8 instances:   1
-  Class: sky130_fd_pr__pfet_01v8 instances:   1
-Circuit contains 4 nets.
-
-Circuit was modified by parallel/series device merging.
-New circuit summary:
-
-Contents of circuit 1:  Circuit: 'TieH_1p8'
-Circuit TieH_1p8 contains 2 device instances.
-  Class: sky130_fd_pr__nfet_01v8 instances:   1
-  Class: sky130_fd_pr__pfet_01v8 instances:   1
-Circuit contains 4 nets.
-Contents of circuit 2:  Circuit: 'TieH_1p8'
-Circuit TieH_1p8 contains 2 device instances.
-  Class: sky130_fd_pr__nfet_01v8 instances:   1
-  Class: sky130_fd_pr__pfet_01v8 instances:   1
-Circuit contains 4 nets.
-
-Circuit 1 contains 2 devices, Circuit 2 contains 2 devices.
-Circuit 1 contains 4 nets,    Circuit 2 contains 4 nets.
-
-
 Contents of circuit 1:  Circuit: 'sky130_fd_sc_hd__buf_8'
 Circuit sky130_fd_sc_hd__buf_8 contains 22 device instances.
   Class: sky130_fd_pr__nfet_01v8 instances:  11
@@ -457,6 +428,35 @@ Circuit contains 7 nets.
 
 Circuit 1 contains 4 devices, Circuit 2 contains 4 devices.
 Circuit 1 contains 7 nets,    Circuit 2 contains 7 nets.
+
+
+Contents of circuit 1:  Circuit: 'TieH_1p8'
+Circuit TieH_1p8 contains 3 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:   1
+  Class: sky130_fd_pr__pfet_01v8 instances:   2
+Circuit contains 4 nets.
+Contents of circuit 2:  Circuit: 'TieH_1p8'
+Circuit TieH_1p8 contains 2 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:   1
+  Class: sky130_fd_pr__pfet_01v8 instances:   1
+Circuit contains 4 nets.
+
+Circuit was modified by parallel/series device merging.
+New circuit summary:
+
+Contents of circuit 1:  Circuit: 'TieH_1p8'
+Circuit TieH_1p8 contains 2 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:   1
+  Class: sky130_fd_pr__pfet_01v8 instances:   1
+Circuit contains 4 nets.
+Contents of circuit 2:  Circuit: 'TieH_1p8'
+Circuit TieH_1p8 contains 2 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:   1
+  Class: sky130_fd_pr__pfet_01v8 instances:   1
+Circuit contains 4 nets.
+
+Circuit 1 contains 2 devices, Circuit 2 contains 2 devices.
+Circuit 1 contains 4 nets,    Circuit 2 contains 4 nets.
 
 
 Contents of circuit 1:  Circuit: 'sky130_fd_sc_hd__dfrtn_1'
@@ -617,8 +617,8 @@ Circuit sky130_sw_ip__bgrref_por contains 45 device instances.
   Class: delayPulse_final      instances:   1
   Class: sky130_fd_pr__nfet_05v0_nvt instances:   2
 Circuit contains 50 nets.
-Contents of circuit 2:  Circuit: 'sky130_sw_ip__bgrref_por'
-Circuit sky130_sw_ip__bgrref_por contains 6 device instances.
+Contents of circuit 2:  Circuit: 'sky130_sw_ip__bgrref_por_lvs'
+Circuit sky130_sw_ip__bgrref_por_lvs contains 6 device instances.
   Class: sky130_fd_pr__res_xhigh_po_0p35 instances:   3
   Class: comparator_final      instances:   1
   Class: delayPulse_final      instances:   1
@@ -635,8 +635,8 @@ Circuit sky130_sw_ip__bgrref_por contains 6 device instances.
   Class: delayPulse_final      instances:   1
   Class: sky130_fd_pr__nfet_05v0_nvt instances:   1
 Circuit contains 12 nets.
-Contents of circuit 2:  Circuit: 'sky130_sw_ip__bgrref_por'
-Circuit sky130_sw_ip__bgrref_por contains 6 device instances.
+Contents of circuit 2:  Circuit: 'sky130_sw_ip__bgrref_por_lvs'
+Circuit sky130_sw_ip__bgrref_por_lvs contains 6 device instances.
   Class: sky130_fd_pr__res_xhigh_po_0p35 instances:   3
   Class: comparator_final      instances:   1
   Class: delayPulse_final      instances:   1
@@ -650,5 +650,5 @@ Circuit 1 contains 12 nets,    Circuit 2 contains 12 nets.
 Final result: 
 Circuits match uniquely.
 .
-Logging to file "sky130_sw_ip__bgrref_por_comp.out" disabled
+Logging to file "sky130_sw_ip__bgrref_por_lvs_comp.out" disabled
 LVS Done.
