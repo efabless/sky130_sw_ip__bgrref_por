@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<report-database>
+ <description>SKY130 DRC runset</description>
+ <original-file/>
+ <generator>drc: script='/home/azwefabless/.volare/volare/sky130/versions/42cd15c469adc1d303ffca4a7d32c29a4564a737/sky130A/libs.tech/klayout/drc/sky130A_mr.drc'</generator>
+ <top-cell>sky130_sw_ip__bgrref_por</top-cell>
+ <tags>
+ </tags>
+ <categories>
+  <category>
+   <name>li.1</name>
+   <description>li.1 : min. li width outside or crossing areaid:ce : 0.17um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>li.3</name>
+   <description>li.3 : min. li spacing outside or crossing areaid:ce : 0.17um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>li.5</name>
+   <description>li.5 : min. li enclosure of licon of 2 adjacent edges : 0.08um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>li.6</name>
+   <description>li.6 : min. li area : 0.0561um²</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>li.7</name>
+   <description>li.7 : min. li core spacing : 0.14um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>li.8</name>
+   <description>li.8 : min. li core width : 0.14um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>ct.1</name>
+   <description>ct.1: non-ring mcon should be rectangular</description>
+   <categories>
+   </categories>
+  </category>
+ </categories>
+ <cells>
+  <cell>
+   <name>sky130_sw_ip__bgrref_por</name>
+   <variant/>
+   <references>
+   </references>
+  </cell>
+ </cells>
+ <items>
+ </items>
+</report-database>

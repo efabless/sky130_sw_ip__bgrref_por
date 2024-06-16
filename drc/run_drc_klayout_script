@@ -1,0 +1,57 @@
+#!/bin/bash
+#
+
+# usage:  > run_drc <gds file> <top cellname>
+
+TOP_CELL=$2
+INPUT_GDS=$1
+OUTPUT_PATH=../drc/reports/$TOP_CELL
+LOG_PATH=../drc/reports
+KMHIST_PATH=../../sak/klayout/
+
+
+tech_mr=$PDK_ROOT/${PDK}/libs.tech/klayout/drc/sky130A_mr.drc
+
+echo INPUT_GDS=$INPUT_GDS
+echo TOP_CELL=$TOP_CELL
+echo OUTPUT_PATH=$OUTPUT_PATH
+echo LOG_PATH=$LOG_PATH
+echo tech_mr=$tech_mr
+
+echo ""
+
+echo "Running FEOL"
+klayout -b \
+    -r $tech_mr \
+    -rd input=$INPUT_GDS \
+    -rd topcell=$TOP_CELL \
+    -rd report=${OUTPUT_PATH}/klayout_feol_check.xml \
+    -rd thr=12 \
+    -rd feol=true >& ${LOG_PATH}/klayout_feol_check.log
+
+${KMHIST_PATH}kmHist.rb ${OUTPUT_PATH}/klayout_feol_check.xml > ${OUTPUT_PATH}/klayout_feol_check.xml.summary
+
+echo "Running BEOL"
+klayout -b \
+    -r $tech_mr \
+    -rd input=$INPUT_GDS \
+    -rd topcell=$TOP_CELL \
+    -rd report=${OUTPUT_PATH}/klayout_beol_check.xml \
+    -rd thr=12 \
+    -rd beol=true >& ${LOG_PATH}/klayout_beol_check.log
+
+${KMHIST_PATH}kmHist.rb ${OUTPUT_PATH}/klayout_beol_check.xml > ${OUTPUT_PATH}/klayout_beol_check.xml.summary
+
+
+echo "Running Offgrid"
+klayout -b \
+    -r $tech_mr \
+    -rd input=$INPUT_GDS \
+    -rd topcell=$TOP_CELL \
+    -rd report=${OUTPUT_PATH}/klayout_offgrid_check.xml \
+    -rd thr=12 \
+    -rd offgrid=true >& ${LOG_PATH}/klayout_offgrid_check.log
+
+${KMHIST_PATH}kmHist.rb ${OUTPUT_PATH}/klayout_offgrid_check.xml > ${OUTPUT_PATH}/klayout_offgrid_check.xml.summary
+
+echo ""

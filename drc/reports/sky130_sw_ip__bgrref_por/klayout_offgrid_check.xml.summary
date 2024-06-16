@@ -1,0 +1,78 @@
+       0 x.1b : OFFGRID vertex on areaid.re
+       0 x.1b : OFFGRID vertex on diff
+       0 x.1b : OFFGRID vertex on dnwell
+       0 x.1b : OFFGRID vertex on hvi
+       0 x.1b : OFFGRID vertex on hvntm
+       0 x.1b : OFFGRID vertex on hvtp
+       0 x.1b : OFFGRID vertex on hvtr
+       0 x.1b : OFFGRID vertex on li
+       0 x.1b : OFFGRID vertex on licon
+       0 x.1b : OFFGRID vertex on lvtn
+       0 x.1b : OFFGRID vertex on m1
+       0 x.1b : OFFGRID vertex on m2
+       0 x.1b : OFFGRID vertex on m3
+       0 x.1b : OFFGRID vertex on m4
+       0 x.1b : OFFGRID vertex on m5
+       0 x.1b : OFFGRID vertex on mcon
+       0 x.1b : OFFGRID vertex on mf
+       0 x.1b : OFFGRID vertex on ncm
+       0 x.1b : OFFGRID vertex on npc
+       0 x.1b : OFFGRID vertex on nsdm
+       0 x.1b : OFFGRID vertex on nsm
+       0 x.1b : OFFGRID vertex on nwell
+       0 x.1b : OFFGRID vertex on pad
+       0 x.1b : OFFGRID vertex on poly
+       0 x.1b : OFFGRID vertex on psdm
+       0 x.1b : OFFGRID vertex on pwbm
+       0 x.1b : OFFGRID vertex on pwde
+       0 x.1b : OFFGRID vertex on pwell_rs
+       0 x.1b : OFFGRID vertex on rpm
+       0 x.1b : OFFGRID vertex on tap
+       0 x.1b : OFFGRID vertex on tunm
+       0 x.1b : OFFGRID vertex on uhvi
+       0 x.1b : OFFGRID vertex on vhvi
+       0 x.1b : OFFGRID vertex on via
+       0 x.1b : OFFGRID vertex on via2
+       0 x.1b : OFFGRID vertex on via3
+       0 x.1b : OFFGRID vertex on via4
+       0 x.1b : OFFGRID vertex on vpp
+       0 x.2 : non 90 degree angle diff
+       0 x.2 : non 90 degree angle licon
+       0 x.2 : non 90 degree angle mcon
+       0 x.2 : non 90 degree angle mf
+       0 x.2 : non 90 degree angle poly
+       0 x.2 : non 90 degree angle tap
+       0 x.2 : non 90 degree angle via
+       0 x.2 : non 90 degree angle via2
+       0 x.2 : non 90 degree angle via3
+       0 x.2 : non 90 degree angle via4
+       0 x.2c : non 45 degree angle diff
+       0 x.2c : non 45 degree angle tap
+       0 x.3a : non 45 degree angle dnwell
+       0 x.3a : non 45 degree angle hvi
+       0 x.3a : non 45 degree angle hvntm
+       0 x.3a : non 45 degree angle hvtp
+       0 x.3a : non 45 degree angle hvtr
+       0 x.3a : non 45 degree angle li
+       0 x.3a : non 45 degree angle lvtn
+       0 x.3a : non 45 degree angle m1
+       0 x.3a : non 45 degree angle m2
+       0 x.3a : non 45 degree angle m3
+       0 x.3a : non 45 degree angle m4
+       0 x.3a : non 45 degree angle m5
+       0 x.3a : non 45 degree angle ncm
+       0 x.3a : non 45 degree angle npc
+       0 x.3a : non 45 degree angle nsdm
+       0 x.3a : non 45 degree angle nsm
+       0 x.3a : non 45 degree angle nwell
+       0 x.3a : non 45 degree angle pad
+       0 x.3a : non 45 degree angle psdm
+       0 x.3a : non 45 degree angle pwbm
+       0 x.3a : non 45 degree angle pwde
+       0 x.3a : non 45 degree angle pwell_rs
+       0 x.3a : non 45 degree angle rpm
+       0 x.3a : non 45 degree angle tunm
+       0 x.3a : non 45 degree angle uhvi
+       0 x.3a : non 45 degree angle vhvi
+       0 x.3a : non 45 degree angle vpp
+       0 total error(s) among 77 error type(s), 0 non-zero type(s)

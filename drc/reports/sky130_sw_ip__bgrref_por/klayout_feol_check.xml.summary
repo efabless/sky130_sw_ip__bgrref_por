@@ -1,0 +1,30 @@
+       0 difftap.1 : min. diff width across areaid:ce : 0.15um
+       0 difftap.1_a : min. diff width in periphery : 0.15um
+       0 difftap.1_b : min. tap width across areaid:ce : 0.15um
+       0 difftap.1_c : min. tap width in periphery : 0.15um
+       0 difftap.2 : min. diff width inside areadid:ce : 0.14um
+       0 difftap.3 : min. difftap spacing : 0.27um
+       0 dnwell.1: min. dnwell width : 3.0um
+       0 dnwell.2 : min. dnwell spacing : 6.3um
+       0 hvtp.1 : min. hvtp width : 0.38um
+       0 hvtp.2 : min. hvtp spacing : 0.38um
+       0 hvtr.1 : min. hvtr width : 0.38um
+       0 hvtr.2 : min. hvtr spacing : 0.38um
+       0 hvtr.2_a : hvtr must not overlap hvtp
+       0 lvtn.1a : min. lvtn width : 0.38um
+       0 lvtn.2 : min. lvtn spacing : 0.38um
+       0 ncm.1 : min. ncm width : 0.38um
+       0 ncm.2a : min. ncm spacing : 0.38um
+       0 nwell.1 : min. nwell width : 0.84um
+       0 nwell.2a : min. nwell spacing (merged if less) : 1.27um
+       0 nwell.6 : min enclosure of nwellHole by dnwell : 1.03um
+       0 nwell.9 : HVnwell must be enclosed by hv marker
+       0 poly.1a : min. poly width : 0.15um
+       0 poly.2 : min. poly spacing : 0.21um
+       0 pwde.1 : min. pwde width : 0.84um
+       0 pwde.2 : min. pwde inside v20 spacing : 1.27um
+       0 thkox.1 : min. thkox width inside periphery : 0.6um
+       0 thkox.2 : min. thkox spacing inside periphery : 0.7um
+       0 tunm.1 : min. tunm width : 0.41um
+       0 tunm.2 : min. tunm spacing : 0.5um
+       0 total error(s) among 29 error type(s), 0 non-zero type(s)
