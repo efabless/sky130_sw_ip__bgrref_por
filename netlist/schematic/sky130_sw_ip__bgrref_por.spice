@@ -1,17 +1,17 @@
-** sch_path: /home/tim/gits/cheetah_v3_analog/dependencies/sky130_sw_ip__bgrref_por/xschem_lvs/sky130_sw_ip__bgrref_por_lvs.sch
-.subckt sky130_sw_ip__bgrref_por_lvs avdd por avss dvdd porb vbg porb_h dvss
+** sch_path: /home/tim/gits/cheetah_v3_analog/dependencies/sky130_sw_ip__bgrref_por/xschem/sky130_sw_ip__bgrref_por.sch
+.subckt sky130_sw_ip__bgrref_por vbg por avss avdd dvdd porb dvss porb_h
 *.PININFO avdd:B por:O avss:B dvdd:B porb:O vbg:I porb_h:O dvss:B
 x1 Vinn Vinp RST avss avdd dvdd comparator_final
 XR1 avss Vinn avss sky130_fd_pr__res_xhigh_po_0p35 L=250 mult=1 m=1
 XR10 Vinn Vinp avss sky130_fd_pr__res_xhigh_po_0p35 L=9 mult=1 m=1
-XR12 Vinp net1 avss sky130_fd_pr__res_xhigh_po_0p35 L=150 mult=1 m=1
+XR12 Vinp Vproc avss sky130_fd_pr__res_xhigh_po_0p35 L=150 mult=1 m=1
 x2 RST por dvdd dvss vbg avdd porb porb_h delayPulse_final
-XM2 avdd avdd net1 avss sky130_fd_pr__nfet_05v0_nvt L=0.9 W=1 nf=1 m=2
+XM2 avdd avdd Vproc avss sky130_fd_pr__nfet_05v0_nvt L=0.9 W=1 nf=1 m=2
 .ends
 
 * expanding   symbol:  comparator_final.sym # of pins=6
-** sym_path: /home/tim/gits/cheetah_v3_analog/dependencies/sky130_sw_ip__bgrref_por/xschem_lvs/comparator_final.sym
-** sch_path: /home/tim/gits/cheetah_v3_analog/dependencies/sky130_sw_ip__bgrref_por/xschem_lvs/comparator_final.sch
+** sym_path: /home/tim/gits/cheetah_v3_analog/dependencies/sky130_sw_ip__bgrref_por/xschem/comparator_final.sym
+** sch_path: /home/tim/gits/cheetah_v3_analog/dependencies/sky130_sw_ip__bgrref_por/xschem/comparator_final.sch
 .subckt comparator_final Vinn Vinp RST VSS AVDD DVDD
 *.PININFO AVDD:I RST:O VSS:I Vinn:I Vinp:I DVDD:I
 XM1 VS vbn VSS VSS sky130_fd_pr__nfet_g5v0d10v5 L=1 W=2 nf=1 m=2
@@ -35,22 +35,23 @@ XR12 VSS net5 VSS sky130_fd_pr__res_xhigh_po_0p35 L=28 mult=1 m=1
 XM25 vbn vbn VSS VSS sky130_fd_pr__nfet_g5v0d10v5 L=1 W=2 nf=1 m=1
 XM26 net4 vbn net5 VSS sky130_fd_pr__nfet_g5v0d10v5 L=1 W=2 nf=1 m=2
 XM28 net6 vbn VSS VSS sky130_fd_pr__nfet_01v8 L=0.3 W=4 nf=1 m=1
-XM18 VD Vinn VS VSS sky130_fd_pr__nfet_01v8 L=1 W=2 nf=1 m=6
-XM9 VD Vinn VY VSS sky130_fd_pr__nfet_01v8 L=1 W=2 nf=1 m=1
+XM18 VD Vinn VS VSS sky130_fd_pr__nfet_01v8 L=1 W=2 nf=1 m=3
+XM9 VD Vinn VY VSS sky130_fd_pr__nfet_01v8 L=1 W=2 nf=1 m=3
 XM10 net2 Vinp VS VSS sky130_fd_pr__nfet_01v8 L=1 W=2 nf=1 m=2
 XM5 net7 net7 AVDD AVDD sky130_fd_pr__pfet_g5v0d10v5 L=4 W=1 nf=1 m=1
 XM11 net8 net8 net7 AVDD sky130_fd_pr__pfet_g5v0d10v5 L=4 W=1 nf=1 m=1
 XM20 net6 net6 net8 AVDD sky130_fd_pr__pfet_g5v0d10v5 L=4 W=1 nf=1 m=1
 XM21 net4 net6 vbn VSS sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=4 nf=1 m=1
+XC1 vo vt sky130_fd_pr__cap_mim_m3_1 W=10 L=10 m=1
 .ends
 
 
 * expanding   symbol:  delayPulse_final.sym # of pins=8
-** sym_path: /home/tim/gits/cheetah_v3_analog/dependencies/sky130_sw_ip__bgrref_por/xschem_lvs/delayPulse_final.sym
-** sch_path: /home/tim/gits/cheetah_v3_analog/dependencies/sky130_sw_ip__bgrref_por/xschem_lvs/delayPulse_final.sch
+** sym_path: /home/tim/gits/cheetah_v3_analog/dependencies/sky130_sw_ip__bgrref_por/xschem/delayPulse_final.sym
+** sch_path: /home/tim/gits/cheetah_v3_analog/dependencies/sky130_sw_ip__bgrref_por/xschem/delayPulse_final.sch
 .subckt delayPulse_final din por VCCL VSS Vbg VCCH porb porb_h
 *.PININFO VCCL:I VSS:I din:I Vbg:I por:O VCCH:I porb:O porb_h:O
-x1 Td_L Td_Sd VSS VSS VCCL VCCL outxor sky130_fd_sc_hd__xor2_1
+x1 Td_L Td_Sd VSS VSS VCCL VCCL outxor sky130_fd_sc_ls__xor2_1
 x3 porbPre porbhPre VCCL VSS VCCH levelShifter
 XM2 net1 din VCCL VCCL sky130_fd_pr__pfet_01v8 L=0.3 W=1 nf=1 m=2
 XM3 Td_S net1 VCCL VCCL sky130_fd_pr__pfet_01v8 L=0.3 W=1 nf=1 m=2
@@ -88,15 +89,15 @@ XM35 net15 net14 VCCL VCCL sky130_fd_pr__pfet_01v8 L=0.15 W=1.4 nf=2 m=1
 XM36 Td_Sd net16 VSS VSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.5 nf=1 m=2
 XM38 net16 net15 VSS VSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.5 nf=1 m=1
 XM39 net16 net15 VCCL VCCL sky130_fd_pr__pfet_01v8 L=0.15 W=1.4 nf=2 m=1
-x6 outxor VSS VSS VCCL VCCL rstn sky130_fd_sc_hd__buf_8
+x6 outxor VSS VSS VCCL VCCL rstn sky130_fd_sc_ls__buf_8
 XC4 VSS net15 sky130_fd_pr__cap_mim_m3_2 W=10 L=10 m=1
 XC7 VSS VT2 sky130_fd_pr__cap_mim_m3_2 W=16 L=16 m=20
 XC2 VSS VT3 sky130_fd_pr__cap_mim_m3_2 W=16 L=16 m=20
 XC8 VSS net14 sky130_fd_pr__cap_mim_m3_2 W=10 L=10 m=1
 XC9 VSS net16 sky130_fd_pr__cap_mim_m3_2 W=10 L=10 m=1
 XM40 Td_Sd net16 VCCL VCCL sky130_fd_pr__pfet_01v8 L=0.15 W=1.4 nf=2 m=2
-x5 rstn net2 Td_S VSS VSS VCCL VCCL porbPre sky130_fd_sc_hd__dfrtn_1
-x2 Td_S net2 Td_Lb VSS VSS VCCL VCCL porPre sky130_fd_sc_hd__dfrtp_1
+x5 rstn net2 Td_S VSS VSS VCCL VCCL porbPre sky130_fd_sc_ls__dfrtn_1
+x2 Td_S net2 Td_Lb VSS VSS VCCL VCCL porPre sky130_fd_sc_ls__dfrtp_1
 XM4 Td_Lb Td_L VSS VSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.5 nf=1 m=2
 XM9 Td_Lb Td_L VCCL VCCL sky130_fd_pr__pfet_01v8 L=0.15 W=1.4 nf=2 m=2
 XC1 VSS vbn1 sky130_fd_pr__cap_mim_m3_2 W=16 L=16 m=1
@@ -123,7 +124,7 @@ XM59 net23 porbhPre VSS VSS sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=2 nf=2 m=1
 XM60 net23 porbhPre VCCH VCCH sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=5 nf=2 m=1
 XM61 porb_h net23 VSS VSS sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=4 nf=4 m=1
 XM62 porb_h net23 VCCH VCCH sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=10 nf=4 m=1
-x7 VSS VSS VCCL VCCL sky130_fd_sc_hd__decap_4
+x7 VSS VSS VCCL VCCL sky130_fd_sc_ls__decap_4
 XC10 net8 VCCH sky130_fd_pr__cap_mim_m3_1 W=8 L=8 m=1
 XC11 net7 VCCH sky130_fd_pr__cap_mim_m3_1 W=16 L=16 m=1
 XC12 vbp1 VCCL sky130_fd_pr__cap_mim_m3_1 W=16 L=16 m=1
@@ -139,8 +140,8 @@ XR7 VSS net24 VSS sky130_fd_pr__res_xhigh_po_0p69 L=240 mult=1 m=1
 
 
 * expanding   symbol:  mux2to1.sym # of pins=6
-** sym_path: /home/tim/gits/cheetah_v3_analog/dependencies/sky130_sw_ip__bgrref_por/xschem_lvs/mux2to1.sym
-** sch_path: /home/tim/gits/cheetah_v3_analog/dependencies/sky130_sw_ip__bgrref_por/xschem_lvs/mux2to1.sch
+** sym_path: /home/tim/gits/cheetah_v3_analog/dependencies/sky130_sw_ip__bgrref_por/xschem/mux2to1.sym
+** sch_path: /home/tim/gits/cheetah_v3_analog/dependencies/sky130_sw_ip__bgrref_por/xschem/mux2to1.sch
 .subckt mux2to1 A1 A0 Z VCC VSS S
 *.PININFO VCC:I VSS:I A0:I A1:I Z:B S:I
 XM12 SB S VSS VSS sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=1 nf=1 m=1
@@ -153,8 +154,8 @@ XM2 Z S A1 VSS sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=1 nf=1 m=1
 
 
 * expanding   symbol:  levelShifter.sym # of pins=5
-** sym_path: /home/tim/gits/cheetah_v3_analog/dependencies/sky130_sw_ip__bgrref_por/xschem_lvs/levelShifter.sym
-** sch_path: /home/tim/gits/cheetah_v3_analog/dependencies/sky130_sw_ip__bgrref_por/xschem_lvs/levelShifter.sch
+** sym_path: /home/tim/gits/cheetah_v3_analog/dependencies/sky130_sw_ip__bgrref_por/xschem/levelShifter.sym
+** sch_path: /home/tim/gits/cheetah_v3_analog/dependencies/sky130_sw_ip__bgrref_por/xschem/levelShifter.sch
 .subckt levelShifter ain aout VCCL VSS VCCH
 *.PININFO VCCL:I VSS:I ain:I aout:O VCCH:I
 XM12 net1 S1 VSS VSS sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=3.6 nf=1 m=1
@@ -171,8 +172,8 @@ XM8 aout net2 VCCH VCCH sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=5.8 nf=2 m=1
 
 
 * expanding   symbol:  TieH_1p8.sym # of pins=3
-** sym_path: /home/tim/gits/cheetah_v3_analog/dependencies/sky130_sw_ip__bgrref_por/xschem_lvs/TieH_1p8.sym
-** sch_path: /home/tim/gits/cheetah_v3_analog/dependencies/sky130_sw_ip__bgrref_por/xschem_lvs/TieH_1p8.sch
+** sym_path: /home/tim/gits/cheetah_v3_analog/dependencies/sky130_sw_ip__bgrref_por/xschem/TieH_1p8.sym
+** sch_path: /home/tim/gits/cheetah_v3_analog/dependencies/sky130_sw_ip__bgrref_por/xschem/TieH_1p8.sch
 .subckt TieH_1p8 TieH VSS VCC
 *.PININFO VCC:I VSS:I TieH:B
 XM4 net1 net1 VSS VSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.5 nf=1 m=1

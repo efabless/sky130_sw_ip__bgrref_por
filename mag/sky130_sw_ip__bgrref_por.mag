@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1718284689
+timestamp 1721073345
 << isosubstrate >>
 rect 3992 -292617 17571 -285669
 << nwell >>
@@ -356,11 +356,11 @@ timestamp 1718283729
 transform 0 -1 9676 1 0 -305162
 box 15948 -7932 16222 -7868
 use comparator_final  x1
-timestamp 1718283729
+timestamp 1721068816
 transform 1 0 6296 0 1 -286728
-box -1988 -5804 11208 -2441
+box -1988 -5804 11208 -1484
 use delayPulse_final  x2
-timestamp 1718284689
+timestamp 1721073345
 transform 1 0 1048 0 1 -2959
 box 1311 -297437 38614 -274935
 use sky130_fd_pr__nfet_05v0_nvt_CZFQWY  XM2 paramcells

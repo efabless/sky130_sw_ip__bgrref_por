@@ -19,6 +19,8 @@ N 270 -400 290 -400 {
 lab=avss}
 N 290 -420 290 -400 {
 lab=avss}
+N 290 -660 290 -640 {
+lab=#net1}
 N 290 -580 290 -560 {
 lab=Vinp}
 N 290 -500 290 -480 {
@@ -33,9 +35,10 @@ N 470 -500 520 -500 {
 lab=Vinn}
 N 450 -460 520 -460 {
 lab=avdd}
+N 490 -840 490 -800 {
+lab=vindiff}
 N 680 -530 750 -530 {
-lab=RST}
-N 290 -720 290 -640 {}
+lab=Vout}
 C {devices/title.sym} 160 -30 0 0 {name=l2 author="Stephen Wu"}
 C {devices/iopin.sym} 110 -250 0 0 {name=p24 lab=avdd}
 C {devices/opin.sym} 260 -200 0 0 {name=p25 lab=por}
@@ -47,11 +50,22 @@ C {devices/opin.sym} 260 -140 0 0 {name=p27 lab=porb_h}
 C {devices/iopin.sym} 110 -190 0 0 {name=p28 lab=dvss}
 C {devices/lab_wire.sym} 520 -500 0 0 {name=p2 lab=Vinn}
 C {devices/lab_wire.sym} 520 -560 0 0 {name=p3 lab=Vinp}
+C {devices/ngspice_get_value.sym} 360 -780 0 1 {name=r2 node=v(@m.xm1.msky130_fd_pr__nfet_01v8[w])
+descr="W="}
+C {devices/ngspice_get_value.sym} 360 -830 0 1 {name=r3 node=@m.xm1.msky130_fd_pr__nfet_01v8[gm]
+descr="gm="}
+C {devices/ammeter.sym} 290 -690 0 0 {name=Vr1}
+C {devices/ngspice_probe.sym} 290 -650 0 0 {name=r11}
 C {devices/ngspice_probe.sym} 290 -570 0 0 {name=r14}
 C {devices/ngspice_probe.sym} 290 -490 0 0 {name=r15}
 C {devices/lab_wire.sym} 290 -560 0 1 {name=p11 lab=Vinp}
 C {devices/lab_wire.sym} 290 -480 0 1 {name=p12 lab=Vinn}
 C {devices/lab_wire.sym} 680 -530 0 1 {name=p4 lab=RST}
+C {devices/vcvs.sym} 490 -770 0 0 {name=E1 value=1}
+C {devices/lab_wire.sym} 450 -790 0 0 {name=p6 lab=Vinp}
+C {devices/lab_wire.sym} 450 -750 0 0 {name=p7 lab=Vinn}
+C {devices/gnd.sym} 490 -740 0 0 {name=l9 lab=GND}
+C {devices/lab_wire.sym} 490 -840 0 1 {name=p8 lab=vindiff}
 C {comparator_final.sym} 580 -530 0 0 {name=x1}
 C {sky130_fd_pr/res_xhigh_po_0p35.sym} 290 -450 0 0 {name=R1
 L=250

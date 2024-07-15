@@ -46,7 +46,7 @@ N 700 -760 700 -700 {
 lab=A0}
 N 800 -760 800 -700 {
 lab=Z}
-N 790 -230 790 -200 {lab=#net1}
+N 790 -230 790 -200 {lab=VSS}
 N 790 -400 790 -370 {lab=VCC}
 N 740 -400 760 -400 { lab=A1}
 N 740 -340 740 -200 { lab=A1}
@@ -70,6 +70,8 @@ N 900 -630 900 -270 {
 lab=Z}
 N 900 -450 920 -450 {
 lab=Z}
+N 250 -560 250 -500 {
+lab=SB}
 C {devices/title.sym} 160 -30 0 0 {name=l1 author="Stephen Wu"}
 C {devices/ipin.sym} 200 -260 0 0 {name=p2 lab=VCC}
 C {devices/ipin.sym} 200 -230 0 0 {name=p4 lab=VSS}
@@ -96,7 +98,6 @@ sa=0 sb=0 sd=0
 model=nfet_g5v0d10v5
 spiceprefix=X
 }
-C {devices/ammeter.sym} 250 -530 0 0 {name=v9}
 C {sky130_fd_pr/pfet_g5v0d10v5.sym} 230 -590 0 0 {name=M13
 W=2
 L=0.5

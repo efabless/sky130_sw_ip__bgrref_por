@@ -35,7 +35,7 @@ N 520 -360 520 -330 {
 lab=TieH}
 N 520 -330 600 -330 {
 lab=TieH}
-N 520 -420 520 -360 {}
+C {devices/ammeter.sym} 520 -390 0 0 {name=v2}
 C {sky130_fd_pr/nfet_01v8.sym} 390 -300 0 0 {name=M4
 L=0.15
 W=0.5
