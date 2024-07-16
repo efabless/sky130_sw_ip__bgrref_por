@@ -326,6 +326,31 @@ VSS                                                 |VSS
 Cell pin lists are equivalent.
 Device classes levelShifter and levelShifter are equivalent.
 
+Class sky130_fd_sc_hvl__buf_16 (0):  Merged 40 parallel devices.
+Class sky130_fd_sc_hvl__buf_16 (1):  Merged 40 parallel devices.
+Subcircuit summary:
+Circuit 1: sky130_fd_sc_hvl__buf_16                 |Circuit 2: sky130_fd_sc_hvl__buf_16                 
+----------------------------------------------------|----------------------------------------------------
+sky130_fd_pr__pfet_g5v0d10v5 (22->2)                |sky130_fd_pr__pfet_g5v0d10v5 (22->2)                
+sky130_fd_pr__nfet_g5v0d10v5 (22->2)                |sky130_fd_pr__nfet_g5v0d10v5 (22->2)                
+Number of devices: 4                                |Number of devices: 4                                
+Number of nets: 7                                   |Number of nets: 7                                   
+---------------------------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hvl__buf_16                 |Circuit 2: sky130_fd_sc_hvl__buf_16                 
+----------------------------------------------------|----------------------------------------------------
+X                                                   |X                                                   
+VPWR                                                |VPWR                                                
+VPB                                                 |VPB                                                 
+A                                                   |A                                                   
+VGND                                                |VGND                                                
+VNB                                                 |VNB                                                 
+---------------------------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hvl__buf_16 and sky130_fd_sc_hvl__buf_16 are equivalent.
+
 Circuit 1 cell sky130_fd_pr__nfet_05v0_nvt and Circuit 2 cell sky130_fd_pr__nfet_05v0_nvt are black boxes.
 Warning: Equate pins:  cell sky130_fd_pr__nfet_05v0_nvt is a placeholder, treated as a black box.
 Warning: Equate pins:  cell sky130_fd_pr__nfet_05v0_nvt is a placeholder, treated as a black box.
@@ -401,10 +426,8 @@ Flattening unmatched subcell sky130_fd_pr__cap_mim_m3_1_TBT74C in circuit delayP
 Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_SYBQJL in circuit delayPulse_final (0)(1 instance)
 Flattening unmatched subcell sky130_fd_pr__cap_mim_m3_1_KB5CJD in circuit delayPulse_final (0)(3 instances)
 Flattening unmatched subcell por_output_driver_h in circuit delayPulse_final (0)(1 instance)
-Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_CAF9E7 in circuit delayPulse_final (0)(1 instance)
-Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_X6E435 in circuit delayPulse_final (0)(1 instance)
-Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_CAPB68 in circuit delayPulse_final (0)(1 instance)
-Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_Z6E439 in circuit delayPulse_final (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_CAF9E7 in circuit delayPulse_final (0)(3 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_X6E435 in circuit delayPulse_final (0)(3 instances)
 Flattening unmatched subcell sky130_fd_pr__pfet_01v8_X6XW7S in circuit delayPulse_final (0)(3 instances)
 Flattening unmatched subcell sky130_fd_pr__cap_mim_m3_2_RQPX7Z in circuit delayPulse_final (0)(3 instances)
 Flattening unmatched subcell sky130_fd_pr__cap_mim_m3_2_HYMU45 in circuit delayPulse_final (0)(1 instance)
@@ -416,7 +439,7 @@ Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_XSEQJ6 in circuit dela
 Flattening unmatched subcell sky130_fd_pr__pfet_01v8_6QC8WZ in circuit delayPulse_final (0)(1 instance)
 Flattening unmatched subcell delayPulse_digital in circuit delayPulse_final (0)(1 instance)
 
-Class delayPulse_final (0):  Merged 296 parallel devices.
+Class delayPulse_final (0):  Merged 294 parallel devices.
 Class delayPulse_final (0):  Merged 47 series devices.
 Class delayPulse_final (1):  Merged 1 series devices.
 Subcircuit summary:
@@ -425,8 +448,8 @@ Circuit 1: delayPulse_final                         |Circuit 2: delayPulse_final
 sky130_fd_pr__nfet_01v8 (74->20)                    |sky130_fd_pr__nfet_01v8 (72->20)                    
 sky130_fd_pr__pfet_01v8 (168->26)                   |sky130_fd_pr__pfet_01v8 (87->26)                    
 sky130_fd_pr__cap_mim_m3_2 (47->9)                  |sky130_fd_pr__cap_mim_m3_2 (47->9)                  
-sky130_fd_pr__pfet_g5v0d10v5 (17->6)                |sky130_fd_pr__pfet_g5v0d10v5 (6)                    
-sky130_fd_pr__nfet_g5v0d10v5 (19->6)                |sky130_fd_pr__nfet_g5v0d10v5 (15->6)                
+sky130_fd_pr__pfet_g5v0d10v5 (17->7)                |sky130_fd_pr__pfet_g5v0d10v5 (7)                    
+sky130_fd_pr__nfet_g5v0d10v5 (19->7)                |sky130_fd_pr__nfet_g5v0d10v5 (16->7)                
 levelShifter (1)                                    |levelShifter (1)                                    
 sky130_fd_pr__cap_mim_m3_1 (47->9)                  |sky130_fd_pr__cap_mim_m3_1 (47->9)                  
 sky130_fd_pr__res_xhigh_po_0p69 (48->1)             |sky130_fd_pr__res_xhigh_po_0p69 (2->1)              
@@ -436,21 +459,25 @@ TieH_1p8 (1)                                        |TieH_1p8 (1)
 sky130_fd_sc_ls__buf_8 (1)                          |sky130_fd_sc_ls__buf_8 (1)                          
 sky130_fd_sc_ls__dfrtp_1 (1)                        |sky130_fd_sc_ls__dfrtp_1 (1)                        
 sky130_fd_sc_ls__xor2_1 (1)                         |sky130_fd_sc_ls__xor2_1 (1)                         
-Number of devices: 84                               |Number of devices: 84                               
-Number of nets: 45                                  |Number of nets: 45                                  
+sky130_fd_sc_hvl__buf_16 (2)                        |sky130_fd_sc_hvl__buf_16 (2)                        
+Number of devices: 88                               |Number of devices: 88                               
+Number of nets: 48                                  |Number of nets: 48                                  
 ---------------------------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
 Netlists match uniquely.
 
 Subcircuit pins:
 Circuit 1: delayPulse_final                         |Circuit 2: delayPulse_final                         
 ----------------------------------------------------|----------------------------------------------------
 Vbg                                                 |Vbg                                                 
+porb_h[0]                                           |porb_h[0]                                           
+porb_h[1]                                           |porb_h[1]                                           
 VCCH                                                |VCCH                                                
 VCCL                                                |VCCL                                                
 din                                                 |din                                                 
 porb                                                |porb                                                
 por                                                 |por                                                 
-porb_h                                              |porb_h                                              
 VSS                                                 |VSS                                                 
 ---------------------------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
@@ -470,7 +497,7 @@ delayPulse_final (1)                                |delayPulse_final (1)
 sky130_fd_pr__res_xhigh_po_0p35 (41->3)             |sky130_fd_pr__res_xhigh_po_0p35 (3)                 
 sky130_fd_pr__nfet_05v0_nvt (2->1)                  |sky130_fd_pr__nfet_05v0_nvt (2->1)                  
 Number of devices: 6                                |Number of devices: 6                                
-Number of nets: 12                                  |Number of nets: 12                                  
+Number of nets: 13                                  |Number of nets: 13                                  
 ---------------------------------------------------------------------------------------------------------
 Netlists match uniquely.
 
@@ -481,7 +508,8 @@ por                                                 |por
 dvss                                                |dvss                                                
 vbg                                                 |vbg                                                 
 porb                                                |porb                                                
-porb_h                                              |porb_h                                              
+porb_h[1]                                           |porb_h[1]                                           
+porb_h[0]                                           |porb_h[0]                                           
 avss                                                |avss                                                
 avdd                                                |avdd                                                
 dvdd                                                |dvdd                                                

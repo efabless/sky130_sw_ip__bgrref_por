@@ -10,14 +10,14 @@ set techlibs ${pdklib}/libs.tech
 set reflibs ${pdklib}/libs.ref
 
 set setupfile ${techlibs}/netgen/sky130A_setup.tcl
-# set hvlib ${reflibs}/sky130_fd_sc_hvl/spice/sky130_fd_sc_hvl.spice
+set hvlib ${reflibs}/sky130_fd_sc_hvl/spice/sky130_fd_sc_hvl.spice
 # set hdlib ${reflibs}/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
 set lslib ${reflibs}/sky130_fd_sc_ls/spice/sky130_fd_sc_ls.spice
 
 set circuit1 [readnet spice ../netlist/layout/${project}.spice]
-# set circuit2 [readnet spice $hvlib]
+set circuit2 [readnet spice $hvlib]
 # set circuit2 [readnet spice $hdlib]
-set circuit2 [readnet spice $lslib]
+readnet spice $lslib $circuit2
 readnet spice ../netlist/schematic/${project}.spice $circuit2
 lvs "$circuit1 $project" "$circuit2 ${project}" \
 	$setupfile ${project}_comp.out

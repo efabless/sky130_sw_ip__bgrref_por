@@ -35,7 +35,7 @@ lab=avdd}
 N 680 -530 750 -530 {
 lab=RST}
 N 290 -720 290 -640 {
-lab=#net1}
+lab=Vproc}
 N 470 -560 520 -560 {
 lab=Vinp}
 C {devices/title.sym} 160 -30 0 0 {name=l2 author="Stephen Wu"}
@@ -45,7 +45,7 @@ C {devices/iopin.sym} 110 -220 0 0 {name=p26 lab=avss}
 C {devices/iopin.sym} 110 -280 0 0 {name=p30 lab=dvdd}
 C {devices/opin.sym} 260 -170 0 0 {name=p31 lab=porb}
 C {devices/ipin.sym} 130 -160 0 0 {name=p21 lab=vbg}
-C {devices/opin.sym} 260 -140 0 0 {name=p27 lab=porb_h}
+C {devices/opin.sym} 260 -140 0 0 {name=p27 lab=porb_h[1:0]}
 C {devices/iopin.sym} 110 -190 0 0 {name=p28 lab=dvss}
 C {devices/lab_wire.sym} 520 -500 0 0 {name=p2 lab=Vinn}
 C {devices/lab_wire.sym} 520 -560 0 0 {name=p3 lab=Vinp}
@@ -71,7 +71,7 @@ model=res_xhigh_po_0p35
 spiceprefix=X
  mult=1}
 C {delayPulse_final.sym} 810 -500 0 0 {name=x2}
-C {devices/lab_wire.sym} 950 -500 0 1 {name=p14 lab=porb_h}
+C {devices/lab_wire.sym} 950 -500 0 1 {name=p14 lab=porb_h[1:0]}
 C {devices/lab_wire.sym} 950 -520 0 1 {name=p9 lab=porb}
 C {devices/lab_wire.sym} 950 -540 0 1 {name=p1 lab=por}
 C {sky130_fd_pr/nfet_05v0_nvt.sym} 270 -750 0 0 {name=M2

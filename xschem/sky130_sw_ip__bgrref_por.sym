@@ -27,7 +27,7 @@ B 5 -82.5 -42.5 -77.5 -37.5 {name=avdd dir=inout }
 B 5 -82.5 -22.5 -77.5 -17.5 {name=dvdd dir=inout}
 B 5 77.5 -2.5 82.5 2.5 {name=porb dir=out }
 B 5 -82.5 17.5 -77.5 22.5 {name=dvss dir=inout}
-B 5 77.5 17.5 82.5 22.5 {name=porb_h dir=out }
+B 5 77.5 17.5 82.5 22.5 {name=porb_h[1:0] dir=out }
 T {@symname} -66.5 -76 0 0 0.3 0.3 {}
 T {@name} 5 38 0 0 0.2 0.2 {}
 T {por} 55 -24 0 1 0.2 0.2 {}
@@ -38,4 +38,4 @@ T {vbg} -55 44 2 1 0.2 0.2 {}
 T {dvdd} -55 -24 0 0 0.2 0.2 {}
 T {porb} 55 -4 0 1 0.2 0.2 {}
 T {dvss} -55 16 0 0 0.2 0.2 {}
-T {porb_h} 55 16 0 1 0.2 0.2 {}
+T {porb_h[1:0]} 55 16 0 1 0.2 0.2 {}
