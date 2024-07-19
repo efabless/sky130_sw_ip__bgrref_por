@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1721153864
+timestamp 1721348237
 << pwell >>
 rect 28622 -284511 28714 -284488
 << locali >>
@@ -1594,9 +1594,9 @@ timestamp 1718283729
 transform 1 0 534 0 1 -2177
 box 33352 -286528 36282 -285202
 use por_output_driver_h  por_output_driver_h_0
-timestamp 1721153864
+timestamp 1721348237
 transform 1 0 8288 0 1 7808
-box 24599 -292924 28824 -288943
+box 25592 -292924 28824 -288589
 use por_via_2cut  por_via_2cut_0
 timestamp 1718283729
 transform 0 1 40548 -1 0 -271091
@@ -2414,14 +2414,6 @@ use sky130_fd_pr__res_xhigh_po_0p69_KA8C77  sky130_fd_pr__res_xhigh_po_0p69_KA8C
 timestamp 1718283729
 transform 1 0 19502 0 1 -284399
 box -2926 -1582 2926 1582
-use sky130_fd_sc_hvl__buf_16  sky130_fd_sc_hvl__buf_16_0 $PDKPATH/libs.ref/sky130_fd_sc_hvl/mag
-timestamp 1715205430
-transform 1 0 33112 0 1 -282450
-box -66 -43 3618 897
-use sky130_fd_sc_hvl__buf_16  sky130_fd_sc_hvl__buf_16_1
-timestamp 1715205430
-transform 1 0 33112 0 -1 -280822
-box -66 -43 3618 897
 use levelShifter  x3
 timestamp 1718283729
 transform 1 0 30687 0 1 -283596

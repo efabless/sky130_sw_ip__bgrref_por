@@ -1811,8 +1811,8 @@ model=pfet_g5v0d10v5
 spiceprefix=X
 }
 C {devices/lab_pin.sym} 2570 -140 0 1 {name=p20 sig_type=std_logic lab=por_h}
-C {sky130_stdcells/buf_16.sym} 2320 90 0 0 {name=x8 VGND=VSS VNB=VSS VPB=VCCH VPWR=VCCH prefix=sky130_fd_sc_hvl__ }
 C {devices/lab_pin.sym} 2410 140 2 0 {name=p59 sig_type=std_logic lab=porb_h[1]
 }
 C {devices/lab_pin.sym} 2220 120 0 0 {name=p60 sig_type=std_logic lab=por_h}
-C {sky130_stdcells/buf_16.sym} 2320 140 0 0 {name=x9 VGND=VSS VNB=VSS VPB=VCCH VPWR=VCCH prefix=sky130_fd_sc_hvl__ }
+C {sky130_stdcells/inv_16.sym} 2320 90 0 0 {name=x10 VGND=VSS VNB=VSS VPB=VCCH VPWR=VCCH prefix=sky130_fd_sc_hvl__ }
+C {sky130_stdcells/inv_16.sym} 2320 140 0 0 {name=x8 VGND=VSS VNB=VSS VPB=VCCH VPWR=VCCH prefix=sky130_fd_sc_hvl__ }

@@ -138,8 +138,8 @@ XM55 net24 net23 VSS VSS sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=2 nf=2 m=1
 XM56 net24 net23 VCCH VCCH sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=5 nf=2 m=1
 XM57 por_h net24 VSS VSS sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=2 nf=2 m=1
 XM58 por_h net24 VCCH VCCH sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=5 nf=2 m=1
-x8 por_h VSS VSS VCCH VCCH porb_h[0] sky130_fd_sc_hvl__buf_16
-x9 por_h VSS VSS VCCH VCCH porb_h[1] sky130_fd_sc_hvl__buf_16
+x10 por_h VSS VSS VCCH VCCH porb_h[0] sky130_fd_sc_hvl__inv_16
+x8 por_h VSS VSS VCCH VCCH porb_h[1] sky130_fd_sc_hvl__inv_16
 .ends
 
 
