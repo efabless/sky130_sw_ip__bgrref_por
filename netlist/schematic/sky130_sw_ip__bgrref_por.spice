@@ -96,8 +96,8 @@ XC2 VSS VT3 sky130_fd_pr__cap_mim_m3_2 W=16 L=16 m=20
 XC8 VSS net14 sky130_fd_pr__cap_mim_m3_2 W=10 L=10 m=1
 XC9 VSS net16 sky130_fd_pr__cap_mim_m3_2 W=10 L=10 m=1
 XM40 Td_Sd net16 VCCL VCCL sky130_fd_pr__pfet_01v8 L=0.15 W=1.4 nf=2 m=2
-x5 rstn net2 Td_S VSS VSS VCCL VCCL porbPre sky130_fd_sc_ls__dfrtn_1
-x2 Td_S net2 Td_Lb VSS VSS VCCL VCCL porPre sky130_fd_sc_ls__dfrtp_1
+x5 rstn net2 Td_Sd VSS VSS VCCL VCCL porbPre sky130_fd_sc_ls__dfrtn_1
+x2 Td_Sd net2 Td_Lb VSS VSS VCCL VCCL porPre sky130_fd_sc_ls__dfrtp_1
 XM4 Td_Lb Td_L VSS VSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.5 nf=1 m=2
 XM9 Td_Lb Td_L VCCL VCCL sky130_fd_pr__pfet_01v8 L=0.15 W=1.4 nf=2 m=2
 XC1 VSS vbn1 sky130_fd_pr__cap_mim_m3_2 W=16 L=16 m=1
@@ -163,15 +163,16 @@ XM2 Z S A1 VSS sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=1 nf=1 m=1
 .subckt levelShifter ain aout VCCL VSS VCCH
 *.PININFO VCCL:I VSS:I ain:I aout:O VCCH:I
 XM12 net1 S1 VSS VSS sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=3.6 nf=1 m=1
-XM13 net2 net1 VCCH VCCH sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=5.8 nf=2 m=1
+XM13 aob net1 VCCH VCCH sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=5.8 nf=2 m=1
 XM6 S1 ain VSS VSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.5 nf=1 m=1
 XM1 S1 ain VCCL VCCL sky130_fd_pr__pfet_01v8 L=0.15 W=1.4 nf=2 m=1
-XM2 net1 net2 VCCH VCCH sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=5.8 nf=2 m=1
-XM3 net2 S1B VSS VSS sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=3.6 nf=1 m=1
+XM2 net1 aob VCCH VCCH sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=5.8 nf=2 m=1
+XM3 aob S1B VSS VSS sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=3.6 nf=1 m=1
 XM4 S1B S1 VSS VSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.5 nf=1 m=1
 XM5 S1B S1 VCCL VCCL sky130_fd_pr__pfet_01v8 L=0.15 W=1.4 nf=2 m=1
-XM7 aout net2 VSS VSS sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=1.8 nf=1 m=1
-XM8 aout net2 VCCH VCCH sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=5.8 nf=2 m=1
+XM7 aout aob VSS VSS sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=1.8 nf=1 m=1
+XM8 aout aob VCCH VCCH sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=5.8 nf=2 m=1
+XC1 VCCH aob sky130_fd_pr__cap_mim_m3_1 W=2 L=2 m=1
 .ends
 
 

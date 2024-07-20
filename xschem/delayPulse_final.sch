@@ -1201,7 +1201,7 @@ spiceprefix=X
 }
 C {devices/lab_pin.sym} 1030 -700 0 0 {name=p36 sig_type=std_logic lab=VSS}
 C {devices/lab_pin.sym} 980 -760 0 0 {name=p54 sig_type=std_logic lab=vbn1}
-C {devices/lab_pin.sym} 1650 -380 2 1 {name=p41 sig_type=std_logic lab=Td_S}
+C {devices/lab_pin.sym} 1650 -380 2 1 {name=p41 sig_type=std_logic lab=Td_Sd}
 C {devices/lab_wire.sym} 1830 -680 0 1 {name=p39 lab=rstn}
 C {sky130_fd_pr/pfet_01v8.sym} 1300 -1230 0 0 {name=M22
 L=0.5
@@ -1415,7 +1415,7 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {sky130_stdcells/dfrtn_1.sym} 1740 -400 0 0 {name=x5 VGND=VSS VNB=VSS VPB=VCCL VPWR=VCCL prefix=sky130_fd_sc_ls__ }
-C {devices/lab_pin.sym} 1660 -530 2 1 {name=p34 sig_type=std_logic lab=Td_S}
+C {devices/lab_pin.sym} 1660 -530 2 1 {name=p34 sig_type=std_logic lab=Td_Sd}
 C {sky130_stdcells/dfrtp_1.sym} 1750 -510 0 0 {name=x2 VGND=VSS VNB=VSS VPB=VCCL VPWR=VCCL prefix=sky130_fd_sc_ls__ }
 C {sky130_fd_pr/nfet_01v8.sym} 1760 -840 0 0 {name=M4
 L=0.15

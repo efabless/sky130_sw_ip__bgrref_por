@@ -59,6 +59,19 @@ Circuit 1: sky130_fd_pr__pfet_g5v0d10v5             |Circuit 2: sky130_fd_pr__pf
 Cell pin lists are equivalent.
 Device classes sky130_fd_pr__pfet_g5v0d10v5 and sky130_fd_pr__pfet_g5v0d10v5 are equivalent.
 
+Circuit 1 cell sky130_fd_pr__cap_mim_m3_1 and Circuit 2 cell sky130_fd_pr__cap_mim_m3_1 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__cap_mim_m3_1 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__cap_mim_m3_1 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__cap_mim_m3_1               |Circuit 2: sky130_fd_pr__cap_mim_m3_1               
+----------------------------------------------------|----------------------------------------------------
+1                                                   |1                                                   
+2                                                   |2                                                   
+---------------------------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__cap_mim_m3_1 and sky130_fd_pr__cap_mim_m3_1 are equivalent.
+
 Circuit 1 cell sky130_fd_pr__pfet_01v8_hvt and Circuit 2 cell sky130_fd_pr__pfet_01v8_hvt are black boxes.
 Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8_hvt is a placeholder, treated as a black box.
 Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8_hvt is a placeholder, treated as a black box.
@@ -87,19 +100,6 @@ Circuit 1: sky130_fd_pr__res_xhigh_po_0p35          |Circuit 2: sky130_fd_pr__re
 ---------------------------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes sky130_fd_pr__res_xhigh_po_0p35 and sky130_fd_pr__res_xhigh_po_0p35 are equivalent.
-
-Circuit 1 cell sky130_fd_pr__cap_mim_m3_1 and Circuit 2 cell sky130_fd_pr__cap_mim_m3_1 are black boxes.
-Warning: Equate pins:  cell sky130_fd_pr__cap_mim_m3_1 is a placeholder, treated as a black box.
-Warning: Equate pins:  cell sky130_fd_pr__cap_mim_m3_1 is a placeholder, treated as a black box.
-
-Subcircuit pins:
-Circuit 1: sky130_fd_pr__cap_mim_m3_1               |Circuit 2: sky130_fd_pr__cap_mim_m3_1               
-----------------------------------------------------|----------------------------------------------------
-1                                                   |1                                                   
-2                                                   |2                                                   
----------------------------------------------------------------------------------------------------------
-Cell pin lists are equivalent.
-Device classes sky130_fd_pr__cap_mim_m3_1 and sky130_fd_pr__cap_mim_m3_1 are equivalent.
 
 Circuit 1 cell sky130_fd_pr__cap_mim_m3_2 and Circuit 2 cell sky130_fd_pr__cap_mim_m3_2 are black boxes.
 Warning: Equate pins:  cell sky130_fd_pr__cap_mim_m3_2 is a placeholder, treated as a black box.
@@ -325,6 +325,7 @@ Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_PHU9Y6 in circuit leve
 Flattening unmatched subcell sky130_fd_pr__pfet_01v8_X6X8XQ in circuit levelShifter (0)(2 instances)
 Flattening unmatched subcell sky130_fd_pr__nfet_01v8_L9ESAD in circuit levelShifter (0)(2 instances)
 Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_N5F8XL in circuit levelShifter (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__cap_mim_m3_1_FJFAMD in circuit levelShifter (0)(1 instance)
 
 Class levelShifter (0):  Merged 7 parallel devices.
 Subcircuit summary:
@@ -334,7 +335,8 @@ sky130_fd_pr__nfet_g5v0d10v5 (5->3)                 |sky130_fd_pr__nfet_g5v0d10v
 sky130_fd_pr__pfet_g5v0d10v5 (6->3)                 |sky130_fd_pr__pfet_g5v0d10v5 (3)                    
 sky130_fd_pr__pfet_01v8 (4->2)                      |sky130_fd_pr__pfet_01v8 (2)                         
 sky130_fd_pr__nfet_01v8 (2)                         |sky130_fd_pr__nfet_01v8 (2)                         
-Number of devices: 10                               |Number of devices: 10                               
+sky130_fd_pr__cap_mim_m3_1 (1)                      |sky130_fd_pr__cap_mim_m3_1 (1)                      
+Number of devices: 11                               |Number of devices: 11                               
 Number of nets: 9                                   |Number of nets: 9                                   
 ---------------------------------------------------------------------------------------------------------
 Netlists match uniquely.

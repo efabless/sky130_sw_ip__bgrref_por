@@ -278,9 +278,9 @@ Circuit sky130_fd_pr__nfet_01v8 contains no devices.
 Circuit sky130_fd_pr__pfet_01v8 contains no devices.
 Circuit sky130_fd_pr__nfet_g5v0d10v5 contains no devices.
 Circuit sky130_fd_pr__pfet_g5v0d10v5 contains no devices.
+Circuit sky130_fd_pr__cap_mim_m3_1 contains no devices.
 Circuit sky130_fd_pr__pfet_01v8_hvt contains no devices.
 Circuit sky130_fd_pr__res_xhigh_po_0p35 contains no devices.
-Circuit sky130_fd_pr__cap_mim_m3_1 contains no devices.
 Circuit sky130_fd_pr__cap_mim_m3_2 contains no devices.
 
 Contents of circuit 1:  Circuit: 'sky130_fd_sc_hvl__inv_16'
@@ -447,15 +447,17 @@ Circuit 1 contains 7 nets,    Circuit 2 contains 7 nets.
 
 
 Contents of circuit 1:  Circuit: 'levelShifter'
-Circuit levelShifter contains 17 device instances.
+Circuit levelShifter contains 18 device instances.
   Class: sky130_fd_pr__nfet_01v8 instances:   2
+  Class: sky130_fd_pr__cap_mim_m3_1 instances:   1
   Class: sky130_fd_pr__pfet_01v8 instances:   4
   Class: sky130_fd_pr__nfet_g5v0d10v5 instances:   5
   Class: sky130_fd_pr__pfet_g5v0d10v5 instances:   6
 Circuit contains 9 nets.
 Contents of circuit 2:  Circuit: 'levelShifter'
-Circuit levelShifter contains 10 device instances.
+Circuit levelShifter contains 11 device instances.
   Class: sky130_fd_pr__nfet_01v8 instances:   2
+  Class: sky130_fd_pr__cap_mim_m3_1 instances:   1
   Class: sky130_fd_pr__pfet_01v8 instances:   2
   Class: sky130_fd_pr__nfet_g5v0d10v5 instances:   3
   Class: sky130_fd_pr__pfet_g5v0d10v5 instances:   3
@@ -465,21 +467,23 @@ Circuit was modified by parallel/series device merging.
 New circuit summary:
 
 Contents of circuit 1:  Circuit: 'levelShifter'
-Circuit levelShifter contains 10 device instances.
+Circuit levelShifter contains 11 device instances.
   Class: sky130_fd_pr__nfet_01v8 instances:   2
+  Class: sky130_fd_pr__cap_mim_m3_1 instances:   1
   Class: sky130_fd_pr__pfet_01v8 instances:   2
   Class: sky130_fd_pr__nfet_g5v0d10v5 instances:   3
   Class: sky130_fd_pr__pfet_g5v0d10v5 instances:   3
 Circuit contains 9 nets.
 Contents of circuit 2:  Circuit: 'levelShifter'
-Circuit levelShifter contains 10 device instances.
+Circuit levelShifter contains 11 device instances.
   Class: sky130_fd_pr__nfet_01v8 instances:   2
+  Class: sky130_fd_pr__cap_mim_m3_1 instances:   1
   Class: sky130_fd_pr__pfet_01v8 instances:   2
   Class: sky130_fd_pr__nfet_g5v0d10v5 instances:   3
   Class: sky130_fd_pr__pfet_g5v0d10v5 instances:   3
 Circuit contains 9 nets.
 
-Circuit 1 contains 10 devices, Circuit 2 contains 10 devices.
+Circuit 1 contains 11 devices, Circuit 2 contains 11 devices.
 Circuit 1 contains 9 nets,    Circuit 2 contains 9 nets.
 
 Circuit sky130_fd_pr__nfet_05v0_nvt contains no devices.
