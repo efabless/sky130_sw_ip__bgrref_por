@@ -1,0 +1,258 @@
+/home/azwefabless/.volare/volare/sky130/versions/42cd15c469adc1d303ffca4a7d32c29a4564a737/sky130A/libs.tech/klayout/drc/sky130A_mr.drc:55: warning: already initialized constant DRC::DRCEngine::FEOL
+/home/azwefabless/.volare/volare/sky130/versions/42cd15c469adc1d303ffca4a7d32c29a4564a737/sky130A/libs.tech/klayout/drc/sky130A_mr.drc:44: warning: previous definition of FEOL was here
+/home/azwefabless/.volare/volare/sky130/versions/42cd15c469adc1d303ffca4a7d32c29a4564a737/sky130A/libs.tech/klayout/drc/sky130A_mr.drc:59: warning: already initialized constant DRC::DRCEngine::BEOL
+/home/azwefabless/.volare/volare/sky130/versions/42cd15c469adc1d303ffca4a7d32c29a4564a737/sky130A/libs.tech/klayout/drc/sky130A_mr.drc:45: warning: previous definition of BEOL was here
+/home/azwefabless/.volare/volare/sky130/versions/42cd15c469adc1d303ffca4a7d32c29a4564a737/sky130A/libs.tech/klayout/drc/sky130A_mr.drc:67: warning: already initialized constant DRC::DRCEngine::OFFGRID
+/home/azwefabless/.volare/volare/sky130/versions/42cd15c469adc1d303ffca4a7d32c29a4564a737/sky130A/libs.tech/klayout/drc/sky130A_mr.drc:46: warning: previous definition of OFFGRID was here
+/home/azwefabless/.volare/volare/sky130/versions/42cd15c469adc1d303ffca4a7d32c29a4564a737/sky130A/libs.tech/klayout/drc/sky130A_mr.drc:73: warning: already initialized constant DRC::DRCEngine::SEAL
+/home/azwefabless/.volare/volare/sky130/versions/42cd15c469adc1d303ffca4a7d32c29a4564a737/sky130A/libs.tech/klayout/drc/sky130A_mr.drc:47: warning: previous definition of SEAL was here
+/home/azwefabless/.volare/volare/sky130/versions/42cd15c469adc1d303ffca4a7d32c29a4564a737/sky130A/libs.tech/klayout/drc/sky130A_mr.drc:79: warning: already initialized constant DRC::DRCEngine::FLOATING_MET
+/home/azwefabless/.volare/volare/sky130/versions/42cd15c469adc1d303ffca4a7d32c29a4564a737/sky130A/libs.tech/klayout/drc/sky130A_mr.drc:48: warning: previous definition of FLOATING_MET was here
+/home/azwefabless/.volare/volare/sky130/versions/42cd15c469adc1d303ffca4a7d32c29a4564a737/sky130A/libs.tech/klayout/drc/sky130A_mr.drc:85: warning: already initialized constant DRC::DRCEngine::SRAM_EXCLUDE
+/home/azwefabless/.volare/volare/sky130/versions/42cd15c469adc1d303ffca4a7d32c29a4564a737/sky130A/libs.tech/klayout/drc/sky130A_mr.drc:49: warning: previous definition of SRAM_EXCLUDE was here
+"_input" in: _drc_engine.rb:1373
+Elapsed: 0.010s
+"_input" in: _drc_engine.rb:1373
+Elapsed: 0.010s
+"_input" in: _drc_engine.rb:1373
+Elapsed: 0.000s
+"_input" in: _drc_engine.rb:1373
+Elapsed: 0.010s
+"_input" in: _drc_engine.rb:1373
+Elapsed: 0.010s
+"_input" in: _drc_engine.rb:1373
+Elapsed: 0.010s
+"_input" in: _drc_engine.rb:1373
+Elapsed: 0.010s
+"_input" in: _drc_engine.rb:1373
+Elapsed: 0.000s
+"_input" in: _drc_engine.rb:1373
+Elapsed: 0.010s
+"_input" in: _drc_engine.rb:1373
+Elapsed: 0.010s
+"_input" in: _drc_engine.rb:1373
+Elapsed: 0.010s
+"_input" in: _drc_engine.rb:1373
+Elapsed: 0.010s
+"_input" in: _drc_engine.rb:1373
+Elapsed: 0.010s
+"_input" in: _drc_engine.rb:1373
+Elapsed: 0.000s
+"_input" in: _drc_engine.rb:1373
+Elapsed: 0.010s
+"_input" in: _drc_engine.rb:1373
+Elapsed: 0.010s
+"_input" in: _drc_engine.rb:1373
+Elapsed: 0.010s
+"_input" in: _drc_engine.rb:1373
+Elapsed: 0.010s
+"_input" in: _drc_engine.rb:1373
+Elapsed: 0.010s
+"_input" in: _drc_engine.rb:1373
+Elapsed: 0.010s
+"_input" in: _drc_engine.rb:1373
+Elapsed: 0.010s
+"_input" in: _drc_engine.rb:1373
+Elapsed: 0.000s
+"_input" in: _drc_engine.rb:1373
+Elapsed: 0.010s
+"_input" in: _drc_engine.rb:1373
+Elapsed: 0.010s
+"_input" in: _drc_engine.rb:1373
+Elapsed: 0.010s
+"_input" in: _drc_engine.rb:1373
+Elapsed: 0.010s
+"_input" in: _drc_engine.rb:1373
+Elapsed: 0.010s
+"_input" in: _drc_engine.rb:1373
+Elapsed: 0.010s
+"_input" in: _drc_engine.rb:1373
+Elapsed: 0.010s
+"_input" in: _drc_engine.rb:1373
+Elapsed: 0.010s
+"_input" in: _drc_engine.rb:1373
+Elapsed: 0.010s
+"_input" in: _drc_engine.rb:1373
+Elapsed: 0.010s
+"_input" in: _drc_engine.rb:1373
+Elapsed: 0.010s
+"_input" in: _drc_engine.rb:1373
+Elapsed: 0.010s
+"_input" in: _drc_engine.rb:1373
+Elapsed: 0.010s
+"_input" in: _drc_engine.rb:1373
+Elapsed: 0.000s
+"_input" in: _drc_engine.rb:1373
+Elapsed: 0.010s
+"_input" in: _drc_engine.rb:1373
+Elapsed: 0.010s
+"_input" in: _drc_engine.rb:1373
+Elapsed: 0.010s
+"_input" in: _drc_engine.rb:1373
+Elapsed: 0.010s
+"_input" in: _drc_engine.rb:1373
+Elapsed: 0.000s
+"_input" in: _drc_engine.rb:1373
+Elapsed: 0.010s
+"_input" in: _drc_engine.rb:1373
+Elapsed: 0.010s
+"_input" in: _drc_engine.rb:1373
+Elapsed: 0.010s
+"_input" in: _drc_engine.rb:1373
+Elapsed: 0.010s
+"_input" in: _drc_engine.rb:1373
+Elapsed: 0.010s
+"_input" in: _drc_engine.rb:1373
+Elapsed: 0.000s
+"_input" in: _drc_engine.rb:1373
+Elapsed: 0.010s
+"_input" in: _drc_engine.rb:1373
+Elapsed: 0.010s
+"_input" in: _drc_engine.rb:1373
+Elapsed: 0.010s
+"_input" in: _drc_engine.rb:1373
+Elapsed: 0.010s
+"_input" in: _drc_engine.rb:1373
+Elapsed: 0.010s
+"_input" in: _drc_engine.rb:1373
+Elapsed: 0.000s
+"_input" in: _drc_engine.rb:1373
+Elapsed: 0.010s
+"_input" in: _drc_engine.rb:1373
+Elapsed: 0.010s
+"_input" in: _drc_engine.rb:1373
+Elapsed: 0.010s
+"_input" in: _drc_engine.rb:1373
+Elapsed: 0.010s
+"_input" in: _drc_engine.rb:1373
+Elapsed: 0.000s
+"_input" in: _drc_engine.rb:1373
+Elapsed: 0.010s
+"_input" in: _drc_engine.rb:1373
+Elapsed: 0.010s
+"_input" in: _drc_engine.rb:1373
+Elapsed: 0.010s
+"_input" in: _drc_engine.rb:1373
+Elapsed: 0.010s
+"_input" in: _drc_engine.rb:1373
+Elapsed: 0.010s
+"_input" in: _drc_engine.rb:1373
+Elapsed: 0.000s
+"_input" in: _drc_engine.rb:1373
+Elapsed: 0.010s
+"_input" in: _drc_engine.rb:1373
+Elapsed: 0.010s
+"_input" in: _drc_engine.rb:1373
+Elapsed: 0.010s
+"_input" in: _drc_engine.rb:1373
+Elapsed: 0.010s
+"_input" in: _drc_engine.rb:1373
+Elapsed: 0.010s
+"_input" in: _drc_engine.rb:1373
+Elapsed: 0.000s
+"_input" in: _drc_engine.rb:1373
+Elapsed: 0.010s
+"_input" in: _drc_engine.rb:1373
+Elapsed: 0.010s
+"_input" in: _drc_engine.rb:1373
+Elapsed: 0.010s
+"_input" in: _drc_engine.rb:1373
+Elapsed: 0.010s
+"_input" in: _drc_engine.rb:1373
+Elapsed: 0.000s
+"_input" in: _drc_engine.rb:1373
+Elapsed: 0.010s
+"_input" in: _drc_engine.rb:1373
+Elapsed: 0.010s
+"_input" in: _drc_engine.rb:1373
+Elapsed: 0.010s
+"_input" in: _drc_engine.rb:1373
+Elapsed: 0.010s
+"_input" in: _drc_engine.rb:1373
+Elapsed: 0.000s
+"_input" in: _drc_engine.rb:1373
+Elapsed: 0.010s
+"_input" in: _drc_engine.rb:1373
+Elapsed: 0.010s
+"_input" in: _drc_engine.rb:1373
+Elapsed: 0.010s
+"_input" in: _drc_engine.rb:1373
+Elapsed: 0.010s
+"_input" in: _drc_engine.rb:1373
+Elapsed: 0.010s
+"_input" in: _drc_engine.rb:1373
+Elapsed: 0.010s
+"_input" in: _drc_engine.rb:1373
+Elapsed: 0.010s
+"_input" in: _drc_engine.rb:1373
+Elapsed: 0.000s
+DRC section
+BEOL section
+START: 67/20 (li)
+"outside" in: _drc_engine.rb:1414
+Elapsed: 0.030s
+"interacting" in: _drc_engine.rb:1414
+Elapsed: 0.010s
+"inside" in: _drc_engine.rb:1414
+Elapsed: 0.010s
+"-" in: _drc_engine.rb:1414
+Elapsed: 0.010s
+"|" in: _drc_engine.rb:1414
+Elapsed: 0.010s
+"width_check" in: _drc_engine.rb:1414
+Elapsed: 0.020s
+"_output" in: _drc_engine.rb:1479
+Elapsed: 0.010s
+"space_check" in: _drc_engine.rb:1414
+Elapsed: 0.040s
+"_output" in: _drc_engine.rb:1479
+Elapsed: 0.010s
+"-" in: _drc_engine.rb:1414
+Elapsed: 0.010s
+"enclosing_check" in: _drc_engine.rb:1414
+Elapsed: 2.040s
+"second_edges" in: _drc_engine.rb:1373
+Elapsed: 0.010s
+"width_check" in: _drc_engine.rb:1414
+Elapsed: 0.040s
+"polygons" in: _drc_engine.rb:1373
+Elapsed: 0.000s
+"interacting" in: _drc_engine.rb:1414
+Elapsed: 0.050s
+"_output" in: _drc_engine.rb:1479
+Elapsed: 0.000s
+"interacting" in: _drc_engine.rb:1414
+Elapsed: 0.020s
+"-" in: _drc_engine.rb:1414
+Elapsed: 0.010s
+"with_area" in: _drc_engine.rb:1414
+Elapsed: 0.010s
+"_output" in: _drc_engine.rb:1479
+Elapsed: 0.000s
+"&" in: _drc_engine.rb:1414
+Elapsed: 0.010s
+"space_check" in: _drc_engine.rb:1414
+Elapsed: 0.010s
+"_output" in: _drc_engine.rb:1479
+Elapsed: 0.010s
+"width_check" in: _drc_engine.rb:1414
+Elapsed: 0.010s
+"_output" in: _drc_engine.rb:1479
+Elapsed: 0.010s
+END: 67/20 (li)
+START: 67/44 (mcon)
+"-" in: _drc_engine.rb:1414
+Elapsed: 0.010s
+"-" in: _drc_engine.rb:1414
+Elapsed: 0.010s
+"non_rectangles" in: _drc_engine.rb:1414
+Elapsed: 0.030s
+"_output" in: _drc_engine.rb:1479
+Elapsed: 0.010s
+ERROR: In /home/azwefabless/.volare/volare/sky130/versions/42cd15c469adc1d303ffca4a7d32c29a4564a737/sky130A/libs.tech/klayout/drc/sky130A_mr.drc: undefined method `width' for nil:NilClass
+Writing report database: /home/azwefabless/cheetah_v3_analog/dependencies/sky130_sw_ip__bgrref_por/drc/reports/sky130_sw_ip__bgrref_por/klayout_beol_check.xml ..
+ERROR: undefined method `width' for nil:NilClass in MacroInterpreter::execute
+  /home/azwefabless/.volare/volare/sky130/versions/42cd15c469adc1d303ffca4a7d32c29a4564a737/sky130A/libs.tech/klayout/drc/sky130A_mr.drc:529:in `execute_drc'
+  :/built-in-macros/drc_interpreters.lym:18:in `instance_eval'
+  :/built-in-macros/drc_interpreters.lym:18:in `execute_drc'
+  :/built-in-macros/drc_interpreters.lym:92:in `execute'

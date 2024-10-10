@@ -5,6 +5,11 @@ K {}
 V {}
 S {}
 E {}
+T {NOTE:  Simulation shows that when VCCL is not
+present, the value of the node aob is low
+enough that aout is high, which is not the
+intended behavior.  The coupling cap corrects
+this.} 670 -830 0 0 0.4 0.4 {}
 N 690 -310 720 -310 {lab=VSS}
 N 690 -280 690 -220 {
 lab=VSS}
@@ -50,7 +55,7 @@ lab=VSS}
 N 690 -420 690 -340 {
 lab=#net1}
 N 860 -420 860 -340 {
-lab=#net2}
+lab=aob}
 N 690 -220 860 -220 {
 lab=VSS}
 N 610 -310 650 -310 {
@@ -82,11 +87,11 @@ lab=S1B}
 N 690 -570 860 -570 {
 lab=VCCH}
 N 730 -510 760 -510 {
-lab=#net2}
+lab=aob}
 N 760 -510 830 -390 {
-lab=#net2}
+lab=aob}
 N 830 -390 860 -390 {
-lab=#net2}
+lab=aob}
 N 790 -510 820 -510 {
 lab=#net1}
 N 710 -390 790 -510 {
@@ -94,7 +99,7 @@ lab=#net1}
 N 690 -390 710 -390 {
 lab=#net1}
 N 860 -380 940 -380 {
-lab=#net2}
+lab=aob}
 N 300 -460 300 -410 {
 lab=VSS}
 N 270 -410 300 -410 {
@@ -106,7 +111,7 @@ lab=VSS}
 N 1050 -390 1050 -360 {
 lab=aout}
 N 1010 -420 1010 -330 {
-lab=#net2}
+lab=aob}
 N 1050 -380 1070 -380 {
 lab=aout}
 N 1050 -330 1050 -300 {
@@ -118,9 +123,9 @@ lab=VCCH}
 N 1050 -470 1050 -450 {
 lab=VCCH}
 N 1000 -380 1010 -380 {
-lab=#net2}
+lab=aob}
 N 940 -380 1000 -380 {
-lab=#net2}
+lab=aob}
 N 1050 -560 1050 -470 {
 lab=VCCH}
 N 860 -570 1050 -570 {
@@ -131,12 +136,23 @@ N 860 -220 1050 -220 {
 lab=VSS}
 N 1050 -280 1050 -220 {
 lab=VSS}
+N 410 -610 410 -550 {
+lab=S1B}
+N 270 -610 270 -550 {
+lab=S1}
+N 860 -480 860 -420 {
+lab=aob}
+N 690 -480 690 -420 {
+lab=#net1}
+N 940 -440 940 -380 {
+lab=aob}
+N 940 -570 940 -500 {
+lab=VCCH}
 C {devices/title.sym} 160 -30 0 0 {name=l2 author="Stephen Wu"}
 C {devices/ipin.sym} 90 -240 0 0 {name=p6 lab=VCCL}
 C {devices/ipin.sym} 90 -210 0 0 {name=p12 lab=VSS}
 C {devices/ipin.sym} 90 -170 0 0 {name=p14 lab=ain}
 C {devices/opin.sym} 150 -200 0 0 {name=p16 lab=aout}
-C {devices/ammeter.sym} 860 -450 0 0 {name=v6}
 C {sky130_fd_pr/nfet_g5v0d10v5.sym} 670 -310 0 0 {name=M12
 W=3.6
 L=0.5
@@ -165,7 +181,6 @@ sa=0 sb=0 sd=0
 model=pfet_g5v0d10v5
 spiceprefix=X
 }
-C {devices/ammeter.sym} 270 -580 0 0 {name=v5}
 C {sky130_fd_pr/nfet_01v8.sym} 250 -460 0 0 {name=M6
 L=0.15
 W=0.5
@@ -196,7 +211,6 @@ spiceprefix=X
 }
 C {devices/lab_pin.sym} 270 -410 2 0 {name=p36 sig_type=std_logic lab=VSS}
 C {devices/lab_pin.sym} 270 -680 3 1 {name=p37 sig_type=std_logic lab=VCCL}
-C {devices/ammeter.sym} 690 -450 0 1 {name=v1}
 C {sky130_fd_pr/pfet_g5v0d10v5.sym} 710 -510 0 1 {name=M2
 W=5.8
 L=0.5
@@ -225,7 +239,6 @@ sa=0 sb=0 sd=0
 model=nfet_g5v0d10v5
 spiceprefix=X
 }
-C {devices/ammeter.sym} 410 -580 0 0 {name=v2}
 C {sky130_fd_pr/nfet_01v8.sym} 390 -460 0 0 {name=M4
 L=0.15
 W=0.5
@@ -294,3 +307,5 @@ sa=0 sb=0 sd=0
 model=pfet_g5v0d10v5
 spiceprefix=X
 }
+C {sky130_fd_pr/cap_mim_m3_1.sym} 940 -470 0 0 {name=C1 model=cap_mim_m3_1 W=2 L=2 MF=1 spiceprefix=X}
+C {devices/lab_pin.sym} 860 -360 0 0 {name=p10 sig_type=std_logic lab=aob}
