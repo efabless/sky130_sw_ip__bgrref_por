@@ -1,0 +1,6 @@
+box 28025 -287754 28225 -287554
+feedback add "device missing 1 terminal;
+ connecting remainder to node dvdd" pale
+box 28025 -287331 28225 -287247
+feedback add "device missing 1 terminal;
+ connecting remainder to node x2.delayPulse_digital_0/sky130_fd_sc_ls__buf_8_0.VNB" pale

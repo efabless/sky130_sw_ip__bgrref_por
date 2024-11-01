@@ -1,13 +1,16 @@
-#this is an initial .yaml file to support physical checks 
+# CACE characterization file 
+
 name: sky130_sw_ip__bgrref_por
 description: Bandgap-referenced Power-on-Reset
 PDK: sky130A
 cace_format: 5.2
+
 authorship:
   designer: Stephen WU
   company: Silergy Technology
   creation_date: March 30, 2024
   license: Apache 2.0
+
 paths:
   root: ..
   documentation: docs
@@ -15,471 +18,440 @@ paths:
   magic: mag
   layout: gds
   netlist: netlist
+
 pins:
   vbg:
     description: input bandgap voltage reference
     type: analog
     direction: input
-    Vtyp: '1.2'
+    Vmin: 1.08
+    Vmax: 1.32
   por:
     description: reset signal in dvdd domain
     type: signal
     direction: output
-    Vmin: '0'
+    Vmin: 0
     Vmax: Vdvdd
   porb:
     description: reset bar signal in dvdd domain
     type: signal
     direction: output
-    Vmin: '0'
+    Vmin: 0
     Vmax: Vdvdd
-  porb_h:
+  porb_h[1:0]:
     description: reset bar signal in avdd domain
     type: signal
     direction: output
-    Vmin: '0'
+    Vmin: 0
     Vmax: Vavdd
   dvdd:
     description: Digital power supply
     type: power
     direction: inout
-    Vmin: '1.64'
-    Vmax: '1.96'
+    Vmin: 1.64
+    Vmax: 1.96
   dvss:
     description: Digital ground
     type: ground
     direction: inout
-    Vmin: '0'
-    Vmax: '0.3'
+    Vmin: 0
+    Vmax: 0.3
   avdd:
     description: Analog power supply
     type: power
     direction: inout
-    Vmin: '2.7'
-    Vmax: '5.5'
+    Vmin: 2.7
+    Vmax: 5.5
   avss:
     description: Analog ground
     type: ground
     direction: inout
-    Vmin: '0'
-    Vmax: '0.3'
+    Vmin: 0
+    Vmax: 0.3
+
 default_conditions:
   Vavdd:
     description: Analog power supply voltage
     display: avdd
     unit: V
-    typical: '3.3'
+    #minimum: 3
+    typical: 3.3
+    #maximum: 5.5
   Vavss:
     description: Analog ground
     display: avss
     unit: V
-    typical: '0'
+    typical: 0
   Vdvdd:
     description: Digital power supply voltage
     display: dvdd
     unit: V
-    typical: '1.8'
-    note: Reference voltage for the enable input
+    #minimum: 1.62
+    typical: 1.8
+    #maximum: 1.98
   Vdvss:
     description: Digital ground
     display: dvss
     unit: V
-    typical: '0'
+    typical: 0
   Vvbg:
     description: bandgap reference voltage
     display: vbg
     unit: V
-    typical: '1.2'
-  Vpor:
-    description: reset voltage signal(dvdd domain)
-    display: por
-    unit: V
-    maximum: '1.8'
-  Vporb:
-    description: reset bar voltage signal(dvdd domain)
-    display: porb
-    unit: V
-    maximum: '1.8'
-  Vporb_h:
-    description: reset bar voltage signal(avdd domain)
-    display: por
-    unit: V
-    maximum: '3.3'
+    #minimum: 1.08
+    typical: 1.2
+    #maximum: 1.32
+  CLw:
+    description: chip distributed wiring capacitive load seen by porb_h signal 
+    display: Cload_wiring 
+    unit: pF
+    #minimum: 0
+    typical: 1
+    #maximum: 5
+  CLb:
+    description: estimated digital buffers load seen by por & porb signals 
+    display: Cload_buffers
+    unit: fF
+    maximum: 200
   temperature:
     description: Ambient temperature
     display: Temp
     unit: °C
-    minimum: '-40'
-    typical: '25'
-    maximum: '85'
+    #minimum: -40
+    typical: 25
+    #maximum: 85
   corner:
     description: Process corner
     display: Corner
-    minimum: ss
+    #enumerate: [ss,tt,ff,ll,hh]
+    #enumerate: [ss,ff,ll,hh]
+    #minimum: ss
     typical: tt
-    maximum: ff
+    #maximum: ff
+  travdd:
+    description: Analog supply rising time
+    display: Avdd_tr
+    unit: mS
+    #minimum: 0.002
+    typical: 1
+    #maximum: 10
+  trdvdd:
+    description: Digital supply rising time
+    display: Dvdd_tr
+    unit: mS
+    #typical: 1
+    typical: 0.1
+  avdd_delay:
+    description: Independant analog supply delay time (for simulation purposes)
+    display: Avdd_delay
+    unit: mS
+    #typical: 1.5
+    typical: 10e-6
+  dvdd_delay:
+    description: Independant digital supply delay time (for simulation purposes)
+    display: Dvdd_delay
+    unit: mS
+    #typical: 10e-6
+    typical: 1.5
+  #vbg_delay:
+    #description: Independant Bandgap delay time (for simulation purposes)
+    #display: Vvbg_delay
+    #unit: mS
+    ##typical: 1.5
+    #typical: 10e-6
+  Tsim:
+    description: transient simulation time
+    display: Tsim
+    unit: mS
+    typical: 90
+  Tstep:
+    description: transient simulation max time step
+    display: Tstep
+    unit: uS
+    minimum: 0.1
+    #typical: 5
+
 parameters:
-  Iavdd:
-    description: Powerup transient simulation, no load
-    display: Iavg_avdd
-    unit: uA
+  tran_params:
+     spec:
+       Iavg:
+         description: Average current consumption (analog+digital)
+         display: Power Consumption 
+         unit: uA
+         minimum:
+           value: any
+         typical:
+           value: 3
+         maximum:
+           value: 5
+       Iavg_ss:
+         description: Steady-state average current consumption (analog+digital) measured when reset is not active
+         display: Steady-State Power Consumption
+         unit: uA
+         minimum:
+           value: any
+         typical:
+           value: any
+         maximum:
+           value: any
+       V_thp:
+         description: Positive trip point of the comparator (point at which reset is released) 
+         display: Output Reset Threshold Voltage
+         unit: V
+         minimum:
+           value: 2.4
+         typical:
+           value: 2.7
+         maximum:
+           value: 3
+       porPulse:
+         description: Time after V_th for reset to deactivate
+         display: Reset Active Time
+         unit: mS
+         minimum:
+           value: 30
+         typical:
+           value: 50
+         maximum:
+           value: 100
+       Vpor_low:
+         description: Reset Output POR Voltage (low)
+         display: Vlow_por
+         unit: V
+         minimum:
+           value: any
+         typical:
+           value: 0.1
+         maximum:
+           value: 0.3
+       Vporb_low:
+         description: Reset Output PORb Voltage (low)
+         display: Vlow_porb
+         unit: V
+         minimum:
+           value: any
+         typical:
+           value: 0.1
+         maximum:
+           value: 0.3
+       Vporb_h_low:
+         description: Reset Output PORb_h Voltage (low)
+         display: Vlow_porb_h
+         unit: V
+         minimum:
+           value: any
+         typical:
+           value: 0.1
+         maximum:
+           value: 0.3
+       Vpor_high_delta:
+         description: Reset Output POR High Voltage Deviation from Dvdd
+         display: por_deviation_from_supply
+         unit: V
+         minimum:
+           value: -0.2
+         typical:
+           value: 0
+         maximum:
+           value: any
+       Vporb_high_delta:
+         description: Reset Output PORb High Voltage Deviation from Dvdd
+         display: porb_deviation_from_supply
+         unit: V
+         minimum:
+           value: -0.2
+         typical:
+           value: 0
+         maximum:
+           value: any
+       Vporbh_high_delta:
+         description: Reset Output PORb_h High Voltage Deviation from Avdd
+         display: porb_h_deviation_from_supply
+         unit: V
+         minimum:
+           value: -0.2
+         typical:
+           value: 0
+         maximum:
+           value: any
+     #conditions:
+       #avdd_delay:
+         #typical: 3
+       #dvdd_delay:
+         #typical: 10e-6
+       #vbg_delay:
+         #typical: 3
+         ##maximum: 10
+     tool:
+       ngspice:
+         template: tran_sim.sch
+         format: ascii
+         suffix: .data
+         variables: [Iavg,Iavg_ss,V_thp,porPulse,Vpor_low,Vporb_low,Vporb_h_low,Vpor_high_delta,Vporb_high_delta,Vporbh_high_delta]
+
+  tran_plot:
+     description: Power-up transient waveforms 
+     display: transient waveforms
+     unit: V
+     tool:
+       ngspice:
+         template: tran_plot.sch
+         format: ascii
+         suffix: .data
+         variables: [time,Avdd,Dvdd,vbg,por,porb,porb_h0]
+     plot:
+       Supplies:
+         suffix: .svg
+         xaxis: time
+         yaxis: [Avdd,Dvdd,vbg]
+       por:
+         suffix: .svg
+         xaxis: time
+         yaxis: por
+       porb:
+         suffix: .svg
+         xaxis: time
+         yaxis: porb
+       porb_h0:
+         suffix: .svg
+         xaxis: time
+         yaxis: porb_h0
+     variables:
+       time:
+         display: Time
+         unit: ms
+       Avdd:
+         display: Avdd
+         unit: V
+       Dvdd:
+         display: Dvdd
+         unit: V
+       vbg:
+         display: vbg
+         unit: V
+       por:
+         display: por
+         unit: V
+       porb:
+         display: porb
+         unit: V
+       porb_h0:
+         display: porb_h0
+         unit: V
+
+  hysteresis:
+    description: Difference between comparator reset assert and deassert levels
+    display: Hysteresis Voltage
+    unit: V
     spec:
-      minimum:
-        value: '0'
-        fail: true
-      typical:
-        value: '3'
-      maximum:
-        value: '5'
-        fail: true
+      hyst:
+        minimum:
+          value: 0.1
+        typical:
+          value: 0.2
+        maximum:
+          value: 0.3
     conditions:
-      Vavdd:
-        typical: '3.3'
-      Vavss:
-        typical: '0'
-      Vdvdd:
-        typical: '1.8'
-      Vdvss:
-        typical: '0'
-      Vvbg:
-        typical: '1.2'
-      temperature:
-        typical: '27'
-      corner:
-        typical: tt
       Tsim:
-        display: Tsim
-        typical: 55m
-    tool:
-      ngspice:
-        template: Iavdd_sim.sch
-        format: ascii
-        suffix: .data
-        variables:
-        - 'null'
-        - result
-    name: Iavdd
-  Ileakage:
-    description: Powerup transient simulation, no load
-    display: Ileakage
-    unit: nA
-    spec:
-      minimum:
-        value: '0'
-        fail: true
-      typical:
-        value: '1'
-      maximum:
-        value: '10'
-        fail: true
-    conditions:
-      Vavdd:
-        typical: '3.3'
-      Vavss:
-        typical: '0'
-      Vdvdd:
-        typical: '1.8'
-      Vdvss:
-        typical: '0'
-      Vvbg:
-        typical: '1.2'
-      temperature:
-        typical: '27'
-      corner:
-        typical: tt
-      Tsim:
-        display: Tsim
-        typical: 55m
-    tool:
-      ngspice:
-        template: leakage_sim.sch
-        format: ascii
-        suffix: .data
-        variables:
-        - 'null'
-        - result
-    name: Ileakage
-  Vreset1:
-    description: Powerup Sim with Temperature variations
-    display: Vreset_T
-    unit: V
-    spec:
-      minimum:
-        value: '2.4'
-        fail: true
-      typical:
-        value: '2.7'
-      maximum:
-        value: '3.0'
-        fail: true
-    conditions:
-      Vavdd:
-        typical: '3.3'
-      Vavss:
-        typical: '0'
-      Vdvdd:
-        typical: '1.8'
-      Vdvss:
-        typical: '0'
-      Vvbg:
-        typical: '1.2'
-      temperature:
-        maximum: '85'
-        typical: '27'
-        minimum: '-40'
-      corner:
-        typical: tt
-    tool:
-      ngspice:
-        template: startup_sim.sch
-        format: ascii
-        suffix: .data
-        variables:
-        - 'null'
-        - result
-    name: Vreset1
-  Vreset2:
-    description: Powerup Sim with Process Corners and normal Temperature
-    display: Vreset_P1
-    unit: V
-    spec:
-      minimum:
-        value: '2.4'
-        fail: true
-      typical:
-        value: '2.7'
-      maximum:
-        value: '3.0'
-        fail: true
-    conditions:
-      Vavdd:
-        typical: '3.3'
-      Vavss:
-        typical: '0'
-      Vdvdd:
-        typical: '1.8'
-      Vdvss:
-        typical: '0'
-      Vvbg:
-        typical: '1.2'
-      temperature:
-        typical: '27'
-      corner:
-        minimum: ss
-        typical: tt
-        maximum: ff
-    tool:
-      ngspice:
-        template: startup_sim.sch
-        format: ascii
-        suffix: .data
-        variables:
-        - 'null'
-        - result
-    name: Vreset2
-  Vreset3:
-    description: Powerup Sim with Process Corners and Cold Temperature
-    display: Vreset_P2
-    unit: V
-    spec:
-      minimum:
-        value: '2.4'
-        fail: true
-      typical:
-        value: '2.7'
-      maximum:
-        value: '3.0'
-        fail: true
-    conditions:
-      Vavdd:
-        typical: '3.3'
-      Vavss:
-        typical: '0'
-      Vdvdd:
-        typical: '1.8'
-      Vdvss:
-        typical: '0'
-      Vvbg:
-        typical: '1.2'
-      temperature:
-        typical: '-40'
-      corner:
-        minimum: ss
-        typical: tt
-        maximum: ff
-    tool:
-      ngspice:
-        template: startup_sim.sch
-        format: ascii
-        suffix: .data
-        variables:
-        - 'null'
-        - result
-    name: Vreset3
-  Vreset4:
-    description: Powerup Sim with Process Corners and Hot Temperature
-    display: Vreset_P3
-    unit: V
-    spec:
-      minimum:
-        value: '2.4'
-        fail: true
-      typical:
-        value: '2.7'
-      maximum:
-        value: '3.0'
-        fail: true
-    conditions:
-      Vavdd:
-        typical: '3.3'
-      Vavss:
-        typical: '0'
-      Vdvdd:
-        typical: '1.8'
-      Vdvss:
-        typical: '0'
-      Vvbg:
-        typical: '1.2'
-      temperature:
-        typical: '85'
-      corner:
-        minimum: ss
-        typical: tt
-        maximum: ff
-    tool:
-      ngspice:
-        template: startup_sim.sch
-        format: ascii
-        suffix: .data
-        variables:
-        - 'null'
-        - result
-    name: Vreset4
-  Vreset5:
-    description: Powerup Sim with different Avdd rising time
-    display: Vreset_Trise
-    unit: V
-    spec:
-      minimum:
-        value: '2.4'
-        fail: true
-      typical:
-        value: '2.7'
-      maximum:
-        value: '3.0'
-        fail: true
-    conditions:
-      Vavdd:
-        typical: '3.3'
-      Vavss:
-        typical: '0'
-      Vdvdd:
-        typical: '1.8'
-      Vdvss:
-        typical: '0'
-      Vvbg:
-        typical: '1.2'
-      temperature:
-        typical: '27'
-      corner:
-        typical: tt
-      travdd:
-        typical: 1m
-      trdvdd:
-        typical: 1.1m
-      trvbg:
-        typical: 0.5m
-      Tsim:
-        display: Tsim
-        typical: 2m
-    tool:
-      ngspice:
-        template: rising_sim.sch
-        format: ascii
-        suffix: .data
-        variables:
-        - 'null'
-        - result
-    name: Vreset5
-  Hysteresis:
-    description: Powerup Sim
-    display: Vhyst
-    unit: V
-    spec:
-      minimum:
-        value: '0.1'
-        fail: true
-      typical:
-        value: '0.2'
-      maximum:
-        value: '0.3'
-        fail: true
-    conditions:
-      Vavdd:
-        typical: '3.3'
-      Vavss:
-        typical: '0'
-      Vdvdd:
-        typical: '1.8'
-      Vdvss:
-        typical: '0'
-      Vvbg:
-        typical: '1.2'
-      temperature:
-        typical: '27'
-      corner:
-        typical: tt
+        typical: 9
+      Tstep:
+        typical: 1
     tool:
       ngspice:
         template: por_hys.sch
         format: ascii
         suffix: .data
-        variables:
-        - 'null'
-        - result
-    name: Hysteresis
-  POR:
-    description: Powerup transient simulation, no load
-    display: POR_pulse
-    unit: ms
+        variables: [hyst]
+
+  hyst_tran_plot:
+     description: Hysteresis measurement transient waveforms 
+     display: Hysteresis transient waveforms
+     unit: V
+     tool:
+       ngspice:
+         template: por_hys_plot.sch
+         format: ascii
+         suffix: .data
+         variables: [time,Avdd,Dvdd,vbg,por,porb,porb_h0]
+     plot:
+       Supplies:
+         suffix: .svg
+         xaxis: time
+         yaxis: [Avdd,Dvdd,vbg]
+       por:
+         suffix: .svg
+         xaxis: time
+         yaxis: por
+       porb:
+         suffix: .svg
+         xaxis: time
+         yaxis: porb
+       porb_h0:
+         suffix: .svg
+         xaxis: time
+         yaxis: porb_h0
+     variables:
+       time:
+         display: Time
+         unit: ms
+       Avdd:
+         display: Avdd
+         unit: V
+       Dvdd:
+         display: Dvdd
+         unit: V
+       vbg:
+         display: vbg
+         unit: V
+       por:
+         display: por
+         unit: V
+       porb:
+         display: porb
+         unit: V
+       porb_h0:
+         display: porb_h0
+         unit: V
+     conditions:
+       Tsim:
+         typical: 4
+       Tstep:
+         typical: 1
+
+  Vglitch:
     spec:
-      minimum:
-        value: '30'
-        fail: true
-      typical:
-        value: '50'
-      maximum:
-        value: '100'
-        fail: true
+       Vglitch_dur:
+         description: Duration of detectable analog supply glitches 
+         display: detectable supply glitch duration 
+         unit: uS
+         minimum:
+           value: any
+         typical:
+           value: any
+         maximum:
+           value: any
+       Vglitch_amp:
+         description: Amplitude of detectable analog supply glitches 
+         display: detectable supply glitch amplitude 
+         unit: V
+         minimum:
+           value: any
+         typical:
+           value: any
+         maximum:
+           value: any
     conditions:
-      Vavdd:
-        typical: '3.3'
-      Vavss:
-        typical: '0'
-      Vdvdd:
-        typical: '1.8'
-      Vdvss:
-        typical: '0'
-      Vvbg:
-        typical: '1.2'
-      temperature:
-        typical: '27'
-      corner:
-        minimum: ss
-        typical: tt
-        maximum: ff
       Tsim:
-        display: Tsim
-        typical: 55m
+        typical: 4
+      Tstep:
+        typical: 0.0005
     tool:
       ngspice:
-        template: por_sim.sch
+        template: por_supply_glitch.sch
         format: ascii
         suffix: .data
-        variables:
-        - 'null'
-        - result
-    name: POR
+        variables: [Vglitch_dur,Vglitch_amp]
+
 
   magic_area:
     spec:

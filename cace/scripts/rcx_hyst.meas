@@ -1,0 +1,4 @@
+*rcx hysteresis measurements 
+meas tran V_thp FIND v(avdd) When v(xdut.x2.din)=dvdd_half FROM=0 TO=meas_window RISE=LAST
+meas tran V_thn FIND v(avdd) WHEN V(xdut.x2.din)=dvdd_half TD=meas_window FALL=LAST
+let hyst='V_thp-V_thn'
