@@ -1,6 +1,4 @@
-** sch_path: /home/efabless/analog_ip/cheetah_v3_analog/dependencies/sky130_sw_ip__bgrref_por/xschem/sky130_sw_ip__bgrref_por.sch
-.subckt sky130_sw_ip__bgrref_por vbg por avss avdd dvdd porb dvss porb_h[1] porb_h[0]
-*.PININFO avdd:B por:O avss:B dvdd:B porb:O vbg:I porb_h[1:0]:O dvss:B
+.subckt sky130_sw_ip__bgrref_por avdd por avss dvdd porb vbg porb_h[1] porb_h[0] dvss
 x1 Vinn Vinp RST avss avdd dvdd comparator_final
 XR1 avss Vinn avss sky130_fd_pr__res_xhigh_po_0p35 L=250 mult=1 m=1
 XR10 Vinn Vinp avss sky130_fd_pr__res_xhigh_po_0p35 L=9 mult=1 m=1
@@ -10,11 +8,7 @@ XM2 avdd avdd Vproc avss sky130_fd_pr__nfet_05v0_nvt L=0.9 W=1 nf=1 ad='int((nf+
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=2 m=2
 .ends
 
-* expanding   symbol:  comparator_final.sym # of pins=6
-** sym_path: xschem/comparator_final.sym
-** sch_path: /home/efabless/analog_ip/cheetah_v3_analog/dependencies/sky130_sw_ip__bgrref_por/xschem/comparator_final.sch
 .subckt comparator_final Vinn Vinp RST VSS AVDD DVDD
-*.PININFO AVDD:I RST:O VSS:I Vinn:I Vinp:I DVDD:I
 XM1 VS vbn VSS VSS sky130_fd_pr__nfet_g5v0d10v5 L=1 W=2 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
 + ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=2 m=2
 XM3 vbp vbp AVDD AVDD sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=4 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
@@ -73,11 +67,7 @@ XC1 vo vt sky130_fd_pr__cap_mim_m3_1 W=10 L=10 MF=1 m=1
 .ends
 
 
-* expanding   symbol:  delayPulse_final.sym # of pins=8
-** sym_path: xschem/delayPulse_final.sym
-** sch_path: /home/efabless/analog_ip/cheetah_v3_analog/dependencies/sky130_sw_ip__bgrref_por/xschem/delayPulse_final.sch
 .subckt delayPulse_final din por VCCL VSS Vbg VCCH porb porb_h[1] porb_h[0]
-*.PININFO VCCL:I VSS:I din:I Vbg:I por:O VCCH:I porb:O porb_h[1:0]:O
 x1 Td_L Td_Sd VSS VSS VCCL VCCL outxor sky130_fd_sc_ls__xor2_1
 x3 porbPre porbhPre VCCL VSS VCCH levelShifter
 XM2 net1 din VCCL VCCL sky130_fd_pr__pfet_01v8 L=0.3 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
@@ -230,11 +220,7 @@ x8 por_h VSS VSS VCCH VCCH porb_h[1] sky130_fd_sc_hvl__inv_16
 .ends
 
 
-* expanding   symbol:  mux2to1.sym # of pins=6
-** sym_path: xschem/mux2to1.sym
-** sch_path: /home/efabless/analog_ip/cheetah_v3_analog/dependencies/sky130_sw_ip__bgrref_por/xschem/mux2to1.sch
 .subckt mux2to1 A1 A0 Z VCC VSS S
-*.PININFO VCC:I VSS:I A0:I A1:I Z:B S:I
 XM12 SB S VSS VSS sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
 + ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
 XM13 SB S VCC VCC sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=2 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
@@ -250,11 +236,7 @@ XM2 Z S A1 VSS sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=1 nf=1 ad='int((nf+1)/2) * W
 .ends
 
 
-* expanding   symbol:  levelShifter.sym # of pins=5
-** sym_path: xschem/levelShifter.sym
-** sch_path: /home/efabless/analog_ip/cheetah_v3_analog/dependencies/sky130_sw_ip__bgrref_por/xschem/levelShifter.sch
 .subckt levelShifter ain aout VCCL VSS VCCH
-*.PININFO VCCL:I VSS:I ain:I aout:O VCCH:I
 XM12 net1 S1 VSS VSS sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=3.6 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
 XM13 aob net1 VCCH VCCH sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=5.8 nf=2 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
@@ -279,15 +261,9 @@ XC1 VCCH aob sky130_fd_pr__cap_mim_m3_1 W=2 L=2 MF=1 m=1
 .ends
 
 
-* expanding   symbol:  TieH_1p8.sym # of pins=3
-** sym_path: xschem/TieH_1p8.sym
-** sch_path: /home/efabless/analog_ip/cheetah_v3_analog/dependencies/sky130_sw_ip__bgrref_por/xschem/TieH_1p8.sch
 .subckt TieH_1p8 TieH VSS VCC
-*.PININFO VCC:I VSS:I TieH:B
 XM4 net1 net1 VSS VSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
 + ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
 XM5 TieH net1 VCC VCC sky130_fd_pr__pfet_01v8 L=0.15 W=1 nf=2 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
 + ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
 .ends
-
-.end
