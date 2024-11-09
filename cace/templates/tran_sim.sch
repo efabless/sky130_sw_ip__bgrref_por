@@ -5,8 +5,188 @@ K {}
 V {}
 S {}
 E {}
-B 2 30 -7020 7970 -5020 {flags=graph
-y1=-0.036
+B 2 80 -10720 8010 -8920 {flags=graph
+y1=0
+y2=3.3
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=0
+x2=0.09
+divx=5
+subdivx=1
+xlabmag=1.0
+ylabmag=1.0
+
+
+dataset=-1
+unitx=1
+logx=0
+logy=0
+
+
+autoload=0
+digital=0
+hilight_wave=3
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+node="\\"avdd_0; avdd % /home/efabless/analog_ip/cheetah_v3_analog/dependencies/sky130_sw_ip__bgrref_por/runs/RUN_2024-11-09_17-13-22/parameters/tran_params/run_0/tran_sim_0.raw tran\\"
+dvdd"
+color="3 4"}
+B 2 80 -8850 8010 -7050 {flags=graph
+y1=0
+y2=1.3
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=0
+x2=0.09
+divx=5
+subdivx=1
+xlabmag=1.0
+ylabmag=1.0
+
+
+dataset=-1
+unitx=1
+logx=0
+logy=0
+
+
+autoload=0
+digital=0
+hilight_wave=-1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+node="\\"vbg_0; vbg % /home/efabless/analog_ip/cheetah_v3_analog/dependencies/sky130_sw_ip__bgrref_por/runs/RUN_2024-11-09_17-13-22/parameters/tran_params/run_0/tran_sim_0.raw tran\\"
+"
+color="3 "}
+B 2 100 -6930 8030 -5130 {flags=graph
+y1=-3.6e-09
+y2=0.055
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=0
+x2=0.09
+divx=5
+subdivx=1
+xlabmag=1.0
+ylabmag=1.0
+
+
+dataset=-1
+unitx=1
+logx=0
+logy=0
+
+
+autoload=0
+digital=0
+hilight_wave=0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+node="\\"xdut.vinp xdut.vinn -_0; xdut.vinp xdut.vinn - % /home/efabless/analog_ip/cheetah_v3_analog/dependencies/sky130_sw_ip__bgrref_por/runs/RUN_2024-11-09_17-13-22/parameters/tran_params/run_0/tran_sim_0.raw tran\\"
+"
+color="3 "}
+B 2 110 -4970 8040 -3170 {flags=graph
+y1=-7.1e-08
+y2=3.4
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=0
+x2=0.09
+divx=5
+subdivx=1
+xlabmag=1.0
+ylabmag=1.0
+
+
+dataset=-1
+unitx=1
+logx=0
+logy=0
+
+
+autoload=0
+digital=0
+hilight_wave=3
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+node="\\"xdut.x1.vo1_0; xdut.x1.vo1 % /home/efabless/analog_ip/cheetah_v3_analog/dependencies/sky130_sw_ip__bgrref_por/runs/RUN_2024-11-09_17-13-22/parameters/tran_params/run_0/tran_sim_0.raw tran\\"
+"
+color="3 "}
+B 2 140 -3050 8070 -1250 {flags=graph
+y1=-1.5e-06
 y2=1.9
 ypos1=0
 ypos2=2
@@ -14,7 +194,99 @@ divy=5
 subdivy=1
 unity=1
 x1=0
-x2=0.12
+x2=0.09
+divx=5
+subdivx=1
+xlabmag=1.0
+ylabmag=1.0
+
+
+dataset=-1
+unitx=1
+logx=0
+logy=0
+
+
+autoload=0
+digital=0
+hilight_wave=0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+color="3 "
+node="\\"xdut.rst_0; xdut.rst % /home/efabless/analog_ip/cheetah_v3_analog/dependencies/sky130_sw_ip__bgrref_por/runs/RUN_2024-11-09_17-13-22/parameters/tran_params/run_0/tran_sim_0.raw tran\\"
+"}
+B 2 8140 -10710 16000 -8950 {flags=graph
+y1=-1.9e-19
+y2=1.9
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=0
+x2=0.09
+divx=5
+subdivx=1
+xlabmag=1.0
+ylabmag=1.0
+
+
+dataset=-1
+unitx=1
+logx=0
+logy=0
+
+
+autoload=0
+digital=0
+hilight_wave=-1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+linewidth_mult=1.2
+
+node="\\"porb_0; porb % /home/efabless/analog_ip/cheetah_v3_analog/dependencies/sky130_sw_ip__bgrref_por/runs/RUN_2024-11-09_17-13-22/parameters/tran_params/run_0/tran_sim_0.raw tran\\"
+"
+color="3 "}
+B 2 8170 -8860 16030 -7100 {flags=graph
+y1=-2.6e-08
+y2=3.4
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=0
+x2=0.09
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -49,22 +321,20 @@ hilight_wave=1
 
 
 linewidth_mult=1.2
-node="\\"por0; por % /home/efabless/analog_ip/cheetah_v3_analog/dependencies/sky130_sw_ip__bgrref_por/runs/RUN_2024-10-31_14-35-40/parameters/tran_params/run_1/tran_sim_1.raw tran\\"
-\\"por1; por % /home/efabless/analog_ip/cheetah_v3_analog/dependencies/sky130_sw_ip__bgrref_por/runs/RUN_2024-10-31_14-35-40/parameters/tran_params/run_5/tran_sim_5.raw tran\\"
-\\"por2; por % /home/efabless/analog_ip/cheetah_v3_analog/dependencies/sky130_sw_ip__bgrref_por/runs/RUN_2024-10-31_14-35-40/parameters/tran_params/run_7/tran_sim_7.raw tran\\"
-\\"por3; por % /home/efabless/analog_ip/cheetah_v3_analog/dependencies/sky130_sw_ip__bgrref_por/runs/RUN_2024-10-31_14-35-40/parameters/tran_params/run_8/tran_sim_8.raw tran\\"
-"
-color="3 4 5 6 "}
-B 2 30 -4990 7980 -3110 {flags=graph
-y1=-0.045
-y2=1.9
+
+color="3 "
+node="\\"porb_h[0]_0; porb_h[0] % /home/efabless/analog_ip/cheetah_v3_analog/dependencies/sky130_sw_ip__bgrref_por/runs/RUN_2024-11-09_17-13-22/parameters/tran_params/run_0/tran_sim_0.raw tran\\"
+"}
+B 2 8190 -6940 16050 -5180 {flags=graph
+y1=-0.0004
+y2=0.00016
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
 x1=0
-x2=0.12
+x2=0.09
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -97,14 +367,290 @@ hilight_wave=0
 
 
 
-node="\\"porb0; porb % /home/efabless/analog_ip/cheetah_v3_analog/dependencies/sky130_sw_ip__bgrref_por/runs/RUN_2024-10-31_14-35-40/parameters/tran_params/run_1/tran_sim_1.raw tran\\"
-\\"porb1; porb % /home/efabless/analog_ip/cheetah_v3_analog/dependencies/sky130_sw_ip__bgrref_por/runs/RUN_2024-10-31_14-35-40/parameters/tran_params/run_5/tran_sim_5.raw tran\\"
-\\"porb2; porb % /home/efabless/analog_ip/cheetah_v3_analog/dependencies/sky130_sw_ip__bgrref_por/runs/RUN_2024-10-31_14-35-40/parameters/tran_params/run_7/tran_sim_7.raw tran\\"
-\\"porb3; porb % /home/efabless/analog_ip/cheetah_v3_analog/dependencies/sky130_sw_ip__bgrref_por/runs/RUN_2024-10-31_14-35-40/parameters/tran_params/run_8/tran_sim_8.raw tran\\"
+
+linewidth_mult=1.2
+node="\\"i(Vavdd)_0; i(Vavdd) % /home/efabless/analog_ip/cheetah_v3_analog/dependencies/sky130_sw_ip__bgrref_por/runs/RUN_2024-11-09_17-13-22/parameters/tran_params/run_0/tran_sim_0.raw tran\\"
 "
-color="3 4 5 6 "}
-B 2 50 -3010 7980 -1210 {flags=graph
-y1=-8.6e-08
+color="3 "}
+B 2 8130 -4990 16080 -3110 {flags=graph
+y1=-0.0012
+y2=1.8
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=0
+x2=0.09
+divx=5
+subdivx=1
+xlabmag=1.0
+ylabmag=1.0
+
+
+dataset=-1
+unitx=1
+logx=0
+logy=0
+
+
+autoload=0
+digital=0
+hilight_wave=0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+node=por
+color=3}
+B 2 8180 -3040 16110 -1240 {flags=graph
+y1=-9.8e-14
+y2=3.4e-06
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=0
+x2=0.09
+divx=5
+subdivx=1
+xlabmag=1.0
+ylabmag=1.0
+
+
+dataset=-1
+unitx=1
+logx=0
+logy=0
+
+
+autoload=0
+digital=0
+hilight_wave=0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+color="3 "
+node="\\"i(v.xdut.Vrbranch)_0; i(v.xdut.Vrbranch) % /home/efabless/analog_ip/cheetah_v3_analog/dependencies/sky130_sw_ip__bgrref_por/runs/RUN_2024-11-09_17-13-22/parameters/tran_params/run_0/tran_sim_0.raw tran\\"
+"}
+B 2 16190 -10750 24050 -8990 {flags=graph
+y1=-3.3e-11
+y2=6e-05
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=0
+x2=0.09
+divx=5
+subdivx=1
+xlabmag=1.0
+ylabmag=1.0
+
+
+dataset=-1
+unitx=1
+logx=0
+logy=0
+
+
+autoload=0
+digital=0
+hilight_wave=0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+linewidth_mult=1.2
+
+
+color="3 "
+node="\\"i(v.xdut.Vcomp)_0; i(v.xdut.Vcomp) % /home/efabless/analog_ip/cheetah_v3_analog/dependencies/sky130_sw_ip__bgrref_por/runs/RUN_2024-11-09_17-13-22/parameters/tran_params/run_0/tran_sim_0.raw tran\\"
+"}
+B 2 16190 -8890 24050 -7130 {flags=graph
+y1=-7.1e-06
+y2=0.00011
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=0
+x2=0.09
+divx=5
+subdivx=1
+xlabmag=1.0
+ylabmag=1.0
+
+
+dataset=-1
+unitx=1
+logx=0
+logy=0
+
+
+autoload=0
+digital=0
+hilight_wave=0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+linewidth_mult=1.2
+
+node="\\"i(v.xdut.Vpulse)_0; i(v.xdut.Vpulse) % /home/efabless/analog_ip/cheetah_v3_analog/dependencies/sky130_sw_ip__bgrref_por/runs/RUN_2024-11-09_17-13-22/parameters/tran_params/run_0/tran_sim_0.raw tran\\"
+"
+color="3 "}
+B 2 16210 -6960 24070 -5200 {flags=graph
+y1=-0.0012
+y2=1.8
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=0
+x2=0.09
+divx=5
+subdivx=1
+xlabmag=1.0
+ylabmag=1.0
+
+
+dataset=-1
+unitx=1
+logx=0
+logy=0
+
+
+autoload=0
+digital=0
+hilight_wave=0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+linewidth_mult=1.2
+node="\\"por_0; por % /home/efabless/analog_ip/cheetah_v3_analog/dependencies/sky130_sw_ip__bgrref_por/runs/RUN_2024-11-09_17-13-22/parameters/tran_params/run_0/tran_sim_0.raw tran\\"
+"
+color="3 "}
+B 2 16150 -5010 24100 -3130 {flags=graph
+y1=0.036
+y2=1600
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=0
+x2=0.09
+divx=5
+subdivx=1
+xlabmag=1.0
+ylabmag=1.0
+
+
+dataset=-1
+unitx=1
+logx=0
+logy=0
+
+
+autoload=0
+digital=0
+hilight_wave=0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+node="\\"speedcheck_0; speedcheck % /home/efabless/analog_ip/cheetah_v3_analog/dependencies/sky130_sw_ip__bgrref_por/runs/RUN_2024-11-09_17-13-22/parameters/tran_params/run_0/tran_sim_0.raw tran\\"
+"
+color="3 "}
+B 2 16230 -3060 24160 -1260 {flags=graph
+y1=-2.6e-08
 y2=3.4
 ypos1=0
 ypos2=2
@@ -112,7 +658,7 @@ divy=5
 subdivy=1
 unity=1
 x1=0
-x2=0.12
+x2=0.09
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -144,16 +690,26 @@ hilight_wave=0
 
 
 
-color="3 4 5 6 "
-node="\\"porb_h[0]0; porb_h[0] % /home/efabless/analog_ip/cheetah_v3_analog/dependencies/sky130_sw_ip__bgrref_por/runs/RUN_2024-10-31_14-35-40/parameters/tran_params/run_1/tran_sim_1.raw tran\\"
-\\"porb_h[0]1; porb_h[0] % /home/efabless/analog_ip/cheetah_v3_analog/dependencies/sky130_sw_ip__bgrref_por/runs/RUN_2024-10-31_14-35-40/parameters/tran_params/run_5/tran_sim_5.raw tran\\"
-\\"porb_h[0]2; porb_h[0] % /home/efabless/analog_ip/cheetah_v3_analog/dependencies/sky130_sw_ip__bgrref_por/runs/RUN_2024-10-31_14-35-40/parameters/tran_params/run_7/tran_sim_7.raw tran\\"
-\\"porb_h[0]3; porb_h[0] % /home/efabless/analog_ip/cheetah_v3_analog/dependencies/sky130_sw_ip__bgrref_por/runs/RUN_2024-10-31_14-35-40/parameters/tran_params/run_8/tran_sim_8.raw tran\\"
+color="3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 "
+node="\\"porb_h[0]_0; porb_h[0] % /home/efabless/analog_ip/cheetah_v3_analog/dependencies/sky130_sw_ip__bgrref_por/runs/RUN_2024-11-03_20-58-17/parameters/tran_params/run_00/tran_sim_0.raw tran\\"
+\\"porb_h[0]_1; porb_h[0] % /home/efabless/analog_ip/cheetah_v3_analog/dependencies/sky130_sw_ip__bgrref_por/runs/RUN_2024-11-03_20-58-17/parameters/tran_params/run_01/tran_sim_1.raw tran\\"
+\\"porb_h[0]_2; porb_h[0] % /home/efabless/analog_ip/cheetah_v3_analog/dependencies/sky130_sw_ip__bgrref_por/runs/RUN_2024-11-03_20-58-17/parameters/tran_params/run_02/tran_sim_2.raw tran\\"
+\\"porb_h[0]_3; porb_h[0] % /home/efabless/analog_ip/cheetah_v3_analog/dependencies/sky130_sw_ip__bgrref_por/runs/RUN_2024-11-03_20-58-17/parameters/tran_params/run_03/tran_sim_3.raw tran\\"
+\\"porb_h[0]_4; porb_h[0] % /home/efabless/analog_ip/cheetah_v3_analog/dependencies/sky130_sw_ip__bgrref_por/runs/RUN_2024-11-03_20-58-17/parameters/tran_params/run_04/tran_sim_4.raw tran\\"
+\\"porb_h[0]_5; porb_h[0] % /home/efabless/analog_ip/cheetah_v3_analog/dependencies/sky130_sw_ip__bgrref_por/runs/RUN_2024-11-03_20-58-17/parameters/tran_params/run_05/tran_sim_5.raw tran\\"
+\\"porb_h[0]_6; porb_h[0] % /home/efabless/analog_ip/cheetah_v3_analog/dependencies/sky130_sw_ip__bgrref_por/runs/RUN_2024-11-03_20-58-17/parameters/tran_params/run_06/tran_sim_6.raw tran\\"
+\\"porb_h[0]_7; porb_h[0] % /home/efabless/analog_ip/cheetah_v3_analog/dependencies/sky130_sw_ip__bgrref_por/runs/RUN_2024-11-03_20-58-17/parameters/tran_params/run_07/tran_sim_7.raw tran\\"
+\\"porb_h[0]_8; porb_h[0] % /home/efabless/analog_ip/cheetah_v3_analog/dependencies/sky130_sw_ip__bgrref_por/runs/RUN_2024-11-03_20-58-17/parameters/tran_params/run_08/tran_sim_8.raw tran\\"
+\\"porb_h[0]_9; porb_h[0] % /home/efabless/analog_ip/cheetah_v3_analog/dependencies/sky130_sw_ip__bgrref_por/runs/RUN_2024-11-03_20-58-17/parameters/tran_params/run_09/tran_sim_9.raw tran\\"
+\\"porb_h[0]_10; porb_h[0] % /home/efabless/analog_ip/cheetah_v3_analog/dependencies/sky130_sw_ip__bgrref_por/runs/RUN_2024-11-03_20-58-17/parameters/tran_params/run_10/tran_sim_10.raw tran\\"
+\\"porb_h[0]_11; porb_h[0] % /home/efabless/analog_ip/cheetah_v3_analog/dependencies/sky130_sw_ip__bgrref_por/runs/RUN_2024-11-03_20-58-17/parameters/tran_params/run_11/tran_sim_11.raw tran\\"
+\\"porb_h[0]_12; porb_h[0] % /home/efabless/analog_ip/cheetah_v3_analog/dependencies/sky130_sw_ip__bgrref_por/runs/RUN_2024-11-03_20-58-17/parameters/tran_params/run_12/tran_sim_12.raw tran\\"
+\\"porb_h[0]_13; porb_h[0] % /home/efabless/analog_ip/cheetah_v3_analog/dependencies/sky130_sw_ip__bgrref_por/runs/RUN_2024-11-03_20-58-17/parameters/tran_params/run_13/tran_sim_13.raw tran\\"
+\\"porb_h[0]_14; porb_h[0] % /home/efabless/analog_ip/cheetah_v3_analog/dependencies/sky130_sw_ip__bgrref_por/runs/RUN_2024-11-03_20-58-17/parameters/tran_params/run_14/tran_sim_14.raw tran\\"
 "}
 N 50 -270 50 -250 { lab=GND}
 N 50 -360 50 -330 { lab=dvdd}
 N 20 -110 20 -90 { lab=GND}
-N 20 -200 20 -170 { lab=vbg}
 N 50 -440 50 -420 { lab=GND}
 N 50 -530 50 -500 { lab=dvss}
 N 360 -440 360 -420 { lab=GND}
@@ -166,9 +722,24 @@ N 200 -440 200 -420 { lab=GND}
 N 200 -530 200 -500 { lab=avss}
 N 550 -220 580 -220 {
 lab=porb_h[1:0]}
+N -450 -130 -450 -110 { lab=GND}
+N -450 -220 -450 -190 { lab=vbg}
+N -20 -190 20 -170 {
+lab=#net1}
+N -480 -350 -480 -330 { lab=GND}
+N -480 -470 -480 -410 {
+lab=#net2}
+N -480 -340 -370 -405 {
+lab=GND}
+N -480 -470 -370 -465 {
+lab=#net2}
+N -110 -105 20 -95 {
+lab=GND}
+N -110 -165 -20 -190 {
+lab=#net1}
 C {devices/title.sym} 160 -30 0 0 {name=l2 author="Stephen Wu"}
 C {devices/gnd.sym} 50 -250 0 0 {name=l22 lab=GND}
-C {devices/gnd.sym} 20 -90 0 0 {name=l1 lab=GND}
+C {devices/gnd.sym} 20 -90 0 0 {name=l1 lab=GND }
 C {devices/vsource.sym} 50 -470 0 1 {name=Vdvss value="DC CACE\{Vdvss\}"}
 C {devices/gnd.sym} 50 -420 0 0 {name=l5 lab=GND}
 C {devices/lab_wire.sym} 50 -530 0 0 {name=p7 lab=dvss}
@@ -181,16 +752,15 @@ C {devices/lab_wire.sym} 390 -260 0 0 {name=p6 lab=dvdd}
 C {devices/lab_wire.sym} 360 -530 0 0 {name=p8 lab=avdd}
 C {devices/lab_wire.sym} 50 -360 0 0 {name=p9 lab=dvdd
 }
-C {devices/lab_wire.sym} 20 -200 0 0 {name=p10 lab=vbg}
-C {devices/vsource.sym} 360 -470 0 0 {name=Vavdd value="PULSE 0 CACE\{Vavdd\} 1.5m CACE\{travdd\} CACE\{travdd\} 0.5 1"}
+C {devices/vsource.sym} 360 -470 0 0 {name=Vavdd value="PULSE 0 CACE\{Vavdd\} CACE\{avdd_delay\} CACE\{travdd\} CACE\{travdd\} 0.5 1"}
 C {devices/lab_wire.sym} 390 -240 0 0 {name=p4 lab=avss}
 C {devices/lab_wire.sym} 390 -220 0 0 {name=p15 lab=dvss}
 C {devices/vsource.sym} 200 -470 0 1 {name=Vavss value="DC CACE\{Vavss\}"}
 C {devices/gnd.sym} 200 -420 0 0 {name=l3 lab=GND}
 C {devices/lab_wire.sym} 200 -530 0 0 {name=p17 lab=avss}
 C {devices/opin.sym} 580 -220 0 0 {name=p11 lab=porb_h[1:0]}
-C {devices/vsource.sym} 50 -300 0 0 {name=Vdvdd value="PULSE 0 CACE\{Vdvdd\} 10n CACE\{trdvdd\} CACE\{trdvdd\} 0.5 1"}
-C {devices/vsource.sym} 20 -140 0 0 {name=Vvbg value="PULSE 0 CACE\{Vvbg\} 1.5m '0.33*CACE\{travdd\}' '0.33*CACE\{travdd\}' 0.5 1"}
+C {devices/vsource.sym} 50 -300 0 0 {name=Vdvdd value="PULSE 0 CACE\{Vdvdd\} CACE\{dvdd_delay\} CACE\{trdvdd\} CACE\{trdvdd\} 0.5 1"}
+C {devices/vsource.sym} 20 -140 0 0 {name=Vbg_typ value="DC 1.17 PWL(0 0 0.5m 0 1m 1 1.5m 1.3 1.53m 1.3 1.55m 0 2m 0 2.26m 1.17)"}
 C {devices/code_shown.sym} 1910 -1020 0 0 {name=SETUP only_toplevel=false value="
 * CACE gensim simulation file CACE\{filename\}
 * Generated by CACE gensim, Efabless Corporation (c) 2024
@@ -213,10 +783,13 @@ C {devices/code_shown.sym} 900 -1030 0 0 {name=CONTROL only_toplevel=false value
 .control
 *save all
 
+save v(avdd) v(dvdd) v(vbg) v(xdut.vinp) v(xdut.vinn) v(xdut.x1.vo1) v(xdut.rst) v(porb) v(porb_h[0]) i(Vavdd) i(Vdvdd) i(v.xdut.Vrbranch) i(v.xdut.Vcomp) i(v.xdut.Vpulse) v(por)
+save v(xdut.x2.porPre) v(xdut.x2.td_l) v(xdut.x2.VT4) V(xdut.vproc) v(xdut.x2.rstn) v(xdut.x2.Td_sd)
+save v(speedcheck)
 tran CACE\{Tstep\} CACE\{Tsim\}
 
 write CACE\{simpath\}/CACE\{filename\}_CACE\{N\}.raw
-echo "CACE\{simpath\}/CACE\{filename\}_CACE\{N\}.raw" >> CACE\{simpath\}/../CACE\{filename\}_base_file.txt
+echo CACE\{simpath\}/CACE\{filename\}_CACE\{N\}.raw >> CACE\{simpath\}/../CACE\{filename\}_base_file.txt
 
 meas tran Iavdd AVG i(Vavdd) from=0 to=CACE\{Tsim\}
 meas tran Idvdd AVG i(Vdvdd) from=0 to=CACE\{Tsim\}
@@ -233,7 +806,7 @@ let dvdd_approx = 0.99999*CACE\{Vdvdd\}
 let avdd_approx = 0.99999*CACE\{Vavdd\}
 let vss_approx = 0.00001*CACE\{Vdvss\}
 
-meas tran V_thp FIND v(avdd) WHEN v(xdut.rst)=dvdd_half RISE=LAST
+meas tran V_thp FIND v(avdd) WHEN v(xdut.x1.vo1)=dvdd_half RISE=LAST
 
 meas tran porPulse TRIG v(por) VAL=dvdd_half RISE=LAST TARG v(por) VAL=dvdd_half FALL=LAST
 
@@ -293,10 +866,25 @@ footprint=1206
 device="ceramic capacitor"}
 C {devices/lab_wire.sym} 420 -150 0 1 {name=p14 lab=porb_h[1]}
 C {devices/gnd.sym} 420 -90 0 0 {name=l9 lab=GND}
-C {launcher.sym} 220 -860 0 0 {name=h1
+C {launcher.sym} 230 -990 0 0 {name=h1
 descr="load waves across corners" 
 tclcommand="
 
 source ~/analog_ip/cheetah_v3_analog/dependencies/sky130_sw_ip__bgrref_por/cace/scripts/waves_corners.tcl
 
 "}
+C {devices/gnd.sym} -450 -110 0 0 {name=l10 lab=GND}
+C {devices/vsource.sym} -450 -160 0 0 {name=Vbg_avdd_1st value="DC 1.17 PWL(0 0 2m 0 2.1m 1.17)"}
+C {devices/capa.sym} -110 -135 0 0 {name=C5
+m=1
+value=CACE\{CLw\}
+footprint=1206
+device="ceramic capacitor"}
+C {devices/gnd.sym} -480 -330 0 0 {name=l11 lab=GND }
+C {devices/vsource.sym} -480 -380 0 0 {name=Vbg_slow value="DC 1.17 PWL(0 0 0.5m 0 1m 1 1.5m 1.3 1.53m 1.3 1.55m 0 7.5m 0 10m 1.17)"}
+C {devices/lab_wire.sym} -450 -220 0 0 {name=p10 lab=vbg}
+C {devices/capa.sym} -370 -435 0 0 {name=C6
+m=1
+value=CACE\{CLw\}
+footprint=1206
+device="ceramic capacitor"}
