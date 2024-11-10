@@ -7,6 +7,8 @@ S {}
 E {}
 N 115 -460 115 -440 { lab=GND}
 N 115 -550 115 -520 { lab=dvss}
+N 425 -460 425 -440 { lab=GND}
+N 425 -550 425 -520 { lab=avdd}
 N 615 -280 645 -280 {
 lab=por}
 N 615 -260 645 -260 {
@@ -15,21 +17,30 @@ N 265 -460 265 -440 { lab=GND}
 N 265 -550 265 -520 { lab=avss}
 N 615 -240 645 -240 {
 lab=porb_h[1:0]}
-N 420 -460 420 -440 { lab=GND}
-N 420 -550 420 -520 { lab=avdd}
-N 80 -290 80 -270 { lab=GND}
-N 80 -380 80 -350 { lab=dvdd}
-N 50 -130 50 -110 { lab=GND}
-N 50 -220 50 -190 { lab=vbg}
+N 85 -290 85 -270 { lab=GND}
+N 85 -380 85 -350 { lab=dvdd}
+N 85 -140 85 -120 { lab=GND}
+N 85 -230 85 -200 { lab=vbg}
+N 710 -330 710 -300 {
+lab=porb_h[1]}
+N 810 -330 810 -300 {
+lab=porb_h[0]}
+N 710 -430 710 -390 {
+lab=porb_h1}
+N 810 -430 810 -390 {
+lab=porb_h0}
 C {devices/title.sym} 160 -30 0 0 {name=l2 author="Stephen Wu"}
 C {devices/vsource.sym} 115 -490 0 1 {name=Vdvss value="DC CACE\{Vdvss\}"}
 C {devices/gnd.sym} 115 -440 0 0 {name=l5 lab=GND}
 C {devices/lab_wire.sym} 115 -550 0 0 {name=p7 lab=dvss}
+C {devices/gnd.sym} 425 -440 0 0 {name=l7 lab=GND}
 C {devices/opin.sym} 645 -280 0 0 {name=p5 lab=por}
 C {devices/opin.sym} 645 -260 0 0 {name=p6 lab=porb}
 C {devices/lab_wire.sym} 455 -220 0 0 {name=p8 lab=vbg}
 C {devices/lab_wire.sym} 455 -300 0 0 {name=p9 lab=avdd}
 C {devices/lab_wire.sym} 455 -280 0 0 {name=p10 lab=dvdd}
+C {devices/lab_wire.sym} 425 -550 0 0 {name=p11 lab=avdd}
+C {devices/vsource.sym} 425 -490 0 0 {name=Vavdd value="PULSE 0 CACE\{Vavdd\} 10n CACE\{travdd\} 1m 1m 4m"}
 C {devices/lab_wire.sym} 455 -260 0 0 {name=p20 lab=avss}
 C {devices/lab_wire.sym} 455 -240 0 0 {name=p21 lab=dvss}
 C {devices/vsource.sym} 265 -490 0 1 {name=Vavss value="DC CACE\{Vavss\}"}
@@ -53,59 +64,69 @@ C {devices/code_shown.sym} 885 -770 0 0 {name=SETUP only_toplevel=false value="
 * Flag unsafe operating conditions (exceeds models' specified limits)
 .option warn=1
 "}
-C {devices/code_shown.sym} 895 -420 0 0 {name=CONTROL only_toplevel=false value="
+C {devices/code_shown.sym} 895 -430 0 0 {name=CONTROL only_toplevel=false value="
 *.options savecurrents
 .control
 *save all
 
-let Tsimend = CACE[CACE\{Tsim\} + 2*CACE\{travdd\}]
-tran CACE\{Tstep\} $&Tsimend
-let dvdd_half = 0.5*CACE\{Vdvdd\}
-let meas_window = CACE\{travdd\} + 3.5m
-*meas tran V_thp FIND v(avdd) When v(xdut.rst)=dvdd_half FROM=0 TO=meas_window RISE=LAST
-*meas tran V_thn FIND v(avdd) WHEN V(xdut.rst)=dvdd_half TD=meas_window FALL=LAST
-*let hyst='V_thp-V_thn'
-.include CACE\{templates\}/../scripts/CACE\{netlist_source\}_hyst.meas
-echo $&hyst  > CACE\{simpath\}/CACE\{filename\}_CACE\{N\}.data
-quit
+tran CACE\{Tstep\} CACE\{Tsim\}
+set wr_singlescale
+wrdata CACE\{simpath\}/CACE\{filename\}_CACE\{N\}.data V(avdd) V(dvdd) V(vbg) V(por) V(porb) V(porb_h0)
 .endc
 "}
-C {sky130_sw_ip__bgrref_por.sym} 535 -260 0 0 {name=xdut}
-C {devices/capa.sym} 830 -130 0 0 {name=C1
+C {sky130_sw_ip__bgrref_por.sym} 535 -260 0 0 {name=XDUT1}
+C {devices/capa.sym} 910 -110 0 0 {name=C1
 m=1
 value=CACE\{CLb\}
 footprint=1206
 device="ceramic capacitor"}
-C {devices/lab_wire.sym} 830 -160 0 1 {name=p1 lab=por}
-C {devices/capa.sym} 730 -130 0 0 {name=C2
+C {devices/lab_wire.sym} 910 -140 0 1 {name=p1 lab=por}
+C {devices/capa.sym} 810 -110 0 0 {name=C2
 m=1
 value=CACE\{CLb\}
 footprint=1206
 device="ceramic capacitor"}
-C {devices/lab_wire.sym} 730 -160 0 1 {name=p19 lab=porb}
-C {devices/gnd.sym} 730 -100 0 0 {name=l4 lab=GND}
-C {devices/gnd.sym} 830 -100 0 0 {name=l1 lab=GND}
-C {devices/capa.sym} 620 -130 0 0 {name=C3
+C {devices/lab_wire.sym} 810 -140 0 1 {name=p19 lab=porb}
+C {devices/gnd.sym} 810 -80 0 0 {name=l4 lab=GND}
+C {devices/gnd.sym} 910 -80 0 0 {name=l1 lab=GND}
+C {devices/capa.sym} 700 -110 0 0 {name=C3
 m=1
 value=CACE\{CLw\}
 footprint=1206
 device="ceramic capacitor"}
-C {devices/lab_wire.sym} 620 -160 0 1 {name=p13 lab=porb_h[0]}
-C {devices/gnd.sym} 620 -100 0 0 {name=l6 lab=GND}
-C {devices/capa.sym} 520 -130 0 0 {name=C4
+C {devices/lab_wire.sym} 700 -140 0 1 {name=p13 lab=porb_h[0]}
+C {devices/gnd.sym} 700 -80 0 0 {name=l6 lab=GND}
+C {devices/capa.sym} 600 -110 0 0 {name=C4
 m=1
 value=CACE\{CLw\}
 footprint=1206
 device="ceramic capacitor"}
-C {devices/lab_wire.sym} 520 -160 0 1 {name=p14 lab=porb_h[1]}
-C {devices/gnd.sym} 520 -100 0 0 {name=l9 lab=GND}
-C {devices/gnd.sym} 420 -440 0 0 {name=l10 lab=GND}
-C {devices/lab_wire.sym} 420 -550 0 0 {name=p2 lab=avdd}
-C {devices/vsource.sym} 420 -490 0 0 {name=Vavdd1 value="PULSE 0 CACE\{Vavdd\} 1.5m CACE\{travdd\} CACE\{travdd\} 4m 30m"}
-C {devices/gnd.sym} 80 -270 0 0 {name=l22 lab=GND}
-C {devices/gnd.sym} 50 -110 0 0 {name=l3 lab=GND}
-C {devices/lab_wire.sym} 80 -380 0 0 {name=p3 lab=dvdd
+C {devices/lab_wire.sym} 600 -140 0 1 {name=p14 lab=porb_h[1]}
+C {devices/gnd.sym} 600 -80 0 0 {name=l9 lab=GND}
+C {devices/gnd.sym} 85 -270 0 0 {name=l3 lab=GND}
+C {devices/gnd.sym} 85 -120 0 0 {name=l12 lab=GND}
+C {devices/lab_wire.sym} 85 -380 0 0 {name=p4 lab=dvdd
 }
-C {devices/lab_wire.sym} 50 -220 0 0 {name=p4 lab=vbg}
-C {devices/vsource.sym} 80 -320 0 0 {name=Vdvdd value="PULSE 0 CACE\{Vdvdd\} 10n CACE\{trdvdd\} CACE\{trdvdd\} 0.5 1"}
-C {devices/vsource.sym} 50 -160 0 0 {name=Vvbg value="PULSE 0 CACE\{Vvbg\} 1.5m '0.33*CACE\{travdd\}' '0.33*CACE\{travdd\}' 0.5 1"}
+C {devices/lab_wire.sym} 85 -230 0 0 {name=p12 lab=vbg}
+C {devices/vsource.sym} 85 -320 0 0 {name=Vdvdd2 value="DC CACE\{Vdvdd\}"
+}
+C {devices/vsource.sym} 85 -170 0 0 {name=Vvbg2 value="DC CACE\{Vvbg\}"
+}
+C {res.sym} 710 -360 0 0 {name=R1
+value=0
+footprint=1206
+device=resistor
+m=1}
+C {res.sym} 810 -360 0 0 {name=R2
+value=0
+footprint=1206
+device=resistor
+m=1}
+C {devices/lab_wire.sym} 710 -300 0 1 {name=p16 lab=porb_h[1]
+}
+C {devices/lab_wire.sym} 810 -300 0 1 {name=p18 lab=porb_h[0]
+}
+C {devices/lab_wire.sym} 710 -430 0 1 {name=p2 lab=porb_h1
+}
+C {devices/lab_wire.sym} 810 -430 0 1 {name=p3 lab=porb_h0
+}
