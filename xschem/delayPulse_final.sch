@@ -727,9 +727,7 @@ N 1260 -780 1260 -750 {
 lab=VSS}
 N 1160 -750 1260 -750 {
 lab=VSS}
-N 980 -20 980 10 { lab=VSS}
 N 1130 -20 1130 10 { lab=VSS}
-N 1250 -20 1250 10 { lab=VSS}
 N 660 -990 660 -930 {
 lab=VT2}
 N 1020 -990 1020 -930 {
@@ -779,17 +777,17 @@ lab=#net15}
 N 1220 -120 1250 -120 {
 lab=#net16}
 N 1220 -60 1220 -20 {
-lab=VSS}
+lab=VCCL}
 N 1220 -20 1250 -20 {
-lab=VSS}
+lab=VCCL}
 N 1100 -60 1100 -20 {
 lab=VSS}
 N 1100 -20 1130 -20 {
 lab=VSS}
 N 950 -60 950 -20 {
-lab=VSS}
+lab=VCCL}
 N 950 -20 980 -20 {
-lab=VSS}
+lab=VCCL}
 N 1170 -140 1170 10 {
 lab=VSS}
 N 1020 -140 1020 10 {
@@ -842,6 +840,10 @@ N 2220 90 2220 140 {
 lab=por_h}
 N 2220 90 2280 90 {
 lab=por_h}
+N 1250 -20 1250 40 {
+lab=VCCL}
+N 980 -20 980 40 {
+lab=VCCL}
 C {devices/lab_pin.sym} 620 -430 0 0 {name=p4 sig_type=std_logic lab=VCCL}
 C {devices/lab_pin.sym} 620 -100 0 0 {name=p5 sig_type=std_logic lab=VSS}
 C {devices/lab_pin.sym} 790 -750 0 0 {name=p1 sig_type=std_logic lab=VSS}
@@ -1816,3 +1818,5 @@ C {devices/lab_pin.sym} 2410 140 2 0 {name=p59 sig_type=std_logic lab=porb_h[1]
 C {devices/lab_pin.sym} 2220 120 0 0 {name=p60 sig_type=std_logic lab=por_h}
 C {sky130_stdcells/inv_16.sym} 2320 90 0 0 {name=x10 VGND=VSS VNB=VSS VPB=VCCH VPWR=VCCH prefix=sky130_fd_sc_hvl__ }
 C {sky130_stdcells/inv_16.sym} 2320 140 0 0 {name=x8 VGND=VSS VNB=VSS VPB=VCCH VPWR=VCCH prefix=sky130_fd_sc_hvl__ }
+C {devices/lab_pin.sym} 1250 40 0 1 {name=p63 sig_type=std_logic lab=VCCL}
+C {devices/lab_pin.sym} 980 40 0 1 {name=p64 sig_type=std_logic lab=VCCL}
