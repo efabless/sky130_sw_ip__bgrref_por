@@ -1,12 +1,19 @@
 ** sch_path: /home/tim/gits/cheetah_v3_analog/dependencies/sky130_sw_ip__bgrref_por/xschem/sky130_sw_ip__bgrref_por.sch
 .subckt sky130_sw_ip__bgrref_por vbg por avss avdd dvdd porb dvss porb_h[1] porb_h[0]
 *.PININFO avdd:B por:O avss:B dvdd:B porb:O vbg:I porb_h[1:0]:O dvss:B
-x1 Vinn Vinp RST avss avdd dvdd comparator_final
-XR1 avss Vinn avss sky130_fd_pr__res_xhigh_po_0p35 L=250 mult=1 m=1
-XR10 Vinn Vinp avss sky130_fd_pr__res_xhigh_po_0p35 L=9 mult=1 m=1
-XR12 Vinp Vproc avss sky130_fd_pr__res_xhigh_po_0p35 L=150 mult=1 m=1
-x2 RST por dvdd dvss vbg avdd porb porb_h[1] porb_h[0] delayPulse_final
-XM2 avdd avdd Vproc avss sky130_fd_pr__nfet_05v0_nvt L=0.9 W=1 nf=1 m=2
+x1 Vinn Vinp RST avss net1 dvdd comparator_final
+XR1 avss Vinn avss sky130_fd_pr__res_xhigh_po_0p35 L=1000 mult=1 m=1
+XR10 Vinn Vinp avss sky130_fd_pr__res_xhigh_po_0p35 L=36 mult=1 m=1
+XR12 Vinp net3 avss sky130_fd_pr__res_xhigh_po_0p35 L=600 mult=1 m=1
+x2 RST por dvdd dvss vbg net2 porb porb_h[1] porb_h[0] delayPulse_final
+XM2 avdd avdd net4 avss sky130_fd_pr__nfet_05v0_nvt L=0.9 W=1 nf=1 m=1
+Vrbranch Vproc net3 0
+.save i(vrbranch)
+Vcomp avdd net1 0
+.save i(vcomp)
+Vpulse avdd net2 0
+.save i(vpulse)
+XM1 net4 avdd Vproc avss sky130_fd_pr__nfet_05v0_nvt L=0.9 W=1 nf=1 m=1
 .ends
 
 * expanding   symbol:  comparator_final.sym # of pins=6
@@ -23,7 +30,7 @@ XM6 vo vbn VSS VSS sky130_fd_pr__nfet_g5v0d10v5 L=1 W=2 nf=1 m=2
 XM14 vo1 vo VSS VSS sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=4 nf=1 m=1
 XM15 vo1 vo net1 net1 sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=1 nf=1 m=1
 XM12 net3 vo1 VSS VSS sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=1 nf=1 m=1
-XM13 net3 vo1 AVDD AVDD sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=2 nf=2 m=1
+XM13 net3 vo1 DVDD DVDD sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=2 nf=2 m=1
 XM16 RST net3 VSS VSS sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=1 nf=1 m=1
 XM17 RST net3 DVDD DVDD sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=2 nf=2 m=1
 XM4 vbp AVDD net2 VSS sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=4 nf=1 m=1
@@ -93,8 +100,8 @@ x6 outxor VSS VSS VCCL VCCL rstn sky130_fd_sc_ls__buf_8
 XC4 VSS net15 sky130_fd_pr__cap_mim_m3_2 W=10 L=10 m=1
 XC7 VSS VT2 sky130_fd_pr__cap_mim_m3_2 W=16 L=16 m=20
 XC2 VSS VT3 sky130_fd_pr__cap_mim_m3_2 W=16 L=16 m=20
-XC8 VSS net14 sky130_fd_pr__cap_mim_m3_2 W=10 L=10 m=1
-XC9 VSS net16 sky130_fd_pr__cap_mim_m3_2 W=10 L=10 m=1
+XC8 VCCL net14 sky130_fd_pr__cap_mim_m3_2 W=10 L=10 m=1
+XC9 VCCL net16 sky130_fd_pr__cap_mim_m3_2 W=10 L=10 m=1
 XM40 Td_Sd net16 VCCL VCCL sky130_fd_pr__pfet_01v8 L=0.15 W=1.4 nf=2 m=2
 x5 rstn net2 Td_Sd VSS VSS VCCL VCCL porbPre sky130_fd_sc_ls__dfrtn_1
 x2 Td_Sd net2 Td_Lb VSS VSS VCCL VCCL porPre sky130_fd_sc_ls__dfrtp_1
@@ -129,9 +136,9 @@ XC12 vbp1 VCCL sky130_fd_pr__cap_mim_m3_1 W=16 L=16 m=1
 XC13 vbn1 VSS sky130_fd_pr__cap_mim_m3_1 W=16 L=16 m=1
 XC14 VT2 VSS sky130_fd_pr__cap_mim_m3_1 W=16 L=16 m=20
 XC15 VT3 VSS sky130_fd_pr__cap_mim_m3_1 W=16 L=16 m=20
-XC16 net14 VSS sky130_fd_pr__cap_mim_m3_1 W=10 L=10 m=1
+XC16 net14 VCCL sky130_fd_pr__cap_mim_m3_1 W=10 L=10 m=1
 XC17 net15 VSS sky130_fd_pr__cap_mim_m3_1 W=10 L=10 m=1
-XC18 net16 VSS sky130_fd_pr__cap_mim_m3_1 W=10 L=10 m=1
+XC18 net16 VCCL sky130_fd_pr__cap_mim_m3_1 W=10 L=10 m=1
 XR1 net25 net9 VSS sky130_fd_pr__res_xhigh_po_0p69 L=240 mult=1 m=1
 XR7 VSS net25 VSS sky130_fd_pr__res_xhigh_po_0p69 L=240 mult=1 m=1
 XM55 net24 net23 VSS VSS sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=2 nf=2 m=1

@@ -402,9 +402,9 @@ Circuit 1: comparator_final                         |Circuit 2: comparator_final
 ----------------------------------------------------|----------------------------------------------------
 Vinp                                                |Vinp                                                
 RST                                                 |RST                                                 
-DVDD                                                |DVDD                                                
 Vinn                                                |Vinn                                                
 AVDD                                                |AVDD                                                
+DVDD                                                |DVDD                                                
 VSS                                                 |VSS                                                 
 ---------------------------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
@@ -467,7 +467,7 @@ Number of nets: 48                                  |Number of nets: 48
 ---------------------------------------------------------------------------------------------------------
 Resolving symmetries by property value.
 Resolving symmetries by pin name.
-Netlists match uniquely.
+Netlists match uniquely with port errors.
 
 Subcircuit pins:
 Circuit 1: delayPulse_final                         |Circuit 2: delayPulse_final                         
@@ -480,41 +480,63 @@ VCCL                                                |VCCL
 din                                                 |din                                                 
 porb                                                |porb                                                
 por                                                 |por                                                 
+VT2                                                 |(no pin, node is VT2                                
 VSS                                                 |VSS                                                 
 ---------------------------------------------------------------------------------------------------------
-Cell pin lists are equivalent.
+Cell pin lists for delayPulse_final and delayPulse_final altered to match.
 Device classes delayPulse_final and delayPulse_final are equivalent.
-Flattening unmatched subcell sky130_fd_pr__res_xhigh_po_0p35_NZA8SD in circuit sky130_sw_ip__bgrref_por (0)(1 instance)
-Flattening unmatched subcell sky130_fd_pr__res_xhigh_po_0p35_D2SRCG in circuit sky130_sw_ip__bgrref_por (0)(1 instance)
-Flattening unmatched subcell sky130_fd_pr__res_xhigh_po_0p35_SZAJAG in circuit sky130_sw_ip__bgrref_por (0)(1 instance)
+  Flattening non-matched subcircuits delayPulse_final delayPulse_final
+Flattening unmatched subcell sky130_fd_pr__res_xhigh_po_0p35_WGPHGK in circuit sky130_sw_ip__bgrref_por (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__res_xhigh_po_0p35_YTHETB in circuit sky130_sw_ip__bgrref_por (0)(1 instance)
 Flattening unmatched subcell sky130_fd_pr__nfet_05v0_nvt_CZFQWY in circuit sky130_sw_ip__bgrref_por (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__res_xhigh_po_0p35_MNWQZD in circuit sky130_sw_ip__bgrref_por (0)(1 instance)
 
-Class sky130_sw_ip__bgrref_por (0):  Merged 1 parallel devices.
+Removing zero-valued device vsrc from cell sky130_sw_ip__bgrref_por (1) makes a better match
+Removing zero-valued device vsrc from cell sky130_sw_ip__bgrref_por (1) makes a better match
+Removing zero-valued device vsrc from cell sky130_sw_ip__bgrref_por (1) makes a better match
+Making another compare attempt.
+
 Class sky130_sw_ip__bgrref_por (0):  Merged 38 series devices.
 Subcircuit summary:
 Circuit 1: sky130_sw_ip__bgrref_por                 |Circuit 2: sky130_sw_ip__bgrref_por                 
 ----------------------------------------------------|----------------------------------------------------
 comparator_final (1)                                |comparator_final (1)                                
-delayPulse_final (1)                                |delayPulse_final (1)                                
 sky130_fd_pr__res_xhigh_po_0p35 (41->3)             |sky130_fd_pr__res_xhigh_po_0p35 (3)                 
-sky130_fd_pr__nfet_05v0_nvt (2->1)                  |sky130_fd_pr__nfet_05v0_nvt (2->1)                  
-Number of devices: 6                                |Number of devices: 6                                
-Number of nets: 13                                  |Number of nets: 13                                  
+sky130_fd_pr__nfet_01v8 (72->20)                    |sky130_fd_pr__nfet_01v8 (72->20)                    
+sky130_fd_pr__pfet_01v8 (29->26)                    |sky130_fd_pr__pfet_01v8 (29->26)                    
+sky130_fd_pr__cap_mim_m3_2 (47->9)                  |sky130_fd_pr__cap_mim_m3_2 (47->9)                  
+sky130_fd_pr__pfet_g5v0d10v5 (7)                    |sky130_fd_pr__pfet_g5v0d10v5 (7)                    
+sky130_fd_pr__nfet_g5v0d10v5 (16->7)                |sky130_fd_pr__nfet_g5v0d10v5 (16->7)                
+levelShifter (1)                                    |levelShifter (1)                                    
+sky130_fd_pr__cap_mim_m3_1 (47->9)                  |sky130_fd_pr__cap_mim_m3_1 (47->9)                  
+sky130_fd_sc_hvl__inv_16 (2)                        |sky130_fd_sc_hvl__inv_16 (2)                        
+sky130_fd_pr__res_xhigh_po_0p69 (1)                 |sky130_fd_pr__res_xhigh_po_0p69 (1)                 
+sky130_fd_sc_ls__decap_4 (1)                        |sky130_fd_sc_ls__decap_4 (1)                        
+sky130_fd_sc_ls__dfrtn_1 (1)                        |sky130_fd_sc_ls__dfrtn_1 (1)                        
+TieH_1p8 (1)                                        |TieH_1p8 (1)                                        
+sky130_fd_sc_ls__buf_8 (1)                          |sky130_fd_sc_ls__buf_8 (1)                          
+sky130_fd_sc_ls__dfrtp_1 (1)                        |sky130_fd_sc_ls__dfrtp_1 (1)                        
+sky130_fd_sc_ls__xor2_1 (1)                         |sky130_fd_sc_ls__xor2_1 (1)                         
+sky130_fd_pr__nfet_05v0_nvt (2)                     |sky130_fd_pr__nfet_05v0_nvt (2)                     
+Number of devices: 94                               |Number of devices: 94                               
+Number of nets: 53                                  |Number of nets: 53                                  
 ---------------------------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
 Netlists match uniquely.
 
 Subcircuit pins:
 Circuit 1: sky130_sw_ip__bgrref_por                 |Circuit 2: sky130_sw_ip__bgrref_por                 
 ----------------------------------------------------|----------------------------------------------------
-por                                                 |por                                                 
 dvss                                                |dvss                                                
 vbg                                                 |vbg                                                 
-porb                                                |porb                                                
 porb_h[1]                                           |porb_h[1]                                           
 porb_h[0]                                           |porb_h[0]                                           
+porb                                                |porb                                                
+por                                                 |por                                                 
 avss                                                |avss                                                
-avdd                                                |avdd                                                
 dvdd                                                |dvdd                                                
+avdd                                                |avdd                                                
 ---------------------------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes sky130_sw_ip__bgrref_por and sky130_sw_ip__bgrref_por are equivalent.
