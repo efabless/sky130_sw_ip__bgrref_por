@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1731362657
+timestamp 1731363933
 << nwell >>
 rect -672 -3780 -582 -2986
 << locali >>
@@ -342,29 +342,29 @@ rect 8658 -3332 8833 -2760
 rect 8950 -3371 9001 -2863
 rect 9114 -3371 9158 -2939
 rect 9811 -3133 9953 -2760
-rect 10023 -3197 10057 -2875
-rect 10182 -3189 10216 -2878
+rect 10023 -3182 10057 -2875
+rect 10182 -3182 10216 -2878
 rect 10291 -3133 10652 -2760
 rect 10426 -3136 10652 -3133
+rect 9996 -3228 10244 -3182
 rect 10724 -3189 10758 -2877
 rect 10889 -3183 10923 -2878
 rect 10986 -3129 11132 -2760
 rect 10769 -3189 10923 -3183
-rect 10182 -3193 10923 -3189
-rect 10182 -3197 10928 -3193
+rect 10286 -3193 10923 -3189
+rect 10286 -3222 10928 -3193
 rect 8879 -3418 9158 -3371
 rect 8879 -3420 8886 -3418
 rect 9030 -3420 9158 -3418
 rect 9114 -3683 9158 -3420
-rect 10009 -3222 10928 -3197
-rect 10009 -3230 10238 -3222
+rect 10009 -3230 10084 -3228
+rect 10009 -3598 10042 -3230
+rect 10286 -3345 10329 -3222
 rect 10724 -3225 10928 -3222
 rect 10769 -3226 10928 -3225
 rect 10769 -3228 10918 -3226
-rect 10009 -3598 10042 -3230
-rect 10205 -3392 10238 -3230
-rect 10098 -3404 10238 -3392
-rect 10089 -3541 10238 -3404
+rect 10089 -3398 10329 -3345
+rect 10089 -3541 10238 -3398
 rect 10009 -3631 10073 -3598
 rect 9114 -3729 9821 -3683
 rect 6755 -4318 7129 -4272
@@ -585,111 +585,111 @@ rect 8744 -4051 8757 -3976
 rect 9085 -4051 9102 -3976
 rect 8744 -4059 9102 -4051
 use por_via_2cut  por_via_2cut_0
-timestamp 1731362657
+timestamp 1718283729
 transform 0 1 12943 -1 0 12197
 box 16088 -7932 16222 -7868
 use por_via_2cut  por_via_2cut_1
-timestamp 1731362657
+timestamp 1718283729
 transform 0 1 14397 -1 0 12197
 box 16088 -7932 16222 -7868
 use por_via_2cut  por_via_2cut_2
-timestamp 1731362657
+timestamp 1718283729
 transform -1 0 20668 0 -1 -10745
 box 16088 -7932 16222 -7868
 use por_via_2cut  por_via_2cut_3
-timestamp 1731362657
+timestamp 1718283729
 transform 0 1 13917 -1 0 12200
 box 16088 -7932 16222 -7868
 use por_via_2cut  por_via_2cut_4
-timestamp 1731362657
+timestamp 1718283729
 transform 0 1 13204 -1 0 12420
 box 16088 -7932 16222 -7868
 use por_via_2cut  por_via_2cut_5
-timestamp 1731362657
+timestamp 1718283729
 transform 0 1 14659 -1 0 12416
 box 16088 -7932 16222 -7868
 use por_via_2cut  por_via_2cut_6
-timestamp 1731362657
+timestamp 1718283729
 transform 0 1 14171 -1 0 12418
 box 16088 -7932 16222 -7868
 use por_via_2cut  por_via_2cut_7
-timestamp 1731362657
+timestamp 1718283729
 transform 0 1 13686 -1 0 12413
 box 16088 -7932 16222 -7868
 use por_via_2cut  por_via_2cut_8
-timestamp 1731362657
+timestamp 1718283729
 transform 0 1 13197 -1 0 13028
 box 16088 -7932 16222 -7868
 use por_via_2cut  por_via_2cut_9
-timestamp 1731362657
+timestamp 1718283729
 transform 0 1 12941 -1 0 12829
 box 16088 -7932 16222 -7868
 use por_via_2cut  por_via_2cut_10
-timestamp 1731362657
+timestamp 1718283729
 transform 0 1 13686 -1 0 13026
 box 16088 -7932 16222 -7868
 use por_via_2cut  por_via_2cut_11
-timestamp 1731362657
+timestamp 1718283729
 transform 0 1 13426 -1 0 12825
 box 16088 -7932 16222 -7868
 use por_via_2cut  por_via_2cut_12
-timestamp 1731362657
+timestamp 1718283729
 transform 0 1 14402 -1 0 12824
 box 16088 -7932 16222 -7868
 use por_via_2cut  por_via_2cut_13
-timestamp 1731362657
+timestamp 1718283729
 transform 0 1 13915 -1 0 12823
 box 16088 -7932 16222 -7868
 use por_via_2cut  por_via_2cut_14
-timestamp 1731362657
+timestamp 1718283729
 transform 0 1 14175 -1 0 13020
 box 16088 -7932 16222 -7868
 use por_via_2cut  por_via_2cut_16
-timestamp 1731362657
+timestamp 1718283729
 transform 0 1 14659 -1 0 13024
 box 16088 -7932 16222 -7868
 use por_via_2cut  por_via_2cut_18
-timestamp 1731362657
+timestamp 1718283729
 transform 0 1 15320 -1 0 11946
 box 16088 -7932 16222 -7868
 use por_via_2cut  por_via_2cut_19
-timestamp 1731362657
+timestamp 1718283729
 transform 0 1 15210 -1 0 12354
 box 16088 -7932 16222 -7868
 use por_via_2cut  por_via_2cut_20
-timestamp 1731362657
+timestamp 1718283729
 transform 0 1 15006 -1 0 12338
 box 16088 -7932 16222 -7868
 use por_via_2cut  por_via_2cut_21
-timestamp 1731362657
+timestamp 1718283729
 transform -1 0 21420 0 -1 -13152
 box 16088 -7932 16222 -7868
 use por_via_2cut  por_via_2cut_22
-timestamp 1731362657
+timestamp 1718283729
 transform 0 1 18015 -1 0 12681
 box 16088 -7932 16222 -7868
 use por_via_2cut  por_via_2cut_23
-timestamp 1731362657
+timestamp 1718283729
 transform 0 1 18017 -1 0 13110
 box 16088 -7932 16222 -7868
 use por_via_2cut  por_via_2cut_24
-timestamp 1731362657
+timestamp 1718283729
 transform 0 1 18723 -1 0 13103
 box 16088 -7932 16222 -7868
 use por_via_2cut  por_via_2cut_25
-timestamp 1731362657
+timestamp 1718283729
 transform 0 1 18230 -1 0 12648
 box 16088 -7932 16222 -7868
 use por_via_2cut  por_via_2cut_26
-timestamp 1731362657
+timestamp 1718283729
 transform -1 0 24499 0 -1 -11716
 box 16088 -7932 16222 -7868
 use por_via_2cut  por_via_2cut_27
-timestamp 1731362657
+timestamp 1718283729
 transform 0 1 13429 -1 0 12199
 box 16088 -7932 16222 -7868
 use por_via_2cut  por_via_2cut_28
-timestamp 1731362657
+timestamp 1718283729
 transform -1 0 20373 0 -1 -10747
 box 16088 -7932 16222 -7868
 use por_via_4cut  por_via_4cut_0
@@ -785,7 +785,7 @@ timestamp 1718283729
 transform 1 0 -7204 0 1 3874
 box 15948 -7932 16222 -7868
 use sky130_fd_pr__cap_mim_m3_1_KB5CJD  sky130_fd_pr__cap_mim_m3_1_KB5CJD_1 paramcells
-timestamp 1731362657
+timestamp 1718283729
 transform -1 0 8446 0 -1 -2524
 box -1186 -1040 1248 1040
 use sky130_fd_pr__nfet_01v8_B8TQK3  sky130_fd_pr__nfet_01v8_B8TQK3_0 paramcells
@@ -801,7 +801,7 @@ timestamp 1718283729
 transform -1 0 5662 0 1 -3526
 box -296 -719 296 719
 use mux2to1  x1
-timestamp 1731362657
+timestamp 1718283729
 transform -1 0 5102 0 1 -4041
 box 404 -1761 1956 334
 use sky130_fd_pr__nfet_g5v0d10v5_T4TNG7  XM1 paramcells
@@ -849,7 +849,7 @@ timestamp 1718283729
 transform 1 0 9619 0 1 -5270
 box -288 -358 288 358
 use sky130_fd_pr__pfet_g5v0d10v5_KLNSY6  XM13 paramcells
-timestamp 1731362657
+timestamp 1718283729
 transform 1 0 10119 0 1 -3042
 box -387 -397 387 397
 use sky130_fd_pr__nfet_g5v0d10v5_MJGQJ3  XM14
@@ -865,11 +865,11 @@ timestamp 1718283729
 transform 1 0 10065 0 1 -5270
 box -288 -358 288 358
 use sky130_fd_pr__pfet_g5v0d10v5_KLNSY6  XM17
-timestamp 1731362657
+timestamp 1718283729
 transform 1 0 10821 0 1 -3042
 box -387 -397 387 397
 use sky130_fd_pr__pfet_g5v0d10v5_FGK6VM  XM19 paramcells
-timestamp 1731362657
+timestamp 1718283729
 transform 1 0 8971 0 1 -3136
 box -358 -497 358 497
 use sky130_fd_pr__pfet_g5v0d10v5_VHBZVD  XM20
