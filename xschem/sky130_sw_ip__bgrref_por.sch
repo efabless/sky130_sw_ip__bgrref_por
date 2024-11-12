@@ -82,13 +82,18 @@ N 250 -480 290 -480 {
 lab=Vinn}
 N 130 -480 160 -480 {
 lab=avss}
+N 700 -410 750 -410 {
+lab=#net6}
+N 700 -490 700 -410 {
+lab=#net6}
+N 680 -490 700 -490 {
+lab=#net6}
 C {devices/title.sym} 160 -30 0 0 {name=l2 author="Stephen Wu"}
 C {devices/iopin.sym} 110 -250 0 0 {name=p24 lab=avdd}
 C {devices/opin.sym} 260 -200 0 0 {name=p25 lab=por}
 C {devices/iopin.sym} 110 -220 0 0 {name=p26 lab=avss}
 C {devices/iopin.sym} 110 -280 0 0 {name=p30 lab=dvdd}
 C {devices/opin.sym} 260 -170 0 0 {name=p31 lab=porb}
-C {devices/ipin.sym} 130 -160 0 0 {name=p21 lab=vbg}
 C {devices/opin.sym} 260 -140 0 0 {name=p27 lab=porb_h[1:0]}
 C {devices/iopin.sym} 110 -190 0 0 {name=p28 lab=dvss}
 C {devices/lab_wire.sym} 520 -500 0 0 {name=p2 lab=Vinn}
@@ -136,7 +141,6 @@ C {devices/lab_wire.sym} 430 -430 0 0 {name=p5 lab=avdd}
 C {devices/lab_wire.sym} 520 -440 0 0 {name=p15 lab=dvdd
 }
 C {devices/lab_wire.sym} 660 -350 0 0 {name=p20 lab=avdd}
-C {devices/lab_wire.sym} 750 -410 0 0 {name=p10 lab=vbg}
 C {devices/lab_wire.sym} 750 -450 0 0 {name=p13 lab=dvdd
 }
 C {devices/lab_wire.sym} 290 -1020 0 0 {name=p16 lab=avdd}

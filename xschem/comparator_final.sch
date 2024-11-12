@@ -5,6 +5,9 @@ K {}
 V {}
 S {}
 E {}
+T {ejf 11/11/24:
+Added ~180nA bias output
+to bias delay generator} 40 -740 0 0 0.3 0.3 {}
 N 530 -810 560 -810 {lab=AVDD}
 N 780 -810 810 -810 {lab=AVDD}
 N 670 -390 700 -390 {lab=VSS}
@@ -237,19 +240,11 @@ N -340 -640 -320 -640 {
 lab=vbn}
 N -320 -680 -320 -640 {
 lab=vbn}
-N -320 -640 -300 -640 {
-lab=vbn}
 N -380 -870 -380 -860 {
 lab=vbn}
 N -110 -640 -80 -640 {lab=VSS}
-N -170 -640 -150 -640 {
-lab=vbn}
-N -240 -640 -220 -640 {
-lab=vbn}
 N -110 -870 -110 -860 {
 lab=#net5}
-N -300 -640 -240 -640 {
-lab=vbn}
 N -510 -460 -290 -460 {
 lab=VSS}
 N -650 -580 -620 -580 {lab=VSS}
@@ -321,8 +316,6 @@ N -540 -580 -530 -580 {
 lab=vbn}
 N 1310 -300 1350 -300 {
 lab=VSS}
-N -220 -640 -170 -640 {
-lab=vbn}
 N -290 -460 -110 -460 {
 lab=VSS}
 N -200 -900 -150 -900 {
@@ -409,6 +402,28 @@ N -440 -640 -390 -640 {
 lab=VSS}
 N 1200 -940 1430 -940 {
 lab=DVDD}
+N -250 -610 -250 -460 {
+lab=VSS}
+N -320 -680 -180 -680 {
+lab=vbn}
+N -180 -680 -180 -640 {
+lab=vbn}
+N -180 -640 -150 -640 {
+lab=vbn}
+N -180 -680 -40 -680 {
+lab=vbn}
+N -250 -640 -210 -640 {
+lab=VSS}
+N -210 -640 -210 -460 {
+lab=VSS}
+N -250 -760 -250 -670 {
+lab=#net10}
+N -250 -760 -220 -760 {
+lab=#net10}
+N -160 -760 -40 -760 {
+lab=ibn180n}
+N -320 -640 -290 -640 {
+lab=vbn}
 C {sky130_fd_pr/nfet_g5v0d10v5.sym} 650 -390 0 0 {name=M1
 W=2
 L=1
@@ -672,7 +687,7 @@ model=res_xhigh_po_0p35
 spiceprefix=X
  mult=1}
 C {devices/lab_pin.sym} -400 -460 3 0 {name=l28 lab=VSS}
-C {devices/lab_pin.sym} -320 -680 0 1 {name=l34 lab=vbn}
+C {devices/lab_pin.sym} -40 -680 0 1 {name=l34 lab=vbn}
 C {sky130_fd_pr/nfet_g5v0d10v5.sym} -360 -640 0 1 {name=M25
 W=2
 L=1
@@ -805,3 +820,19 @@ spiceprefix=X
 C {devices/lab_pin.sym} 590 -530 2 0 {name=l5 lab=VSS}
 C {devices/lab_pin.sym} 750 -530 2 1 {name=l9 lab=VSS}
 C {devices/opin.sym} 130 -280 0 0 {name=p5 lab=vo}
+C {sky130_fd_pr/nfet_g5v0d10v5.sym} -270 -640 0 0 {name=M9
+W=2
+L=1
+nf=1
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=nfet_g5v0d10v5
+spiceprefix=X
+}
+C {ammeter.sym} -190 -760 1 1 {name=Vbn180n savecurrent=true spice_ignore=0}
+C {opin.sym} -40 -760 0 0 {name=p8 lab=ibn180n}
