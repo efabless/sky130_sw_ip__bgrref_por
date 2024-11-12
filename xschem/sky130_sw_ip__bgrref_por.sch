@@ -60,6 +60,28 @@ N 290 -760 290 -740 {
 lab=Vproc}
 N 250 -930 250 -870 {
 lab=avdd}
+N 150 -550 270 -550 {
+lab=avss}
+N 130 -580 290 -580 {
+lab=Vinp}
+N 130 -520 130 -510 {
+lab=#net5}
+N 370 -400 520 -400 {
+lab=vo}
+N 370 -400 370 -380 {
+lab=vo}
+N 90 -380 370 -380 {
+lab=vo}
+N 90 -480 90 -380 {
+lab=vo}
+N 130 -450 250 -450 {
+lab=Vinn}
+N 250 -480 250 -450 {
+lab=Vinn}
+N 250 -480 290 -480 {
+lab=Vinn}
+N 130 -480 160 -480 {
+lab=avss}
 C {devices/title.sym} 160 -30 0 0 {name=l2 author="Stephen Wu"}
 C {devices/iopin.sym} 110 -250 0 0 {name=p24 lab=avdd}
 C {devices/opin.sym} 260 -200 0 0 {name=p25 lab=por}
@@ -83,7 +105,7 @@ model=res_xhigh_po_0p35
 spiceprefix=X
  mult=1}
 C {sky130_fd_pr/res_xhigh_po_0p35.sym} 290 -530 0 0 {name=R10
-L=36
+L=72
 model=res_xhigh_po_0p35
 spiceprefix=X
  mult=1}
@@ -141,3 +163,24 @@ model=nfet_05v0_nvt
 spiceprefix=X
 }
 C {devices/lab_wire.sym} 320 -820 0 1 {name=p8 lab=avss}
+C {sky130_fd_pr/res_xhigh_po_0p35.sym} 130 -550 0 1 {name=R2
+L=72
+model=res_xhigh_po_0p35
+spiceprefix=X
+ mult=1}
+C {devices/lab_pin.sym} 370 -380 0 1 {name=p23 sig_type=std_logic lab=vo}
+C {sky130_fd_pr/nfet_05v0_nvt.sym} 110 -480 0 0 {name=M3
+L=0.9
+W=1
+nf=1
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=nfet_05v0_nvt
+spiceprefix=X
+}
+C {devices/lab_wire.sym} 160 -480 0 1 {name=p7 lab=avss}
