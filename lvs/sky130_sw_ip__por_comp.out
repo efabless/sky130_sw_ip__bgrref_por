@@ -465,20 +465,20 @@ VSS                                                 |VSS
 Cell pin lists for delayPulse_final and delayPulse_final altered to match.
 Device classes delayPulse_final and delayPulse_final are equivalent.
   Flattening non-matched subcircuits delayPulse_final delayPulse_final
-Flattening unmatched subcell sky130_fd_pr__res_xhigh_po_0p35_WGPHGK in circuit sky130_sw_ip__bgrref_por (0)(1 instance)
-Flattening unmatched subcell sky130_fd_pr__nfet_05v0_nvt_FPTPS4 in circuit sky130_sw_ip__bgrref_por (0)(1 instance)
-Flattening unmatched subcell sky130_fd_pr__nfet_05v0_nvt_CZFQWY in circuit sky130_sw_ip__bgrref_por (0)(1 instance)
-Flattening unmatched subcell sky130_fd_pr__res_xhigh_po_0p35_PXB2PH in circuit sky130_sw_ip__bgrref_por (0)(1 instance)
-Flattening unmatched subcell sky130_fd_pr__res_xhigh_po_0p35_MNWQZD in circuit sky130_sw_ip__bgrref_por (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__res_xhigh_po_0p35_WGPHGK in circuit sky130_sw_ip__por (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_05v0_nvt_FPTPS4 in circuit sky130_sw_ip__por (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_05v0_nvt_CZFQWY in circuit sky130_sw_ip__por (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__res_xhigh_po_0p35_PXB2PH in circuit sky130_sw_ip__por (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__res_xhigh_po_0p35_MNWQZD in circuit sky130_sw_ip__por (0)(1 instance)
 
-Removing zero-valued device vsrc from cell sky130_sw_ip__bgrref_por (1) makes a better match
-Removing zero-valued device vsrc from cell sky130_sw_ip__bgrref_por (1) makes a better match
-Removing zero-valued device vsrc from cell sky130_sw_ip__bgrref_por (1) makes a better match
+Removing zero-valued device vsrc from cell sky130_sw_ip__por (1) makes a better match
+Removing zero-valued device vsrc from cell sky130_sw_ip__por (1) makes a better match
+Removing zero-valued device vsrc from cell sky130_sw_ip__por (1) makes a better match
 Making another compare attempt.
 
-Class sky130_sw_ip__bgrref_por (0):  Merged 40 series devices.
+Class sky130_sw_ip__por (0):  Merged 40 series devices.
 Subcircuit summary:
-Circuit 1: sky130_sw_ip__bgrref_por                 |Circuit 2: sky130_sw_ip__bgrref_por                 
+Circuit 1: sky130_sw_ip__por                        |Circuit 2: sky130_sw_ip__por                        
 ----------------------------------------------------|----------------------------------------------------
 comparator_final (1)                                |comparator_final (1)                                
 sky130_fd_pr__nfet_01v8 (72->20)                    |sky130_fd_pr__nfet_01v8 (72->20)                    
@@ -506,7 +506,7 @@ Resolving symmetries by pin name.
 Netlists match uniquely.
 
 Subcircuit pins:
-Circuit 1: sky130_sw_ip__bgrref_por                 |Circuit 2: sky130_sw_ip__bgrref_por                 
+Circuit 1: sky130_sw_ip__por                        |Circuit 2: sky130_sw_ip__por                        
 ----------------------------------------------------|----------------------------------------------------
 dvss                                                |dvss                                                
 porb_h[1]                                           |porb_h[1]                                           
@@ -518,7 +518,7 @@ dvdd                                                |dvdd
 avdd                                                |avdd                                                
 ---------------------------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
-Device classes sky130_sw_ip__bgrref_por and sky130_sw_ip__bgrref_por are equivalent.
+Device classes sky130_sw_ip__por and sky130_sw_ip__por are equivalent.
 
 Final result: Circuits match uniquely.
 .

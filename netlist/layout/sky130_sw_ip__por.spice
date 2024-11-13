@@ -1,4 +1,4 @@
-* NGSPICE file created from sky130_sw_ip__bgrref_por.ext - technology: sky130A
+* NGSPICE file created from sky130_sw_ip__por.ext - technology: sky130A
 
 .subckt sky130_fd_pr__nfet_g5v0d10v5_UNEQ2N a_n252_n322# a_50_n100# a_n108_n100# a_n50_n188#
 X0 a_50_n100# a_n50_n188# a_n108_n100# a_n252_n322# sky130_fd_pr__nfet_g5v0d10v5 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.5
@@ -854,7 +854,7 @@ X13 a_n699_3984# a_n699_n4416# a_n1327_n4546# sky130_fd_pr__res_xhigh_po_0p35 l=
 X14 a_131_3984# a_131_n4416# a_n1327_n4546# sky130_fd_pr__res_xhigh_po_0p35 l=40
 .ends
 
-.subckt sky130_sw_ip__bgrref_por por avss avdd dvdd porb dvss porb_h[0] porb_h[1]
+.subckt sky130_sw_ip__por por avss avdd dvdd porb dvss porb_h[0] porb_h[1]
 Xx1 x1/Vinn x1/Vinp x2/din avdd dvdd x2/ibn180n x1/vo avss comparator_final
 Xx2 x2/din por porb porb_h[0] porb_h[1] x2/ibn180n dvdd avdd dvss x2/VT2 delayPulse_final
 XR1 m1_10763_n288829# m1_9601_n280429# m1_8273_n280429# avss m1_7941_n280429# m1_7775_n288829#

@@ -1,6 +1,6 @@
 # Tcl script to run LVS on the project
 
-set project sky130_sw_ip__bgrref_por
+set project sky130_sw_ip__por
 
 if {[catch {set PDK_ROOT $::env(PDK_ROOT)}]} {set PDK_ROOT /usr/local/share/pdk}
 if {[catch {set PDK $::env(PDK)}]} {set PDK sky130A}
