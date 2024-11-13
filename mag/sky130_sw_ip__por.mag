@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1731458933
+timestamp 1731462724
 << isosubstrate >>
 rect 3992 -292617 17571 -279609
 << nwell >>
@@ -539,7 +539,7 @@ timestamp 1731450921
 transform 1 0 10231 0 1 -290301
 box -318 -358 318 358
 use comparator_final  x1
-timestamp 1731450921
+timestamp 1731462724
 transform 1 0 6296 0 1 -286728
 box -1988 -5804 11208 -2441
 use delayPulse_final  x2
