@@ -424,6 +424,16 @@ N -160 -760 -40 -760 {
 lab=ibn180n}
 N -320 -640 -290 -640 {
 lab=vbn}
+N 380 -430 430 -430 {
+lab=VSS}
+N 430 -460 430 -430 {
+lab=VSS}
+N 340 -460 430 -460 {
+lab=VSS}
+N 340 -460 340 -400 {
+lab=VSS}
+N 340 -400 380 -400 {
+lab=VSS}
 C {sky130_fd_pr/nfet_g5v0d10v5.sym} 650 -390 0 0 {name=M1
 W=2
 L=1
@@ -836,3 +846,18 @@ spiceprefix=X
 }
 C {ammeter.sym} -190 -760 1 1 {name=Vbn180n savecurrent=true spice_ignore=0}
 C {opin.sym} -40 -760 0 0 {name=p8 lab=ibn180n}
+C {sky130_fd_pr/nfet_01v8.sym} 360 -430 0 0 {name=M22
+L=1
+W=2
+nf=1 
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=nfet_01v8
+spiceprefix=X
+}
+C {devices/lab_pin.sym} 430 -460 2 0 {name=l10 lab=VSS}

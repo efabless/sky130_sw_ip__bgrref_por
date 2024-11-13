@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1721348237
+timestamp 1731433208
 << locali >>
 rect 26884 -291054 28788 -291024
 rect 26884 -291092 27004 -291054
@@ -234,11 +234,11 @@ timestamp 1718283729
 transform 1 0 28429 0 1 -291567
 box -387 -547 387 547
 use sky130_fd_sc_hvl__inv_16  sky130_fd_sc_hvl__inv_16_0 $PDKPATH/libs.ref/sky130_fd_sc_hvl/mag
-timestamp 1715205430
+timestamp 1729530005
 transform 1 0 25658 0 -1 -288632
 box -66 -43 2754 897
 use sky130_fd_sc_hvl__inv_16  sky130_fd_sc_hvl__inv_16_1
-timestamp 1715205430
+timestamp 1729530005
 transform 1 0 25658 0 1 -290260
 box -66 -43 2754 897
 << end >>

@@ -860,7 +860,6 @@ C {devices/title.sym} 160 80 0 0 {name=l2 author="Stephen Wu"}
 C {devices/ipin.sym} 120 -320 0 0 {name=p6 lab=VCCL}
 C {devices/ipin.sym} 120 -290 0 0 {name=p12 lab=VSS}
 C {devices/ipin.sym} 120 -250 0 0 {name=p14 lab=din}
-C {devices/ipin.sym} 120 -220 0 0 {name=p15 lab=Vbg}
 C {devices/opin.sym} 160 -250 0 0 {name=p16 lab=por}
 C {devices/lab_pin.sym} 330 -650 0 0 {name=p17 sig_type=std_logic lab=VCCL}
 C {devices/lab_pin.sym} 330 -320 0 0 {name=p18 sig_type=std_logic lab=VSS}
