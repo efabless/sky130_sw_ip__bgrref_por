@@ -385,19 +385,19 @@ VSS                                                 |VSS
 ---------------------------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes comparator_final and comparator_final are equivalent.
-Flattening unmatched subcell sky130_fd_pr__nfet_01v8_L9ESAD in circuit delayPulse_final (0)(4 instances)
-Flattening unmatched subcell sky130_fd_pr__pfet_01v8_XPC8Y6 in circuit delayPulse_final (0)(15 instances)
 Flattening unmatched subcell sky130_fd_pr__pfet_01v8_GHZ9W9 in circuit delayPulse_final (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_XPC8Y6 in circuit delayPulse_final (0)(15 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_L9ESAD in circuit delayPulse_final (0)(4 instances)
 Flattening unmatched subcell sky130_fd_pr__cap_mim_m3_2_2V27AY in circuit delayPulse_final (0)(2 instances)
 Flattening unmatched subcell por_output_buffer in circuit delayPulse_final (0)(2 instances)
 Flattening unmatched subcell sky130_fd_pr__nfet_01v8_PR763Z in circuit delayPulse_final (0)(2 instances)
 Flattening unmatched subcell sky130_fd_pr__pfet_01v8_DD63S8 in circuit delayPulse_final (0)(2 instances)
-Flattening unmatched subcell sky130_fd_pr__pfet_01v8_U6B66J in circuit delayPulse_final (0)(4 instances)
-Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_PQJ659 in circuit delayPulse_final (0)(3 instances)
 Flattening unmatched subcell sky130_fd_pr__nfet_01v8_G7LLWL in circuit delayPulse_final (0)(5 instances)
-Flattening unmatched subcell sky130_fd_pr__nfet_01v8_5QNSAB in circuit delayPulse_final (0)(3 instances)
-Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_KLZS5A in circuit delayPulse_final (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_PQJ659 in circuit delayPulse_final (0)(3 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_U6B66J in circuit delayPulse_final (0)(4 instances)
 Flattening unmatched subcell sky130_fd_pr__pfet_01v8_SKYQWJ in circuit delayPulse_final (0)(3 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_KLZS5A in circuit delayPulse_final (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_5QNSAB in circuit delayPulse_final (0)(3 instances)
 Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_69TNYL in circuit delayPulse_final (0)(1 instance)
 Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_ESEQJ8 in circuit delayPulse_final (0)(1 instance)
 Flattening unmatched subcell sky130_fd_pr__cap_mim_m3_1_TBT74C in circuit delayPulse_final (0)(3 instances)
@@ -413,8 +413,8 @@ Flattening unmatched subcell sky130_fd_pr__cap_mim_m3_2_4PHTN9 in circuit delayP
 Flattening unmatched subcell sky130_fd_pr__cap_mim_m3_1_EEU5EF in circuit delayPulse_final (0)(2 instances)
 Flattening unmatched subcell sky130_fd_pr__cap_mim_m3_1_RRZ644 in circuit delayPulse_final (0)(1 instance)
 Flattening unmatched subcell sky130_fd_pr__res_xhigh_po_0p69_KA8C77 in circuit delayPulse_final (0)(2 instances)
-Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_XSEQJ6 in circuit delayPulse_final (0)(1 instance)
 Flattening unmatched subcell sky130_fd_pr__pfet_01v8_6QC8WZ in circuit delayPulse_final (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_XSEQJ6 in circuit delayPulse_final (0)(1 instance)
 Flattening unmatched subcell delayPulse_digital in circuit delayPulse_final (0)(1 instance)
 
 Removing zero-valued device vsrc from cell delayPulse_final (1) makes a better match
@@ -426,12 +426,12 @@ Class delayPulse_final (1):  Merged 1 series devices.
 Subcircuit summary:
 Circuit 1: delayPulse_final                         |Circuit 2: delayPulse_final                         
 ----------------------------------------------------|----------------------------------------------------
-sky130_fd_pr__nfet_01v8 (74->20)                    |sky130_fd_pr__nfet_01v8 (72->20)                    
 sky130_fd_pr__pfet_01v8 (168->26)                   |sky130_fd_pr__pfet_01v8 (87->26)                    
+sky130_fd_pr__nfet_01v8 (74->20)                    |sky130_fd_pr__nfet_01v8 (72->20)                    
 sky130_fd_pr__cap_mim_m3_2 (47->9)                  |sky130_fd_pr__cap_mim_m3_2 (47->9)                  
 sky130_fd_pr__pfet_g5v0d10v5 (17->7)                |sky130_fd_pr__pfet_g5v0d10v5 (7)                    
-sky130_fd_pr__nfet_g5v0d10v5 (19->7)                |sky130_fd_pr__nfet_g5v0d10v5 (16->7)                
 levelShifter (1)                                    |levelShifter (1)                                    
+sky130_fd_pr__nfet_g5v0d10v5 (19->7)                |sky130_fd_pr__nfet_g5v0d10v5 (16->7)                
 sky130_fd_pr__cap_mim_m3_1 (47->9)                  |sky130_fd_pr__cap_mim_m3_1 (47->9)                  
 sky130_fd_sc_hvl__inv_16 (2)                        |sky130_fd_sc_hvl__inv_16 (2)                        
 sky130_fd_pr__res_xhigh_po_0p69 (48->1)             |sky130_fd_pr__res_xhigh_po_0p69 (2->1)              
@@ -454,13 +454,13 @@ Circuit 1: delayPulse_final                         |Circuit 2: delayPulse_final
 porb_h[0]                                           |porb_h[0]                                           
 porb_h[1]                                           |porb_h[1]                                           
 VCCH                                                |VCCH                                                
-VCCL                                                |VCCL                                                
+VSS                                                 |VSS                                                 
 ibn180n                                             |ibn180n                                             
 din                                                 |din                                                 
 porb                                                |porb                                                
 por                                                 |por                                                 
+VCCL                                                |VCCL                                                
 VT2                                                 |(no pin, node is VT2                                
-VSS                                                 |VSS                                                 
 ---------------------------------------------------------------------------------------------------------
 Cell pin lists for delayPulse_final and delayPulse_final altered to match.
 Device classes delayPulse_final and delayPulse_final are equivalent.
@@ -481,12 +481,12 @@ Subcircuit summary:
 Circuit 1: sky130_sw_ip__por                        |Circuit 2: sky130_sw_ip__por                        
 ----------------------------------------------------|----------------------------------------------------
 comparator_final (1)                                |comparator_final (1)                                
-sky130_fd_pr__nfet_01v8 (72->20)                    |sky130_fd_pr__nfet_01v8 (72->20)                    
 sky130_fd_pr__pfet_01v8 (29->26)                    |sky130_fd_pr__pfet_01v8 (29->26)                    
+sky130_fd_pr__nfet_01v8 (72->20)                    |sky130_fd_pr__nfet_01v8 (72->20)                    
 sky130_fd_pr__cap_mim_m3_2 (47->9)                  |sky130_fd_pr__cap_mim_m3_2 (47->9)                  
 sky130_fd_pr__pfet_g5v0d10v5 (7)                    |sky130_fd_pr__pfet_g5v0d10v5 (7)                    
-sky130_fd_pr__nfet_g5v0d10v5 (16->7)                |sky130_fd_pr__nfet_g5v0d10v5 (16->7)                
 levelShifter (1)                                    |levelShifter (1)                                    
+sky130_fd_pr__nfet_g5v0d10v5 (16->7)                |sky130_fd_pr__nfet_g5v0d10v5 (16->7)                
 sky130_fd_pr__cap_mim_m3_1 (47->9)                  |sky130_fd_pr__cap_mim_m3_1 (47->9)                  
 sky130_fd_sc_hvl__inv_16 (2)                        |sky130_fd_sc_hvl__inv_16 (2)                        
 sky130_fd_pr__res_xhigh_po_0p69 (1)                 |sky130_fd_pr__res_xhigh_po_0p69 (1)                 
