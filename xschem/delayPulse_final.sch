@@ -1189,7 +1189,7 @@ C {devices/lab_pin.sym} 1050 -1020 0 1 {name=p30 sig_type=std_logic lab=VCCL}
 C {devices/lab_pin.sym} 1130 -910 1 0 {name=p10 sig_type=std_logic lab=VT3}
 C {devices/lab_pin.sym} 540 -1220 0 1 {name=p32 sig_type=std_logic lab=vbp1}
 C {devices/lab_pin.sym} 540 -1140 0 1 {name=p37 sig_type=std_logic lab=vbp2}
-C {devices/lab_pin.sym} 1160 -750 0 0 {name=p53 sig_type=std_logic lab=VSS}
+C {devices/lab_pin.sym} 1160 -750 0 0 {name=p53 sig_type=std_logic lab=VCCL}
 C {devices/lab_pin.sym} 300 -880 0 1 {name=p47 sig_type=std_logic lab=vbn1}
 C {sky130_fd_pr/nfet_g5v0d10v5.sym} 1000 -760 0 0 {name=M21
 L=0.8

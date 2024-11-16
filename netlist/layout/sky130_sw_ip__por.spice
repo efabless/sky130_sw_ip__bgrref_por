@@ -295,6 +295,11 @@ X0 a_n33_n50# a_n81_n154# a_n125_n50# a_n227_n224# sky130_fd_pr__nfet_01v8 ad=0.
 X1 a_63_n50# a_n81_n154# a_n33_n50# a_n227_n224# sky130_fd_pr__nfet_01v8 ad=0.155 pd=1.62 as=0.0825 ps=0.83 w=0.5 l=0.15
 .ends
 
+.subckt sky130_fd_pr__nfet_g5v0d10v5_69TNYL a_100_n100# a_n292_n322# a_n158_n100#
++ a_n100_n188#
+X0 a_100_n100# a_n100_n188# a_n158_n100# a_n292_n322# sky130_fd_pr__nfet_g5v0d10v5 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=1
+.ends
+
 .subckt sky130_fd_pr__nfet_g5v0d10v5_WSE8X6 a_n331_n402# a_29_n268# a_n29_n180# a_n129_n268#
 + a_n187_n180# a_129_n180#
 X0 a_129_n180# a_29_n268# a_n29_n180# a_n331_n402# sky130_fd_pr__nfet_g5v0d10v5 ad=0.522 pd=4.18 as=0.261 ps=2.09 w=1.8 l=0.5
@@ -335,11 +340,6 @@ XXM6 VSS VSS ain S1 sky130_fd_pr__nfet_01v8_L9ESAD
 XXM7 aout VSS m2_2125_n529# VSS sky130_fd_pr__nfet_g5v0d10v5_N5F8XL
 XXM8 aout m2_2125_n529# m2_2125_n529# VCCH aout VCCH sky130_fd_pr__pfet_g5v0d10v5_PHU9Y6
 Xsky130_fd_pr__cap_mim_m3_1_FJFAMD_0 m2_2125_n529# VCCH sky130_fd_pr__cap_mim_m3_1_FJFAMD
-.ends
-
-.subckt sky130_fd_pr__nfet_g5v0d10v5_69TNYL a_100_n100# a_n292_n322# a_n158_n100#
-+ a_n100_n188#
-X0 a_100_n100# a_n100_n188# a_n158_n100# a_n292_n322# sky130_fd_pr__nfet_g5v0d10v5 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=1
 .ends
 
 .subckt sky130_fd_pr__nfet_g5v0d10v5_ESEQJ8 a_n282_n422# a_80_n200# a_n138_n200# a_n80_n288#
@@ -672,11 +672,12 @@ Xsky130_fd_sc_ls__xor2_1_0 sky130_fd_sc_ls__xor2_1_0/A sky130_fd_sc_ls__xor2_1_0
 + VSUBS VSUBS TieH_1p8_0/VCC TieH_1p8_0/VCC sky130_fd_sc_ls__buf_8_0/A sky130_fd_sc_ls__xor2_1
 .ends
 
-.subckt delayPulse_final din por porb porb_h[0] porb_h[1] ibn180n VCCL VCCH VSS VT2
+.subckt delayPulse_final din por porb porb_h[0] porb_h[1] ibn180n m2_1725_n286520#
++ VCCL VCCH m2_1729_n290386# VSS VT2
 XXM12 VT3 VCCL VT2 VCCL VT2 VCCL sky130_fd_pr__pfet_01v8_GHZ9W9
 XXM23 m2_29747_n287456# m2_27024_n287466# vbp2 vbp2 m2_27024_n287466# VCCL sky130_fd_pr__pfet_01v8_XPC8Y6
 XXM34 VSS VSS m4_25183_n288425# m2_24504_n284758# sky130_fd_pr__nfet_01v8_L9ESAD
-Xsky130_fd_pr__cap_mim_m3_2_2V27AY_0 VT3 VSS VSS VT3 sky130_fd_pr__cap_mim_m3_2_2V27AY
+Xsky130_fd_pr__cap_mim_m3_2_2V27AY_0 VT3 VCCL VCCL VT3 sky130_fd_pr__cap_mim_m3_2_2V27AY
 Xpor_output_buffer_1 VCCL por VSS porPre por_output_buffer
 XXM13 m2_31224_n287586# VT3 VSS VSS VSS VT3 sky130_fd_pr__nfet_01v8_G7LLWL
 XXM24 ibn180n ibn180n VCCH m1_22999_n287228# sky130_fd_pr__pfet_g5v0d10v5_PQJ659
@@ -689,8 +690,8 @@ XXM25 m1_22999_n287228# m1_22999_n287228# m1_22999_n287228# m1_22999_n287228# VC
 + m1_22999_n287228# m1_22999_n287228# m1_22999_n287228# VCCH m1_22999_n287228# m1_22999_n287228#
 + m1_22999_n287228# m1_22999_n287228# VCCH VCCH VCCH m1_22999_n287228# VCCH sky130_fd_pr__pfet_g5v0d10v5_KLZS5A
 XXM36 VSS VSS Td_Sd Td_Sd m2_24748_n284671# sky130_fd_pr__nfet_01v8_5QNSAB
-Xx3 porbPre x3/aout VCCL VSS VCCH levelShifter
 XXM26 m1_22125_n286949# VSS VSS VSS sky130_fd_pr__nfet_g5v0d10v5_69TNYL
+Xx3 porbPre x3/aout VCCL VSS VCCH levelShifter
 XXM16 m2_27024_n287466# VCCL vbp1 vbp1 VCCL VCCL sky130_fd_pr__pfet_01v8_XPC8Y6
 XXM27 VSS VSS m2_31224_n287586# m2_31884_n287663# sky130_fd_pr__nfet_01v8_L9ESAD
 XXM38 VSS VSS m2_24504_n284758# m2_24748_n284671# sky130_fd_pr__nfet_01v8_L9ESAD
@@ -713,9 +714,9 @@ Xsky130_fd_pr__cap_mim_m3_1_KB5CJD_2 VSS m2_24504_n284758# sky130_fd_pr__cap_mim
 XXM4 Td_Lb VSS VSS VSS Td_L sky130_fd_pr__nfet_01v8_5QNSAB
 XXM5 VT2 m2_30306_n287752# VSS VSS VSS m2_30306_n287752# sky130_fd_pr__nfet_01v8_G7LLWL
 XXM6 VT3 VT2 VSS m2_29342_n288187# m2_29342_n288187# VT2 sky130_fd_pr__nfet_01v8_G7LLWL
+XXM7 VSS din VSS m2_30306_n287752# m2_30306_n287752# din sky130_fd_pr__nfet_01v8_G7LLWL
 Xpor_output_driver_h_0 VCCH VCCH porb_h[0] VSS VCCH x3/aout VCCH VSS porb_h[1] VSS
 + por_output_driver_h
-XXM7 VSS din VSS m2_30306_n287752# m2_30306_n287752# din sky130_fd_pr__nfet_01v8_G7LLWL
 XXM8 VSS m2_30306_n287752# VSS Td_S Td_S m2_30306_n287752# sky130_fd_pr__nfet_01v8_G7LLWL
 XXM9 VCCL Td_Lb VCCL VCCL Td_Lb Td_L VCCL VCCL Td_L sky130_fd_pr__pfet_01v8_X6XW7S
 Xsky130_fd_pr__cap_mim_m3_2_RQPX7Z_0 VCCL vbp1 sky130_fd_pr__cap_mim_m3_2_RQPX7Z
@@ -735,7 +736,7 @@ XXC5 VCCH m1_22999_n287228# sky130_fd_pr__cap_mim_m3_2_RQPX7Z
 Xsky130_fd_pr__cap_mim_m3_2_4PHTN9_0 m2_24504_n284758# VSS sky130_fd_pr__cap_mim_m3_2_4PHTN9
 Xsky130_fd_pr__cap_mim_m3_1_EEU5EF_0 VSS VT2 VT2 VSS sky130_fd_pr__cap_mim_m3_1_EEU5EF
 XXC9 m2_24748_n284671# VCCL sky130_fd_pr__cap_mim_m3_2_4PHTN9
-Xsky130_fd_pr__cap_mim_m3_1_EEU5EF_1 VSS VT3 VT3 VSS sky130_fd_pr__cap_mim_m3_1_EEU5EF
+Xsky130_fd_pr__cap_mim_m3_1_EEU5EF_1 VCCL VT3 VT3 VCCL sky130_fd_pr__cap_mim_m3_1_EEU5EF
 Xsky130_fd_pr__cap_mim_m3_1_RRZ644_0 VCCH ibn180n sky130_fd_pr__cap_mim_m3_1_RRZ644
 XXM40 Td_Sd VCCL Td_Sd Td_Sd VCCL m2_24748_n284671# VCCL Td_Sd m2_24748_n284671# sky130_fd_pr__pfet_01v8_X6XW7S
 XXM30 Td_L VSS VSS VSS m2_31884_n287663# sky130_fd_pr__nfet_01v8_5QNSAB
@@ -856,7 +857,8 @@ X14 a_131_3984# a_131_n4416# a_n1327_n4546# sky130_fd_pr__res_xhigh_po_0p35 l=40
 
 .subckt sky130_sw_ip__por por avss avdd dvdd porb dvss porb_h[0] porb_h[1]
 Xx1 x1/Vinn x1/Vinp x2/din avdd dvdd x2/ibn180n x1/vo avss comparator_final
-Xx2 x2/din por porb porb_h[0] porb_h[1] x2/ibn180n dvdd avdd dvss x2/VT2 delayPulse_final
+Xx2 x2/din por porb porb_h[0] porb_h[1] x2/ibn180n avdd dvdd avdd avss dvss x2/VT2
++ delayPulse_final
 XR1 m1_10763_n288829# m1_9601_n280429# m1_8273_n280429# avss m1_7941_n280429# m1_7775_n288829#
 + m1_9269_n280429# m1_10099_n288829# m1_8439_n288829# m1_10929_n280429# m1_7277_n280429#
 + m1_9933_n280429# m1_9103_n288829# m1_9767_n288829# m1_7277_n280429# x1/Vinn m1_9933_n280429#

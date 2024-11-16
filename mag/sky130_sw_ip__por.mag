@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1731463417
+timestamp 1731723950
 << isosubstrate >>
 rect 3992 -292617 17571 -279609
 << nwell >>
@@ -478,8 +478,10 @@ rect 38044 -289340 39496 -289256
 rect 39296 -289388 39496 -289340
 rect 16747 -289466 17438 -289428
 rect 10326 -290222 10378 -289565
-rect 35038 -290006 39195 -290005
+rect 37864 -290005 39496 -289913
+rect 35038 -290006 39496 -290005
 rect 35038 -290381 39497 -290006
+rect 37864 -290493 39496 -290381
 rect 39301 -290786 39501 -290729
 rect 37952 -290871 39501 -290786
 rect 37952 -291076 38037 -290871
@@ -507,47 +509,47 @@ rect 32079 -284981 32641 -284194
 << metal5 >>
 rect 32079 -284981 32641 -284194
 use por_via_2cut  por_via_2cut_0
-timestamp 1731463417
+timestamp 1718283729
 transform 0 1 18285 -1 0 -274010
 box 16088 -7932 16222 -7868
 use por_via_2cut  por_via_2cut_2
-timestamp 1731463417
+timestamp 1718283729
 transform -1 0 26472 0 -1 -297476
 box 16088 -7932 16222 -7868
 use por_via_2cut  por_via_2cut_4
-timestamp 1731463417
+timestamp 1718283729
 transform 0 1 17981 -1 0 -274025
 box 16088 -7932 16222 -7868
 use por_via_4cut  por_via_4cut_18
-timestamp 1731463417
+timestamp 1718283729
 transform 0 -1 9666 1 0 -305206
 box 15948 -7932 16222 -7868
 use sky130_fd_pr__res_xhigh_po_0p35_WGPHGK  R1 paramcells
-timestamp 1731463417
+timestamp 1731359787
 transform 1 0 9138 0 1 -284414
 box -2193 -4582 2193 4582
 use sky130_fd_pr__res_xhigh_po_0p35_PXB2PH  R10 paramcells
-timestamp 1731463417
+timestamp 1731450921
 transform 1 0 11917 0 1 -284732
 box -450 -4182 450 4182
 use sky130_fd_pr__res_xhigh_po_0p35_MNWQZD  R12 paramcells
-timestamp 1731463417
+timestamp 1731359787
 transform 1 0 13835 0 1 -284412
 box -1363 -4582 1363 4582
 use sky130_fd_pr__nfet_05v0_nvt_FPTPS4  sky130_fd_pr__nfet_05v0_nvt_FPTPS4_0 paramcells
-timestamp 1731463417
+timestamp 1731450921
 transform 1 0 10231 0 1 -290301
 box -318 -358 318 358
 use comparator_final  x1
-timestamp 1731463417
+timestamp 1731723950
 transform 1 0 6296 0 1 -286728
 box -1988 -5804 11208 -2441
 use delayPulse_final  x2
-timestamp 1731463417
+timestamp 1731723950
 transform 1 0 1055 0 1 -2959
 box 1311 -297437 38614 -274935
 use sky130_fd_pr__nfet_05v0_nvt_CZFQWY  XM2 paramcells
-timestamp 1731463417
+timestamp 1726591550
 transform 1 0 15668 0 1 -280576
 box -318 -567 318 567
 << labels >>

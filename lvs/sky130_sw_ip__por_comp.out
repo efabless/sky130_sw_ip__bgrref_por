@@ -417,12 +417,18 @@ Flattening unmatched subcell sky130_fd_pr__pfet_01v8_6QC8WZ in circuit delayPuls
 Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_XSEQJ6 in circuit delayPulse_final (0)(1 instance)
 Flattening unmatched subcell delayPulse_digital in circuit delayPulse_final (0)(1 instance)
 
+Cell delayPulse_final (0) disconnected node: m2_1725_n286520#
+Cell delayPulse_final (0) disconnected node: m2_1729_n290386#
 Removing zero-valued device vsrc from cell delayPulse_final (1) makes a better match
 Making another compare attempt.
 
+Cell delayPulse_final (0) disconnected node: m2_1725_n286520#
+Cell delayPulse_final (0) disconnected node: m2_1729_n290386#
 Class delayPulse_final (0):  Merged 294 parallel devices.
 Class delayPulse_final (0):  Merged 47 series devices.
 Class delayPulse_final (1):  Merged 1 series devices.
+Cell delayPulse_final (0) disconnected node: m2_1725_n286520#
+Cell delayPulse_final (0) disconnected node: m2_1729_n290386#
 Subcircuit summary:
 Circuit 1: delayPulse_final                         |Circuit 2: delayPulse_final                         
 ----------------------------------------------------|----------------------------------------------------
@@ -430,8 +436,8 @@ sky130_fd_pr__pfet_01v8 (168->26)                   |sky130_fd_pr__pfet_01v8 (87
 sky130_fd_pr__nfet_01v8 (74->20)                    |sky130_fd_pr__nfet_01v8 (72->20)                    
 sky130_fd_pr__cap_mim_m3_2 (47->9)                  |sky130_fd_pr__cap_mim_m3_2 (47->9)                  
 sky130_fd_pr__pfet_g5v0d10v5 (17->7)                |sky130_fd_pr__pfet_g5v0d10v5 (7)                    
-levelShifter (1)                                    |levelShifter (1)                                    
 sky130_fd_pr__nfet_g5v0d10v5 (19->7)                |sky130_fd_pr__nfet_g5v0d10v5 (16->7)                
+levelShifter (1)                                    |levelShifter (1)                                    
 sky130_fd_pr__cap_mim_m3_1 (47->9)                  |sky130_fd_pr__cap_mim_m3_1 (47->9)                  
 sky130_fd_sc_hvl__inv_16 (2)                        |sky130_fd_sc_hvl__inv_16 (2)                        
 sky130_fd_pr__res_xhigh_po_0p69 (48->1)             |sky130_fd_pr__res_xhigh_po_0p69 (2->1)              
@@ -485,8 +491,8 @@ sky130_fd_pr__pfet_01v8 (29->26)                    |sky130_fd_pr__pfet_01v8 (29
 sky130_fd_pr__nfet_01v8 (72->20)                    |sky130_fd_pr__nfet_01v8 (72->20)                    
 sky130_fd_pr__cap_mim_m3_2 (47->9)                  |sky130_fd_pr__cap_mim_m3_2 (47->9)                  
 sky130_fd_pr__pfet_g5v0d10v5 (7)                    |sky130_fd_pr__pfet_g5v0d10v5 (7)                    
-levelShifter (1)                                    |levelShifter (1)                                    
 sky130_fd_pr__nfet_g5v0d10v5 (16->7)                |sky130_fd_pr__nfet_g5v0d10v5 (16->7)                
+levelShifter (1)                                    |levelShifter (1)                                    
 sky130_fd_pr__cap_mim_m3_1 (47->9)                  |sky130_fd_pr__cap_mim_m3_1 (47->9)                  
 sky130_fd_sc_hvl__inv_16 (2)                        |sky130_fd_sc_hvl__inv_16 (2)                        
 sky130_fd_pr__res_xhigh_po_0p69 (1)                 |sky130_fd_pr__res_xhigh_po_0p69 (1)                 

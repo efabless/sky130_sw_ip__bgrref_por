@@ -1,4 +1,4 @@
-** sch_path: /home/tim/gits/sky130_ef_ip__power_on_reset/dependencies/sky130_sw_ip__bgrref_por/xschem/sky130_sw_ip__por.sch
+** sch_path: /home/tim/gits/sky130_sw_ip__por/xschem/sky130_sw_ip__por.sch
 .subckt sky130_sw_ip__por por avss avdd dvdd porb dvss porb_h[1] porb_h[0]
 *.PININFO avdd:B por:O avss:B dvdd:B porb:O porb_h[1:0]:O dvss:B
 x1 Vinn Vinp RST avss net1 dvdd vo net6 comparator_final
@@ -19,8 +19,8 @@ XM3 net5 vo Vinn avss sky130_fd_pr__nfet_05v0_nvt L=0.9 W=1 nf=1 m=1
 .ends
 
 * expanding   symbol:  comparator_final.sym # of pins=8
-** sym_path: /home/tim/gits/sky130_ef_ip__power_on_reset/dependencies/sky130_sw_ip__bgrref_por/xschem/comparator_final.sym
-** sch_path: /home/tim/gits/sky130_ef_ip__power_on_reset/dependencies/sky130_sw_ip__bgrref_por/xschem/comparator_final.sch
+** sym_path: /home/tim/gits/sky130_sw_ip__por/xschem/comparator_final.sym
+** sch_path: /home/tim/gits/sky130_sw_ip__por/xschem/comparator_final.sch
 .subckt comparator_final Vinn Vinp RST VSS AVDD DVDD vo ibn180n
 *.PININFO AVDD:I RST:O VSS:I Vinn:I Vinp:I DVDD:I vo:O ibn180n:O
 XM1 VS vbn VSS VSS sky130_fd_pr__nfet_g5v0d10v5 L=1 W=2 nf=1 m=2
@@ -57,8 +57,8 @@ XM22 VSS VSS VSS VSS sky130_fd_pr__nfet_01v8 L=1 W=2 nf=1 m=1
 
 
 * expanding   symbol:  delayPulse_final.sym # of pins=8
-** sym_path: /home/tim/gits/sky130_ef_ip__power_on_reset/dependencies/sky130_sw_ip__bgrref_por/xschem/delayPulse_final.sym
-** sch_path: /home/tim/gits/sky130_ef_ip__power_on_reset/dependencies/sky130_sw_ip__bgrref_por/xschem/delayPulse_final.sch
+** sym_path: /home/tim/gits/sky130_sw_ip__por/xschem/delayPulse_final.sym
+** sch_path: /home/tim/gits/sky130_sw_ip__por/xschem/delayPulse_final.sch
 .subckt delayPulse_final din por VCCL VSS VCCH porb porb_h[1] porb_h[0] ibn180n
 *.PININFO VCCL:I VSS:I din:I por:O VCCH:I porb:O porb_h[1:0]:O ibn180n:I
 x1 Td_L Td_Sd VSS VSS VCCL VCCL outxor sky130_fd_sc_ls__xor2_1
@@ -102,7 +102,7 @@ XM39 net16 net15 VCCL VCCL sky130_fd_pr__pfet_01v8 L=0.15 W=1.4 nf=2 m=1
 x6 outxor VSS VSS VCCL VCCL rstn sky130_fd_sc_ls__buf_8
 XC4 VSS net15 sky130_fd_pr__cap_mim_m3_2 W=10 L=10 m=1
 XC7 VSS VT2 sky130_fd_pr__cap_mim_m3_2 W=16 L=16 m=20
-XC2 VSS VT3 sky130_fd_pr__cap_mim_m3_2 W=16 L=16 m=20
+XC2 VCCL VT3 sky130_fd_pr__cap_mim_m3_2 W=16 L=16 m=20
 XC8 VCCL net14 sky130_fd_pr__cap_mim_m3_2 W=10 L=10 m=1
 XC9 VCCL net16 sky130_fd_pr__cap_mim_m3_2 W=10 L=10 m=1
 XM40 Td_Sd net16 VCCL VCCL sky130_fd_pr__pfet_01v8 L=0.15 W=1.4 nf=2 m=2
@@ -138,7 +138,7 @@ XC11 net7 VCCH sky130_fd_pr__cap_mim_m3_1 W=16 L=16 m=1
 XC12 vbp1 VCCL sky130_fd_pr__cap_mim_m3_1 W=16 L=16 m=1
 XC13 vbn1 VSS sky130_fd_pr__cap_mim_m3_1 W=16 L=16 m=1
 XC14 VT2 VSS sky130_fd_pr__cap_mim_m3_1 W=16 L=16 m=20
-XC15 VT3 VSS sky130_fd_pr__cap_mim_m3_1 W=16 L=16 m=20
+XC15 VT3 VCCL sky130_fd_pr__cap_mim_m3_1 W=16 L=16 m=20
 XC16 net14 VCCL sky130_fd_pr__cap_mim_m3_1 W=10 L=10 m=1
 XC17 net15 VSS sky130_fd_pr__cap_mim_m3_1 W=10 L=10 m=1
 XC18 net16 VCCL sky130_fd_pr__cap_mim_m3_1 W=10 L=10 m=1
@@ -156,8 +156,8 @@ Vvgbias net8 ibn180n 0
 
 
 * expanding   symbol:  levelShifter.sym # of pins=5
-** sym_path: /home/tim/gits/sky130_ef_ip__power_on_reset/dependencies/sky130_sw_ip__bgrref_por/xschem/levelShifter.sym
-** sch_path: /home/tim/gits/sky130_ef_ip__power_on_reset/dependencies/sky130_sw_ip__bgrref_por/xschem/levelShifter.sch
+** sym_path: /home/tim/gits/sky130_sw_ip__por/xschem/levelShifter.sym
+** sch_path: /home/tim/gits/sky130_sw_ip__por/xschem/levelShifter.sch
 .subckt levelShifter ain aout VCCL VSS VCCH
 *.PININFO VCCL:I VSS:I ain:I aout:O VCCH:I
 XM12 net1 S1 VSS VSS sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=3.6 nf=1 m=1
@@ -175,8 +175,8 @@ XC1 VCCH aob sky130_fd_pr__cap_mim_m3_1 W=2 L=2 m=1
 
 
 * expanding   symbol:  TieH_1p8.sym # of pins=3
-** sym_path: /home/tim/gits/sky130_ef_ip__power_on_reset/dependencies/sky130_sw_ip__bgrref_por/xschem/TieH_1p8.sym
-** sch_path: /home/tim/gits/sky130_ef_ip__power_on_reset/dependencies/sky130_sw_ip__bgrref_por/xschem/TieH_1p8.sch
+** sym_path: /home/tim/gits/sky130_sw_ip__por/xschem/TieH_1p8.sym
+** sch_path: /home/tim/gits/sky130_sw_ip__por/xschem/TieH_1p8.sch
 .subckt TieH_1p8 TieH VSS VCC
 *.PININFO VCC:I VSS:I TieH:B
 XM4 net1 net1 VSS VSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.5 nf=1 m=1
