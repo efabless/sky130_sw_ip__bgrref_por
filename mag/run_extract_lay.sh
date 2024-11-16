@@ -1,6 +1,6 @@
 #! /bin/bash
 
-project=sky130_sw_ip__bgrref_por
+project=sky130_sw_ip__por
 
 echo ${PDK_ROOT:=/usr/share/pdk} > /dev/null
 echo ${PDK:=sky130A} > /dev/null

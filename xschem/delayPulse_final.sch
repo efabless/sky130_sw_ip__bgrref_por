@@ -183,7 +183,7 @@ N 10 -1220 30 -1220 {
 lab=VCCH}
 N 30 -910 60 -910 {lab=VSS}
 N -20 -910 -10 -910 {
-lab=Vbg}
+lab=VSS}
 N 190 -830 230 -830 {
 lab=VSS}
 N 60 -910 60 -770 {
@@ -195,7 +195,7 @@ lab=VCCH}
 N -140 -1280 10 -1280 {
 lab=VCCH}
 N -40 -910 -20 -910 {
-lab=Vbg}
+lab=VSS}
 N 230 -1220 270 -1220 {
 lab=VCCH}
 N 230 -1120 270 -1120 {
@@ -450,8 +450,6 @@ lab=#net15}
 N 1210 -260 1250 -260 {
 lab=#net16}
 N 30 -1090 30 -1030 {
-lab=#net8}
-N 30 -970 30 -940 {
 lab=#net8}
 N -60 -1070 30 -1070 {
 lab=#net8}
@@ -734,8 +732,6 @@ N 1020 -990 1020 -930 {
 lab=VT3}
 N 1320 -990 1320 -930 {
 lab=#net4}
-N 30 -1030 30 -970 {
-lab=#net8}
 N 330 -560 330 -500 {
 lab=#net1}
 N 620 -340 620 -280 {
@@ -844,6 +840,16 @@ N 1250 -20 1250 40 {
 lab=VCCL}
 N 980 -20 980 40 {
 lab=VCCL}
+N 30 -940 60 -940 {
+lab=VSS}
+N 60 -940 60 -910 {
+lab=VSS}
+N -70 -970 30 -970 {
+lab=ibn180n}
+N -40 -940 -40 -910 {
+lab=VSS}
+N -40 -940 30 -940 {
+lab=VSS}
 C {devices/lab_pin.sym} 620 -430 0 0 {name=p4 sig_type=std_logic lab=VCCL}
 C {devices/lab_pin.sym} 620 -100 0 0 {name=p5 sig_type=std_logic lab=VSS}
 C {devices/lab_pin.sym} 790 -750 0 0 {name=p1 sig_type=std_logic lab=VSS}
@@ -854,7 +860,6 @@ C {devices/title.sym} 160 80 0 0 {name=l2 author="Stephen Wu"}
 C {devices/ipin.sym} 120 -320 0 0 {name=p6 lab=VCCL}
 C {devices/ipin.sym} 120 -290 0 0 {name=p12 lab=VSS}
 C {devices/ipin.sym} 120 -250 0 0 {name=p14 lab=din}
-C {devices/ipin.sym} 120 -220 0 0 {name=p15 lab=Vbg}
 C {devices/opin.sym} 160 -250 0 0 {name=p16 lab=por}
 C {devices/lab_pin.sym} 330 -650 0 0 {name=p17 sig_type=std_logic lab=VCCL}
 C {devices/lab_pin.sym} 330 -320 0 0 {name=p18 sig_type=std_logic lab=VSS}
@@ -1092,7 +1097,6 @@ model=nfet_g5v0d10v5
 spiceprefix=X
 }
 C {devices/ngspice_probe.sym} 30 -870 0 0 {name=r2}
-C {devices/lab_pin.sym} -40 -910 2 1 {name=p28 sig_type=std_logic lab=Vbg}
 C {devices/lab_pin.sym} 150 -770 0 0 {name=p24 sig_type=std_logic lab=VSS}
 C {devices/lab_wire.sym} 100 -1280 0 1 {name=p8 lab=VCCH}
 C {devices/lab_pin.sym} 690 -1280 0 1 {name=p7 sig_type=std_logic lab=VCCL}
@@ -1185,7 +1189,7 @@ C {devices/lab_pin.sym} 1050 -1020 0 1 {name=p30 sig_type=std_logic lab=VCCL}
 C {devices/lab_pin.sym} 1130 -910 1 0 {name=p10 sig_type=std_logic lab=VT3}
 C {devices/lab_pin.sym} 540 -1220 0 1 {name=p32 sig_type=std_logic lab=vbp1}
 C {devices/lab_pin.sym} 540 -1140 0 1 {name=p37 sig_type=std_logic lab=vbp2}
-C {devices/lab_pin.sym} 1160 -750 0 0 {name=p53 sig_type=std_logic lab=VSS}
+C {devices/lab_pin.sym} 1160 -750 0 0 {name=p53 sig_type=std_logic lab=VCCL}
 C {devices/lab_pin.sym} 300 -880 0 1 {name=p47 sig_type=std_logic lab=vbn1}
 C {sky130_fd_pr/nfet_g5v0d10v5.sym} 1000 -760 0 0 {name=M21
 L=0.8
@@ -1820,3 +1824,5 @@ C {sky130_stdcells/inv_16.sym} 2320 90 0 0 {name=x10 VGND=VSS VNB=VSS VPB=VCCH V
 C {sky130_stdcells/inv_16.sym} 2320 140 0 0 {name=x8 VGND=VSS VNB=VSS VPB=VCCH VPWR=VCCH prefix=sky130_fd_sc_hvl__ }
 C {devices/lab_pin.sym} 1250 40 0 1 {name=p63 sig_type=std_logic lab=VCCL}
 C {devices/lab_pin.sym} 980 40 0 1 {name=p64 sig_type=std_logic lab=VCCL}
+C {ammeter.sym} 30 -1000 0 0 {name=Vvgbias savecurrent=true spice_ignore=0}
+C {ipin.sym} -70 -970 0 0 {name=p65 lab=ibn180n}

@@ -295,31 +295,6 @@ X                                                   |X
 ---------------------------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes sky130_fd_sc_ls__xor2_1 and sky130_fd_sc_ls__xor2_1 are equivalent.
-Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_UNEQ2N in circuit mux2to1 (0)(3 instances)
-Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_KLD8Y6 in circuit mux2to1 (0)(3 instances)
-
-Subcircuit summary:
-Circuit 1: mux2to1                                  |Circuit 2: mux2to1                                  
-----------------------------------------------------|----------------------------------------------------
-sky130_fd_pr__nfet_g5v0d10v5 (3)                    |sky130_fd_pr__nfet_g5v0d10v5 (3)                    
-sky130_fd_pr__pfet_g5v0d10v5 (3)                    |sky130_fd_pr__pfet_g5v0d10v5 (3)                    
-Number of devices: 6                                |Number of devices: 6                                
-Number of nets: 7                                   |Number of nets: 7                                   
----------------------------------------------------------------------------------------------------------
-Netlists match uniquely.
-
-Subcircuit pins:
-Circuit 1: mux2to1                                  |Circuit 2: mux2to1                                  
-----------------------------------------------------|----------------------------------------------------
-A1                                                  |A1                                                  
-A0                                                  |A0                                                  
-S                                                   |S                                                   
-VSS                                                 |VSS                                                 
-VCC                                                 |VCC                                                 
-Z                                                   |Z                                                   
----------------------------------------------------------------------------------------------------------
-Cell pin lists are equivalent.
-Device classes mux2to1 and mux2to1 are equivalent.
 Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_WSE8X6 in circuit levelShifter (0)(2 instances)
 Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_PHU9Y6 in circuit levelShifter (0)(3 instances)
 Flattening unmatched subcell sky130_fd_pr__pfet_01v8_X6X8XQ in circuit levelShifter (0)(2 instances)
@@ -369,30 +344,29 @@ Cell pin lists are equivalent.
 Device classes sky130_fd_pr__nfet_05v0_nvt and sky130_fd_pr__nfet_05v0_nvt are equivalent.
 Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_UNEQ2N in circuit comparator_final (0)(2 instances)
 Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_VHBZVD in circuit comparator_final (0)(5 instances)
-Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_KLNSY6 in circuit comparator_final (0)(2 instances)
 Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_MJGQJ3 in circuit comparator_final (0)(4 instances)
-Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_YYAQG7 in circuit comparator_final (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_KLNSY6 in circuit comparator_final (0)(2 instances)
 Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_KLAZY6 in circuit comparator_final (0)(1 instance)
-Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_T4TNG7 in circuit comparator_final (0)(3 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_T4TNG7 in circuit comparator_final (0)(4 instances)
 Flattening unmatched subcell sky130_fd_pr__nfet_01v8_SALWK2 in circuit comparator_final (0)(1 instance)
 Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_FGK6VM in circuit comparator_final (0)(1 instance)
 Flattening unmatched subcell sky130_fd_pr__res_xhigh_po_0p35_FVGVKR in circuit comparator_final (0)(1 instance)
 Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_KL3SY6 in circuit comparator_final (0)(3 instances)
-Flattening unmatched subcell sky130_fd_pr__cap_mim_m3_1_KB5CJD in circuit comparator_final (0)(1 instance)
-Flattening unmatched subcell sky130_fd_pr__nfet_01v8_B8TQK3 in circuit comparator_final (0)(4 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_B8TQK3 in circuit comparator_final (0)(5 instances)
 
-Class comparator_final (0):  Merged 10 parallel devices.
+Removing zero-valued device vsrc from cell comparator_final (1) makes a better match
+Making another compare attempt.
+
+Class comparator_final (0):  Merged 12 parallel devices.
 Class comparator_final (0):  Merged 3 series devices.
 Subcircuit summary:
 Circuit 1: comparator_final                         |Circuit 2: comparator_final                         
 ----------------------------------------------------|----------------------------------------------------
-sky130_fd_pr__nfet_g5v0d10v5 (13->10)               |sky130_fd_pr__nfet_g5v0d10v5 (13->10)               
+sky130_fd_pr__nfet_g5v0d10v5 (14->11)               |sky130_fd_pr__nfet_g5v0d10v5 (14->11)               
 sky130_fd_pr__pfet_g5v0d10v5 (14->12)               |sky130_fd_pr__pfet_g5v0d10v5 (12)                   
-mux2to1 (1)                                         |mux2to1 (1)                                         
-sky130_fd_pr__nfet_01v8 (9->4)                      |sky130_fd_pr__nfet_01v8 (9->4)                      
+sky130_fd_pr__nfet_01v8 (11->4)                     |sky130_fd_pr__nfet_01v8 (11->4)                     
 sky130_fd_pr__res_xhigh_po_0p35 (4->1)              |sky130_fd_pr__res_xhigh_po_0p35 (1)                 
-sky130_fd_pr__cap_mim_m3_1 (1)                      |sky130_fd_pr__cap_mim_m3_1 (1)                      
-Number of devices: 29                               |Number of devices: 29                               
+Number of devices: 28                               |Number of devices: 28                               
 Number of nets: 22                                  |Number of nets: 22                                  
 ---------------------------------------------------------------------------------------------------------
 Netlists match uniquely.
@@ -400,28 +374,30 @@ Netlists match uniquely.
 Subcircuit pins:
 Circuit 1: comparator_final                         |Circuit 2: comparator_final                         
 ----------------------------------------------------|----------------------------------------------------
-Vinp                                                |Vinp                                                
 RST                                                 |RST                                                 
+Vinp                                                |Vinp                                                
 Vinn                                                |Vinn                                                
+ibn180n                                             |ibn180n                                             
 AVDD                                                |AVDD                                                
+vo                                                  |vo                                                  
 DVDD                                                |DVDD                                                
 VSS                                                 |VSS                                                 
 ---------------------------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes comparator_final and comparator_final are equivalent.
-Flattening unmatched subcell sky130_fd_pr__nfet_01v8_L9ESAD in circuit delayPulse_final (0)(4 instances)
-Flattening unmatched subcell sky130_fd_pr__pfet_01v8_XPC8Y6 in circuit delayPulse_final (0)(15 instances)
 Flattening unmatched subcell sky130_fd_pr__pfet_01v8_GHZ9W9 in circuit delayPulse_final (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_XPC8Y6 in circuit delayPulse_final (0)(15 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_L9ESAD in circuit delayPulse_final (0)(4 instances)
 Flattening unmatched subcell sky130_fd_pr__cap_mim_m3_2_2V27AY in circuit delayPulse_final (0)(2 instances)
 Flattening unmatched subcell por_output_buffer in circuit delayPulse_final (0)(2 instances)
 Flattening unmatched subcell sky130_fd_pr__nfet_01v8_PR763Z in circuit delayPulse_final (0)(2 instances)
 Flattening unmatched subcell sky130_fd_pr__pfet_01v8_DD63S8 in circuit delayPulse_final (0)(2 instances)
-Flattening unmatched subcell sky130_fd_pr__pfet_01v8_U6B66J in circuit delayPulse_final (0)(4 instances)
-Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_PQJ659 in circuit delayPulse_final (0)(3 instances)
 Flattening unmatched subcell sky130_fd_pr__nfet_01v8_G7LLWL in circuit delayPulse_final (0)(5 instances)
-Flattening unmatched subcell sky130_fd_pr__nfet_01v8_5QNSAB in circuit delayPulse_final (0)(3 instances)
-Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_KLZS5A in circuit delayPulse_final (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_PQJ659 in circuit delayPulse_final (0)(3 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_U6B66J in circuit delayPulse_final (0)(4 instances)
 Flattening unmatched subcell sky130_fd_pr__pfet_01v8_SKYQWJ in circuit delayPulse_final (0)(3 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_KLZS5A in circuit delayPulse_final (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_5QNSAB in circuit delayPulse_final (0)(3 instances)
 Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_69TNYL in circuit delayPulse_final (0)(1 instance)
 Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_ESEQJ8 in circuit delayPulse_final (0)(1 instance)
 Flattening unmatched subcell sky130_fd_pr__cap_mim_m3_1_TBT74C in circuit delayPulse_final (0)(3 instances)
@@ -437,22 +413,31 @@ Flattening unmatched subcell sky130_fd_pr__cap_mim_m3_2_4PHTN9 in circuit delayP
 Flattening unmatched subcell sky130_fd_pr__cap_mim_m3_1_EEU5EF in circuit delayPulse_final (0)(2 instances)
 Flattening unmatched subcell sky130_fd_pr__cap_mim_m3_1_RRZ644 in circuit delayPulse_final (0)(1 instance)
 Flattening unmatched subcell sky130_fd_pr__res_xhigh_po_0p69_KA8C77 in circuit delayPulse_final (0)(2 instances)
-Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_XSEQJ6 in circuit delayPulse_final (0)(1 instance)
 Flattening unmatched subcell sky130_fd_pr__pfet_01v8_6QC8WZ in circuit delayPulse_final (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_XSEQJ6 in circuit delayPulse_final (0)(1 instance)
 Flattening unmatched subcell delayPulse_digital in circuit delayPulse_final (0)(1 instance)
 
+Cell delayPulse_final (0) disconnected node: m2_1725_n286520#
+Cell delayPulse_final (0) disconnected node: m2_1729_n290386#
+Removing zero-valued device vsrc from cell delayPulse_final (1) makes a better match
+Making another compare attempt.
+
+Cell delayPulse_final (0) disconnected node: m2_1725_n286520#
+Cell delayPulse_final (0) disconnected node: m2_1729_n290386#
 Class delayPulse_final (0):  Merged 294 parallel devices.
 Class delayPulse_final (0):  Merged 47 series devices.
 Class delayPulse_final (1):  Merged 1 series devices.
+Cell delayPulse_final (0) disconnected node: m2_1725_n286520#
+Cell delayPulse_final (0) disconnected node: m2_1729_n290386#
 Subcircuit summary:
 Circuit 1: delayPulse_final                         |Circuit 2: delayPulse_final                         
 ----------------------------------------------------|----------------------------------------------------
-sky130_fd_pr__nfet_01v8 (74->20)                    |sky130_fd_pr__nfet_01v8 (72->20)                    
 sky130_fd_pr__pfet_01v8 (168->26)                   |sky130_fd_pr__pfet_01v8 (87->26)                    
+sky130_fd_pr__nfet_01v8 (74->20)                    |sky130_fd_pr__nfet_01v8 (72->20)                    
 sky130_fd_pr__cap_mim_m3_2 (47->9)                  |sky130_fd_pr__cap_mim_m3_2 (47->9)                  
 sky130_fd_pr__pfet_g5v0d10v5 (17->7)                |sky130_fd_pr__pfet_g5v0d10v5 (7)                    
-sky130_fd_pr__nfet_g5v0d10v5 (19->7)                |sky130_fd_pr__nfet_g5v0d10v5 (16->7)                
 levelShifter (1)                                    |levelShifter (1)                                    
+sky130_fd_pr__nfet_g5v0d10v5 (19->7)                |sky130_fd_pr__nfet_g5v0d10v5 (16->7)                
 sky130_fd_pr__cap_mim_m3_1 (47->9)                  |sky130_fd_pr__cap_mim_m3_1 (47->9)                  
 sky130_fd_sc_hvl__inv_16 (2)                        |sky130_fd_sc_hvl__inv_16 (2)                        
 sky130_fd_pr__res_xhigh_po_0p69 (48->1)             |sky130_fd_pr__res_xhigh_po_0p69 (2->1)              
@@ -463,7 +448,7 @@ sky130_fd_sc_ls__buf_8 (1)                          |sky130_fd_sc_ls__buf_8 (1)
 sky130_fd_sc_ls__dfrtp_1 (1)                        |sky130_fd_sc_ls__dfrtp_1 (1)                        
 sky130_fd_sc_ls__xor2_1 (1)                         |sky130_fd_sc_ls__xor2_1 (1)                         
 Number of devices: 88                               |Number of devices: 88                               
-Number of nets: 48                                  |Number of nets: 48                                  
+Number of nets: 47                                  |Number of nets: 47                                  
 ---------------------------------------------------------------------------------------------------------
 Resolving symmetries by property value.
 Resolving symmetries by pin name.
@@ -472,42 +457,42 @@ Netlists match uniquely with port errors.
 Subcircuit pins:
 Circuit 1: delayPulse_final                         |Circuit 2: delayPulse_final                         
 ----------------------------------------------------|----------------------------------------------------
-Vbg                                                 |Vbg                                                 
 porb_h[0]                                           |porb_h[0]                                           
 porb_h[1]                                           |porb_h[1]                                           
 VCCH                                                |VCCH                                                
-VCCL                                                |VCCL                                                
+VSS                                                 |VSS                                                 
+ibn180n                                             |ibn180n                                             
 din                                                 |din                                                 
 porb                                                |porb                                                
 por                                                 |por                                                 
+VCCL                                                |VCCL                                                
 VT2                                                 |(no pin, node is VT2                                
-VSS                                                 |VSS                                                 
 ---------------------------------------------------------------------------------------------------------
 Cell pin lists for delayPulse_final and delayPulse_final altered to match.
 Device classes delayPulse_final and delayPulse_final are equivalent.
   Flattening non-matched subcircuits delayPulse_final delayPulse_final
-Flattening unmatched subcell sky130_fd_pr__res_xhigh_po_0p35_WGPHGK in circuit sky130_sw_ip__bgrref_por (0)(1 instance)
-Flattening unmatched subcell sky130_fd_pr__res_xhigh_po_0p35_YTHETB in circuit sky130_sw_ip__bgrref_por (0)(1 instance)
-Flattening unmatched subcell sky130_fd_pr__nfet_05v0_nvt_CZFQWY in circuit sky130_sw_ip__bgrref_por (0)(1 instance)
-Flattening unmatched subcell sky130_fd_pr__res_xhigh_po_0p35_MNWQZD in circuit sky130_sw_ip__bgrref_por (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__res_xhigh_po_0p35_WGPHGK in circuit sky130_sw_ip__por (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_05v0_nvt_FPTPS4 in circuit sky130_sw_ip__por (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_05v0_nvt_CZFQWY in circuit sky130_sw_ip__por (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__res_xhigh_po_0p35_PXB2PH in circuit sky130_sw_ip__por (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__res_xhigh_po_0p35_MNWQZD in circuit sky130_sw_ip__por (0)(1 instance)
 
-Removing zero-valued device vsrc from cell sky130_sw_ip__bgrref_por (1) makes a better match
-Removing zero-valued device vsrc from cell sky130_sw_ip__bgrref_por (1) makes a better match
-Removing zero-valued device vsrc from cell sky130_sw_ip__bgrref_por (1) makes a better match
+Removing zero-valued device vsrc from cell sky130_sw_ip__por (1) makes a better match
+Removing zero-valued device vsrc from cell sky130_sw_ip__por (1) makes a better match
+Removing zero-valued device vsrc from cell sky130_sw_ip__por (1) makes a better match
 Making another compare attempt.
 
-Class sky130_sw_ip__bgrref_por (0):  Merged 38 series devices.
+Class sky130_sw_ip__por (0):  Merged 40 series devices.
 Subcircuit summary:
-Circuit 1: sky130_sw_ip__bgrref_por                 |Circuit 2: sky130_sw_ip__bgrref_por                 
+Circuit 1: sky130_sw_ip__por                        |Circuit 2: sky130_sw_ip__por                        
 ----------------------------------------------------|----------------------------------------------------
 comparator_final (1)                                |comparator_final (1)                                
-sky130_fd_pr__res_xhigh_po_0p35 (41->3)             |sky130_fd_pr__res_xhigh_po_0p35 (3)                 
-sky130_fd_pr__nfet_01v8 (72->20)                    |sky130_fd_pr__nfet_01v8 (72->20)                    
 sky130_fd_pr__pfet_01v8 (29->26)                    |sky130_fd_pr__pfet_01v8 (29->26)                    
+sky130_fd_pr__nfet_01v8 (72->20)                    |sky130_fd_pr__nfet_01v8 (72->20)                    
 sky130_fd_pr__cap_mim_m3_2 (47->9)                  |sky130_fd_pr__cap_mim_m3_2 (47->9)                  
 sky130_fd_pr__pfet_g5v0d10v5 (7)                    |sky130_fd_pr__pfet_g5v0d10v5 (7)                    
-sky130_fd_pr__nfet_g5v0d10v5 (16->7)                |sky130_fd_pr__nfet_g5v0d10v5 (16->7)                
 levelShifter (1)                                    |levelShifter (1)                                    
+sky130_fd_pr__nfet_g5v0d10v5 (16->7)                |sky130_fd_pr__nfet_g5v0d10v5 (16->7)                
 sky130_fd_pr__cap_mim_m3_1 (47->9)                  |sky130_fd_pr__cap_mim_m3_1 (47->9)                  
 sky130_fd_sc_hvl__inv_16 (2)                        |sky130_fd_sc_hvl__inv_16 (2)                        
 sky130_fd_pr__res_xhigh_po_0p69 (1)                 |sky130_fd_pr__res_xhigh_po_0p69 (1)                 
@@ -517,29 +502,29 @@ TieH_1p8 (1)                                        |TieH_1p8 (1)
 sky130_fd_sc_ls__buf_8 (1)                          |sky130_fd_sc_ls__buf_8 (1)                          
 sky130_fd_sc_ls__dfrtp_1 (1)                        |sky130_fd_sc_ls__dfrtp_1 (1)                        
 sky130_fd_sc_ls__xor2_1 (1)                         |sky130_fd_sc_ls__xor2_1 (1)                         
-sky130_fd_pr__nfet_05v0_nvt (2)                     |sky130_fd_pr__nfet_05v0_nvt (2)                     
-Number of devices: 94                               |Number of devices: 94                               
-Number of nets: 53                                  |Number of nets: 53                                  
+sky130_fd_pr__res_xhigh_po_0p35 (44->4)             |sky130_fd_pr__res_xhigh_po_0p35 (4)                 
+sky130_fd_pr__nfet_05v0_nvt (3)                     |sky130_fd_pr__nfet_05v0_nvt (3)                     
+Number of devices: 96                               |Number of devices: 96                               
+Number of nets: 54                                  |Number of nets: 54                                  
 ---------------------------------------------------------------------------------------------------------
 Resolving symmetries by property value.
 Resolving symmetries by pin name.
 Netlists match uniquely.
 
 Subcircuit pins:
-Circuit 1: sky130_sw_ip__bgrref_por                 |Circuit 2: sky130_sw_ip__bgrref_por                 
+Circuit 1: sky130_sw_ip__por                        |Circuit 2: sky130_sw_ip__por                        
 ----------------------------------------------------|----------------------------------------------------
 dvss                                                |dvss                                                
-vbg                                                 |vbg                                                 
 porb_h[1]                                           |porb_h[1]                                           
 porb_h[0]                                           |porb_h[0]                                           
+avss                                                |avss                                                
 porb                                                |porb                                                
 por                                                 |por                                                 
-avss                                                |avss                                                
 dvdd                                                |dvdd                                                
 avdd                                                |avdd                                                
 ---------------------------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
-Device classes sky130_sw_ip__bgrref_por and sky130_sw_ip__bgrref_por are equivalent.
+Device classes sky130_sw_ip__por and sky130_sw_ip__por are equivalent.
 
 Final result: Circuits match uniquely.
 .
