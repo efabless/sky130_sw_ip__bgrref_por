@@ -62,7 +62,7 @@ Creating placeholder cell definition.
 Call to undefined subcircuit sky130_fd_pr__res_xhigh_po_0p69
 Creating placeholder cell definition.
 
-Reading setup file /usr/local/share/pdk/sky130A/libs.tech/netgen/sky130A_setup.tcl
+Reading setup file /usr/share/pdk/sky130A/libs.tech/netgen/sky130A_setup.tcl
 
 Model sky130_fd_pr__res_xhigh_po_0p35 pin 1 == 2
 No property w found for device sky130_fd_pr__res_xhigh_po_0p35
@@ -649,7 +649,7 @@ Circuit 1 contains 47 nets,    Circuit 2 contains 47 nets.
   Flattening non-matched subcircuits delayPulse_final delayPulse_final
 
 Flattening instances of delayPulse_final in file ../netlist/layout/sky130_sw_ip__por.spice
-Flattening instances of delayPulse_final in file /usr/local/share/pdk/sky130A/libs.ref/sky130_fd_sc_hvl/spice/sky130_fd_sc_hvl.spice
+Flattening instances of delayPulse_final in file /usr/share/pdk/sky130A/libs.ref/sky130_fd_sc_hvl/spice/sky130_fd_sc_hvl.spice
 
 Contents of circuit 1:  Circuit: 'sky130_sw_ip__por'
 Circuit sky130_sw_ip__por contains 136 device instances.
