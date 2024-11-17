@@ -543,7 +543,7 @@ Circuit delayPulse_final contains 429 device instances.
   Class: sky130_fd_sc_hvl__inv_16 instances:   2
   Class: sky130_fd_sc_ls__buf_8 instances:   1
   Class: sky130_fd_pr__pfet_g5v0d10v5 instances:  17
-Circuit contains 94 nets, and 2 disconnected pins.
+Circuit contains 91 nets, and 2 disconnected pins.
 Contents of circuit 2:  Circuit: 'delayPulse_final'
 Circuit delayPulse_final contains 90 device instances.
   Class: sky130_fd_pr__nfet_01v8 instances:  20
@@ -562,7 +562,7 @@ Circuit delayPulse_final contains 90 device instances.
   Class: sky130_fd_sc_hvl__inv_16 instances:   2
   Class: sky130_fd_sc_ls__buf_8 instances:   1
   Class: sky130_fd_pr__pfet_g5v0d10v5 instances:   7
-Circuit contains 49 nets.
+Circuit contains 46 nets.
 
 Flattened mismatched instances and attempting compare again.
 
@@ -583,7 +583,7 @@ Circuit delayPulse_final contains 429 device instances.
   Class: sky130_fd_sc_hvl__inv_16 instances:   2
   Class: sky130_fd_sc_ls__buf_8 instances:   1
   Class: sky130_fd_pr__pfet_g5v0d10v5 instances:  17
-Circuit contains 94 nets, and 2 disconnected pins.
+Circuit contains 91 nets, and 2 disconnected pins.
 Contents of circuit 2:  Circuit: 'delayPulse_final'
 Circuit delayPulse_final contains 89 device instances.
   Class: sky130_fd_pr__nfet_01v8 instances:  20
@@ -601,7 +601,7 @@ Circuit delayPulse_final contains 89 device instances.
   Class: sky130_fd_sc_hvl__inv_16 instances:   2
   Class: sky130_fd_sc_ls__buf_8 instances:   1
   Class: sky130_fd_pr__pfet_g5v0d10v5 instances:   7
-Circuit contains 48 nets.
+Circuit contains 45 nets.
 
 Circuit was modified by parallel/series device merging.
 New circuit summary:
@@ -623,7 +623,7 @@ Circuit delayPulse_final contains 88 device instances.
   Class: sky130_fd_sc_hvl__inv_16 instances:   2
   Class: sky130_fd_sc_ls__buf_8 instances:   1
   Class: sky130_fd_pr__pfet_g5v0d10v5 instances:   7
-Circuit contains 47 nets, and 2 disconnected pins.
+Circuit contains 44 nets, and 2 disconnected pins.
 Contents of circuit 2:  Circuit: 'delayPulse_final'
 Circuit delayPulse_final contains 88 device instances.
   Class: sky130_fd_pr__nfet_01v8 instances:  20
@@ -641,10 +641,10 @@ Circuit delayPulse_final contains 88 device instances.
   Class: sky130_fd_sc_hvl__inv_16 instances:   2
   Class: sky130_fd_sc_ls__buf_8 instances:   1
   Class: sky130_fd_pr__pfet_g5v0d10v5 instances:   7
-Circuit contains 47 nets.
+Circuit contains 44 nets.
 
 Circuit 1 contains 88 devices, Circuit 2 contains 88 devices.
-Circuit 1 contains 47 nets,    Circuit 2 contains 47 nets.
+Circuit 1 contains 44 nets,    Circuit 2 contains 44 nets.
 
   Flattening non-matched subcircuits delayPulse_final delayPulse_final
 
@@ -671,7 +671,7 @@ Circuit sky130_sw_ip__por contains 136 device instances.
   Class: sky130_fd_sc_ls__buf_8 instances:   1
   Class: sky130_fd_pr__pfet_g5v0d10v5 instances:   7
   Class: sky130_fd_pr__nfet_05v0_nvt instances:   3
-Circuit contains 94 nets.
+Circuit contains 91 nets.
 Contents of circuit 2:  Circuit: 'sky130_sw_ip__por'
 Circuit sky130_sw_ip__por contains 99 device instances.
   Class: sky130_fd_pr__nfet_01v8 instances:  20
@@ -693,7 +693,7 @@ Circuit sky130_sw_ip__por contains 99 device instances.
   Class: sky130_fd_sc_ls__buf_8 instances:   1
   Class: sky130_fd_pr__pfet_g5v0d10v5 instances:   7
   Class: sky130_fd_pr__nfet_05v0_nvt instances:   3
-Circuit contains 60 nets.
+Circuit contains 57 nets.
 
 Flattened mismatched instances and attempting compare again.
 
@@ -717,7 +717,7 @@ Circuit sky130_sw_ip__por contains 136 device instances.
   Class: sky130_fd_sc_ls__buf_8 instances:   1
   Class: sky130_fd_pr__pfet_g5v0d10v5 instances:   7
   Class: sky130_fd_pr__nfet_05v0_nvt instances:   3
-Circuit contains 94 nets.
+Circuit contains 91 nets.
 Contents of circuit 2:  Circuit: 'sky130_sw_ip__por'
 Circuit sky130_sw_ip__por contains 96 device instances.
   Class: sky130_fd_pr__nfet_01v8 instances:  20
@@ -738,7 +738,7 @@ Circuit sky130_sw_ip__por contains 96 device instances.
   Class: sky130_fd_sc_ls__buf_8 instances:   1
   Class: sky130_fd_pr__pfet_g5v0d10v5 instances:   7
   Class: sky130_fd_pr__nfet_05v0_nvt instances:   3
-Circuit contains 57 nets.
+Circuit contains 54 nets.
 
 Circuit was modified by parallel/series device merging.
 New circuit summary:
@@ -763,7 +763,7 @@ Circuit sky130_sw_ip__por contains 96 device instances.
   Class: sky130_fd_sc_ls__buf_8 instances:   1
   Class: sky130_fd_pr__pfet_g5v0d10v5 instances:   7
   Class: sky130_fd_pr__nfet_05v0_nvt instances:   3
-Circuit contains 54 nets.
+Circuit contains 51 nets.
 Contents of circuit 2:  Circuit: 'sky130_sw_ip__por'
 Circuit sky130_sw_ip__por contains 96 device instances.
   Class: sky130_fd_pr__nfet_01v8 instances:  20
@@ -784,10 +784,10 @@ Circuit sky130_sw_ip__por contains 96 device instances.
   Class: sky130_fd_sc_ls__buf_8 instances:   1
   Class: sky130_fd_pr__pfet_g5v0d10v5 instances:   7
   Class: sky130_fd_pr__nfet_05v0_nvt instances:   3
-Circuit contains 57 nets.
+Circuit contains 54 nets.
 
 Circuit 1 contains 96 devices, Circuit 2 contains 96 devices.
-Circuit 1 contains 54 nets,    Circuit 2 contains 54 nets.
+Circuit 1 contains 51 nets,    Circuit 2 contains 51 nets.
 
 
 Final result: 

@@ -448,7 +448,7 @@ sky130_fd_sc_ls__buf_8 (1)                          |sky130_fd_sc_ls__buf_8 (1)
 sky130_fd_sc_ls__dfrtp_1 (1)                        |sky130_fd_sc_ls__dfrtp_1 (1)                        
 sky130_fd_sc_ls__xor2_1 (1)                         |sky130_fd_sc_ls__xor2_1 (1)                         
 Number of devices: 88                               |Number of devices: 88                               
-Number of nets: 47                                  |Number of nets: 47                                  
+Number of nets: 44                                  |Number of nets: 44                                  
 ---------------------------------------------------------------------------------------------------------
 Resolving symmetries by property value.
 Resolving symmetries by pin name.
@@ -460,11 +460,11 @@ Circuit 1: delayPulse_final                         |Circuit 2: delayPulse_final
 porb_h[0]                                           |porb_h[0]                                           
 porb_h[1]                                           |porb_h[1]                                           
 VCCH                                                |VCCH                                                
-VSS                                                 |VSS                                                 
-ibn180n                                             |ibn180n                                             
 din                                                 |din                                                 
 porb                                                |porb                                                
 por                                                 |por                                                 
+VSS                                                 |VSS                                                 
+ibn180n                                             |ibn180n                                             
 VCCL                                                |VCCL                                                
 VT2                                                 |(no pin, node is VT2                                
 ---------------------------------------------------------------------------------------------------------
@@ -505,7 +505,7 @@ sky130_fd_sc_ls__xor2_1 (1)                         |sky130_fd_sc_ls__xor2_1 (1)
 sky130_fd_pr__res_xhigh_po_0p35 (44->4)             |sky130_fd_pr__res_xhigh_po_0p35 (4)                 
 sky130_fd_pr__nfet_05v0_nvt (3)                     |sky130_fd_pr__nfet_05v0_nvt (3)                     
 Number of devices: 96                               |Number of devices: 96                               
-Number of nets: 54                                  |Number of nets: 54                                  
+Number of nets: 51                                  |Number of nets: 51                                  
 ---------------------------------------------------------------------------------------------------------
 Resolving symmetries by property value.
 Resolving symmetries by pin name.
