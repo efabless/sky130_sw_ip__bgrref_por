@@ -149,9 +149,9 @@ C {devices/lab_wire.sym} 750 -430 0 0 {name=p18 lab=dvss}
 C {devices/lab_wire.sym} 280 -400 0 0 {name=p19 lab=avss}
 C {devices/lab_wire.sym} 320 -930 0 1 {name=p22 lab=avss}
 C {devices/lab_pin.sym} 290 -770 0 1 {name=p6 sig_type=std_logic lab=Vproc}
-C {devices/ammeter.sym} 290 -710 0 0 {name=Vrbranch savecurrent=true lvs_short=true}
-C {devices/ammeter.sym} 460 -460 3 0 {name=Vcomp savecurrent=true lvs_short=true}
-C {devices/ammeter.sym} 690 -390 3 0 {name=Vpulse savecurrent=true lvs_short=true}
+C {devices/ammeter.sym} 290 -710 0 0 {name=Vrbranch savecurrent=true lvs_ignore=short}
+C {devices/ammeter.sym} 460 -460 3 0 {name=Vcomp savecurrent=true lvs_ignore=short}
+C {devices/ammeter.sym} 690 -390 3 0 {name=Vpulse savecurrent=true lvs_ignore=short}
 C {sky130_fd_pr/nfet_05v0_nvt.sym} 270 -820 0 0 {name=M1
 L=0.9
 W=1

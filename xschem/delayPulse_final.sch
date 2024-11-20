@@ -1843,5 +1843,5 @@ C {sky130_stdcells/inv_16.sym} 2320 90 0 0 {name=x10 VGND=VSS VNB=VSS VPB=VCCH V
 C {sky130_stdcells/inv_16.sym} 2320 140 0 0 {name=x8 VGND=VSS VNB=VSS VPB=VCCH VPWR=VCCH prefix=sky130_fd_sc_hvl__ }
 C {devices/lab_pin.sym} 1250 40 0 1 {name=p63 sig_type=std_logic lab=VCCL}
 C {devices/lab_pin.sym} 980 40 0 1 {name=p64 sig_type=std_logic lab=VCCL}
-C {ammeter.sym} 30 -1000 0 0 {name=Vvgbias savecurrent=true spice_ignore=0}
+C {ammeter.sym} 30 -1000 0 0 {name=Vvgbias savecurrent=true spice_ignore=0 lvs_ignore=short}
 C {ipin.sym} -70 -970 0 0 {name=p65 lab=ibn180n}
