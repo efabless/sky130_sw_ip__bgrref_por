@@ -844,7 +844,7 @@ sa=0 sb=0 sd=0
 model=nfet_g5v0d10v5
 spiceprefix=X
 }
-C {ammeter.sym} -190 -760 1 1 {name=Vbn180n savecurrent=true spice_ignore=0}
+C {ammeter.sym} -190 -760 1 1 {name=Vbn180n savecurrent=true spice_ignore=0 lvs_ignore=short}
 C {opin.sym} -40 -760 0 0 {name=p8 lab=ibn180n}
 C {sky130_fd_pr/nfet_01v8.sym} 360 -430 0 0 {name=M22
 L=1
